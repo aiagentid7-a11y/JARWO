@@ -1,0 +1,82 @@
+name: Validate Mining HR Skill
+
+on:
+  push:
+    paths:
+      - 'skills/mining-hr/**'
+      - '.github/workflows/validate-mining-hr-skill.yml'
+  pull_request:
+    paths:
+      - 'skills/mining-hr/**'
+      - '.github/workflows/validate-mining-hr-skill.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f skills/mining-hr/SKILL.md
+          test -f skills/mining-hr/policies/approval-matrix.md
+          test -f skills/mining-hr/templates/case-record.md
+          find skills/mining-hr -type f | sort
+      - name: Validate YAML workflows
+        shell: bash
+        run: |
+          python - <<'PY'
+          import pathlib, yaml
+          for p in pathlib.Path("skills/mining-hr/workflows").glob("*.yaml"):
+              with p.open(encoding="utf-8") as f:
+                  yaml.safe_load(f)
+              print("OK", p)
+          PY
+      - name: Validate intake category coverage
+        shell: bash
+        run: |
+          python - <<'PY'
+          import pathlib, re, sys
+
+          skill_md = pathlib.Path("skills/mining-hr/SKILL.md").read_text(encoding="utf-8")
+          m = re.search(r"## Intake categories\n(.+)\n", skill_md)
+          if not m:
+              sys.exit("Could not find '## Intake categories' line in SKILL.md")
+          categories = [c.strip() for c in m.group(1).split("|")]
+
+          agents_dir = pathlib.Path("skills/mining-hr/agents")
+          workflows_dir = pathlib.Path("skills/mining-hr/workflows")
+          agent_names = {p.stem for p in agents_dir.glob("*.md")}
+          workflow_names = {p.stem for p in workflows_dir.glob("*.yaml")}
+
+          # category -> set of file stems (agent or workflow) that cover it
+          coverage = {
+              "recruitment": {"recruitment"},
+              "manpower": {"workforce-roster"},
+              "roster": {"workforce-roster"},
+              "attendance": {"attendance"},
+              "leave": {"leave-overtime", "leave"},
+              "overtime": {"leave-overtime", "overtime"},
+              "payroll_support": {"payroll-support"},
+              "incentive_ritase": {"incentive-ritase"},
+              "mobilization": {"mobilization"},
+              "training": {"training"},
+              "employee_relations": {"employee-relations"},
+              "disciplinary": {"employee-relations", "disciplinary"},
+              "offboarding": {"offboarding"},
+              "HR_document": {"hr-document"},
+              "analytics": {"analytics"},
+          }
+
+          missing = []
+          for c in categories:
+              covered = coverage.get(c, set()) & (agent_names | workflow_names)
+              if not covered:
+                  missing.append(c)
+
+          if missing:
+              sys.exit(f"Intake categories with no agent/workflow coverage: {missing}")
+          print("OK: every intake category has at least one agent or workflow file.")
+          PY
