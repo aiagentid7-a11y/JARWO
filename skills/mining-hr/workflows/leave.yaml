@@ -1,0 +1,12 @@
+name: leave
+trigger: employee_leave_request
+steps:
+  - authenticate_requester
+  - check_leave_balance
+  - check_roster
+  - check_operational_coverage
+  - route_supervisor_approval:
+      role: authorized_supervisor
+  - record_approved_leave
+  - notify_employee
+audit_required: true

@@ -1,0 +1,13 @@
+name: disciplinary
+trigger: employee_relations_case
+steps:
+  - register_case
+  - collect_facts_and_documents
+  - map_applicable_policy
+  - prepare_case_summary
+  - human_review:
+      role: authorized_hr_manager
+  - issue_approved_action
+  - record_outcome
+audit_required: true
+high_risk: true

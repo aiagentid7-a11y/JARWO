@@ -1,0 +1,11 @@
+name: mobilization
+trigger: approved_new_hire_or_transfer
+steps:
+  - validate_identity_and_employment_status
+  - verify_required_site_documents
+  - verify_required_training_or_certification
+  - assign_site_and_roster
+  - coordinate_transport_and_camp_if_applicable
+  - confirm_arrival
+  - activate_site_hr_record
+audit_required: true

@@ -1,0 +1,14 @@
+name: offboarding
+trigger: employee_separation_case
+steps:
+  - register_case
+  - classify_separation_type
+  - collect_clearance_and_asset_data
+  - reconcile_leave_and_payroll_items
+  - prepare_exit_summary
+  - human_approval:
+      role: authorized_hr_manager
+  - execute_offboarding_actions
+  - record_outcome
+audit_required: true
+high_risk: true

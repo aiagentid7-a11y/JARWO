@@ -1,0 +1,13 @@
+name: incentive_ritase
+trigger: incentive_ritase_calculation_request
+steps:
+  - validate_employee_and_shift
+  - collect_trip_and_tonnage_data
+  - reconcile_with_dispatch_and_weighbridge
+  - apply_incentive_scheme
+  - anomaly_check
+  - route_approval:
+      role: authorized_supervisor
+  - send_to_payroll_support
+  - record
+audit_required: true

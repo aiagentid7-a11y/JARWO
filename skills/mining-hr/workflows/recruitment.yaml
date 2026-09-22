@@ -1,0 +1,15 @@
+name: recruitment
+trigger: approved_manpower_request
+steps:
+  - validate_request
+  - create_job_profile
+  - source_candidates
+  - screen_against_job_criteria
+  - schedule_interviews
+  - collect_required_checks
+  - prepare_offer
+  - human_approval:
+      role: authorized_hiring_manager
+  - pre_mobilization
+  - close_case
+audit_required: true

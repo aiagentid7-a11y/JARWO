@@ -1,0 +1,11 @@
+name: overtime
+trigger: overtime_request
+steps:
+  - validate_employee_and_shift
+  - calculate_hours
+  - check_company_rules
+  - check_required_approval:
+      role: authorized_supervisor
+  - send_to_payroll_support
+  - record
+audit_required: true
