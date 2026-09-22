@@ -1,0 +1,36 @@
+name: Validasi config Hermes
+
+on:
+  push:
+    paths:
+      - "hermes/**"
+  pull_request:
+    paths:
+      - "hermes/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Cek hermes/config.yaml valid sebagai YAML
+        run: |
+          python -c "import yaml; yaml.safe_load(open('hermes/config.yaml'))"
+          echo "config.yaml OK"
+
+      - name: Cek hermes/SOUL.md tidak kosong
+        run: |
+          if [ -s hermes/SOUL.md ]; then
+            echo "SOUL.md OK"
+          else
+            echo "SOUL.md kosong!"
+            exit 1
+          fi

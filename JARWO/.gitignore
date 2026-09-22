@@ -1,0 +1,25 @@
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Hermes runtime (kalau HERMES_HOME pernah diarahkan ke folder ini)
+memories/
+sessions/
+*.db
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
