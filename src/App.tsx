@@ -11,6 +11,7 @@ import EmployeeFormModal from './components/EmployeeFormModal';
 import EmployeeDetailDrawer from './components/EmployeeDetailDrawer';
 import AICopilotChat from './components/AICopilotChat';
 import AttendanceDashboard from './components/AttendanceDashboard';
+import AttendanceSelfService from './components/AttendanceSelfService';
 import PayrollDashboard from './components/PayrollDashboard';
 import PersonalDataDashboard from './components/PersonalDataDashboard';
 import RecruitmentDashboard from './components/RecruitmentDashboard';
@@ -721,13 +722,16 @@ export default function App() {
                 onClearAllEmployees={handleClearAllEmployees}
               />
             ) : activeTab === 'absensi' ? (
-              <AttendanceDashboard 
-                employees={employees}
+              <>
+                {profile?.role === 'Employee' && profile.employee_id && <AttendanceSelfService employeeId={profile.employee_id} />}
+                <AttendanceDashboard 
+                employees={profile?.role === 'Employee' ? employees.filter(e => e.id === profile.employee_id) : employees}
                 onUpdateEmployee={async (id, data) => {
                   await handleSaveEmployee({ id, ...data });
                 }}
                 onUploadSuccess={fetchEmployees}
-              />
+                />
+              </>
             ) : activeTab === 'lembur' ? (
               <OvertimeIncentiveDashboard 
                 employees={employees}
