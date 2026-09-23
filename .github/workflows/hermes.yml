@@ -32,41 +32,23 @@ jobs:
           OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
         run: |
           set -euo pipefail
+
           hermes --version
           hermes doctor --fix || true
+
           test -n "$OPENROUTER_API_KEY" || {
             echo "::error::OPENROUTER_API_KEY belum tersedia di GitHub Actions Secrets."
             exit 1
           }
-          CONFIG="$HOME/.hermes/config.yaml"
-          mkdir -p "$HOME/.hermes"
-          touch "$CONFIG"
 
-          python3 - "$CONFIG" <<'PY'
-          import sys
-          from pathlib import Path
-          path = Path(sys.argv[1])
-          text = path.read_text() if path.exists() else ""
-          if "credential_pool_strategies:" not in text:
-              text = text.rstrip() + "\n\ncredential_pool_strategies:\n  openrouter: round_robin\n"
-          import re
-          model_match = re.search(r"(?m)^model:\n((?:^[ \\t].*\\n?)*)", text)
-          if model_match:
-              block = model_match.group(0)
-              if not re.search(r"(?m)^  provider:\\s*\\S+", block):
-                  block = block.rstrip() + "\\n  provider: openrouter\\n"
-              else:
-                  block = re.sub(r"(?m)^  provider:\\s*.*$", "  provider: openrouter", block)
-              text = text[:model_match.start()] + block + text[model_match.end():]
-          else:
-              text = text.rstrip() + "\\n\\nmodel:\\n  provider: openrouter\\n"
-          path.write_text(text.rstrip() + "\n")
-          PY
+          # Hermes creates/updates ~/.hermes/config.yaml itself.
+          # Do NOT hand-edit YAML: use Hermes' supported config command.
+          hermes config set credential_pool_strategies.openrouter round_robin
+          hermes config check
 
-          echo "=== Hermes config ==="
-          grep -A3 -E '^(model:|credential_pool_strategies:)' "$CONFIG" || true
-          echo "=== OpenRouter credential pool ==="
+          echo "=== Hermes credential pool ==="
           hermes auth list openrouter
+
           echo "=== Credential availability ==="
           echo "OpenRouter key #1: available"
           [ -n "${OPENROUTER_API_KEY_2:-}" ] && echo "OpenRouter key #2: available" || echo "OpenRouter key #2: not configured"
