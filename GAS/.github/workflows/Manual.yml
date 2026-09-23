@@ -1,0 +1,86 @@
+name: Build Release AAB
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Clean committed gradle cache
+        run: rm -rf .gradle
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: gradle
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Run release preflight lint
+        run: ./gradlew lintDebug --no-daemon --no-configuration-cache --stacktrace
+
+      - name: Prepare signing keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        run: |
+          set -euo pipefail
+          if [ -z "${KEYSTORE_BASE64:-}" ]; then
+            echo "ERROR: KEYSTORE_BASE64 belum diset. Production build wajib memakai upload keystore asli."
+            exit 1
+          fi
+          if [ -z "${STORE_PASSWORD:-}" ] || [ -z "${KEY_PASSWORD:-}" ]; then
+            echo "ERROR: STORE_PASSWORD dan KEY_PASSWORD wajib tersedia untuk production signing."
+            exit 1
+          fi
+          KEY_ALIAS="${KEY_ALIAS:-upload}"
+          echo "$KEYSTORE_BASE64" | base64 -d > my-upload-key.jks
+          test -s my-upload-key.jks
+          keytool -list -keystore my-upload-key.jks -storepass "$STORE_PASSWORD" -alias "$KEY_ALIAS" >/dev/null
+          echo "KEYSTORE_PATH=$(pwd)/my-upload-key.jks" >> "$GITHUB_ENV"
+          echo "STORE_PASSWORD=$STORE_PASSWORD" >> "$GITHUB_ENV"
+          echo "KEY_PASSWORD=$KEY_PASSWORD" >> "$GITHUB_ENV"
+          echo "KEY_ALIAS=$KEY_ALIAS" >> "$GITHUB_ENV"
+          echo "Upload keystore production berhasil disiapkan dan alias tervalidasi."
+
+      - name: Build AAB
+        run: |
+          ./gradlew bundleRelease --no-daemon --no-configuration-cache --stacktrace
+
+      - name: Verify production AAB
+        run: |
+          set -euo pipefail
+          AAB="app/build/outputs/bundle/release/app-release.aab"
+          test -s "$AAB"
+          jarsigner -verify -verbose -certs "$AAB" >/dev/null
+          ls -lh "$AAB"
+          echo "Production AAB siap dan signature valid: $AAB"
+
+      - name: Upload AAB Artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: app-release-aab
+          path: app/build/outputs/bundle/release/*.aab
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload ProGuard Mapping
+        if: hashFiles('app/build/outputs/mapping/release/mapping.txt') != ''
+        uses: actions/upload-artifact@v6
+        with:
+          name: app-release-mapping
+          path: app/build/outputs/mapping/release/mapping.txt
+          if-no-files-found: error
+          retention-days: 30

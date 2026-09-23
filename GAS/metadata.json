@@ -1,0 +1,6 @@
+{
+  "name": "GAS",
+  "description": "Aplikasi Personal Payroll Offline-First dengan kalkulator Lembur, BPJS, PPh 21 TER, Cuti, THR, dan Pesangon PHK sesuai regulasi Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

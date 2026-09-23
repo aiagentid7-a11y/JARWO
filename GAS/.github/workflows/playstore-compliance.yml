@@ -1,0 +1,120 @@
+name: Play Store Compliance
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: playstore-compliance-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compliance:
+    name: Play Store / AdMob / Subscription Compliance
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
+
+      - name: Static Play Store compliance scan
+        shell: bash
+        run: |
+          set -euo pipefail
+          failures=0
+          warnings=0
+          pass() { echo "PASS: $1"; }
+          fail() { echo "FAIL: $1"; failures=$((failures+1)); }
+          warn() { echo "WARN: $1"; warnings=$((warnings+1)); }
+
+          BUILD=app/build.gradle.kts
+          MANIFEST=app/src/main/AndroidManifest.xml
+          BILLING=app/src/main/java/com/example/billing/BillingManager.kt
+          PRIVACY=app/src/main/java/com/example/ui/components/DialogComponents.kt
+          ADMOB=app/src/main/java/com/example/ui/components/AdMobBanner.kt
+
+          grep -q 'targetSdk = 36' "$BUILD" && pass 'targetSdk is 36' || fail 'targetSdk is not 36'
+          grep -q 'applicationId = "com.cataleya.gasapp"' "$BUILD" && pass 'applicationId found' || fail 'applicationId missing'
+          grep -q 'com.google.android.gms.permission.AD_ID' "$MANIFEST" && pass 'AD_ID permission declared for ads' || fail 'AD_ID permission missing'
+          grep -q 'com.google.android.gms.ads.APPLICATION_ID' "$MANIFEST" && pass 'AdMob Application ID metadata present' || fail 'AdMob Application ID metadata missing'
+          grep -q 'play-services-ads' "$BUILD" && pass 'Google Mobile Ads SDK dependency present' || fail 'AdMob SDK dependency missing'
+          grep -q 'play-billing' "$BUILD" && pass 'Google Play Billing dependency present' || fail 'Play Billing dependency missing'
+
+          grep -q 'ProductType.SUBS' "$BILLING" && pass 'Subscription product type is used' || fail 'Subscription product type missing'
+          grep -q 'PRO_PRODUCT_ID = "gas_pro"' "$BILLING" && pass 'Subscription product ID gas_pro declared' || fail 'Subscription product ID missing'
+          grep -q 'queryPurchasesAsync' "$BILLING" && pass 'Existing subscription purchases are queried' || fail 'Subscription restore/query flow missing'
+          grep -q 'acknowledgePurchase' "$BILLING" && pass 'Purchased subscriptions are acknowledged' || fail 'Purchase acknowledgement missing'
+          grep -q 'launchBillingFlow' "$BILLING" && pass 'Play Billing purchase flow is implemented' || fail 'Billing purchase flow missing'
+          grep -q 'subscriptionOfferDetails' "$BILLING" && pass 'Subscription offer token is used' || fail 'Subscription offer token handling missing'
+
+          grep -q 'PrivacyPolicyDialog' "$PRIVACY" && pass 'In-app privacy disclosure exists' || fail 'In-app privacy disclosure missing'
+          grep -q 'Kebijakan-Privasi-GAS-Gajiku-Aman-Selalu' "$PRIVACY" && pass 'Privacy policy URL is embedded in the app' || fail 'Privacy policy URL missing'
+          grep -q 'AdMob' "$PRIVACY" && pass 'AdMob disclosure exists in privacy notice' || fail 'AdMob disclosure missing'
+          grep -q 'consentPrivacyAgreed' app/src/main/java/com/example/ui/PayrollViewModel.kt && pass 'Privacy consent state is enforced' || fail 'Privacy consent handling not found'
+
+          grep -q 'ADMOB_PRODUCTION_BANNER_ID' "$ADMOB" && pass 'Production AdMob banner unit is defined' || fail 'Production AdMob banner unit missing'
+          grep -q 'ADMOB_TEST_BANNER_ID' "$ADMOB" && pass 'Debug AdMob test unit is defined' || fail 'AdMob test unit missing'
+
+          if find . -type f \( -name '*.jks' -o -name '*.keystore' -o -name '*.p12' \) -not -path './.git/*' | grep -q .; then
+            fail 'Signing keystore file is committed to the repository'
+          else
+            pass 'No signing keystore is committed'
+          fi
+
+          if grep -RIn 'app-ads.txt' . --exclude-dir=.git --exclude-dir=.gradle >/dev/null 2>&1; then
+            pass 'app-ads.txt reference found in repository'
+          else
+            warn 'app-ads.txt cannot be verified from source; configure and verify it on the developer website in AdMob'
+          fi
+
+          warn 'Play Console listing fields (title, short/full description, screenshots, icon, feature graphic, category, contact/developer website) must be checked in Play Console'
+          warn 'Play Console Data Safety and Ads declaration must match the actual SDK/data behavior'
+          warn 'Content rating, target audience, app access/reviewer instructions, and developer verification are Play Console checks'
+          warn 'AdMob app readiness and app-ads.txt ownership verification are external AdMob checks'
+          warn 'Subscription base plan/offer, price, billing period, countries, tax settings, subscription policy, and testing must be verified in Play Console'
+          warn 'Subscription management/cancellation and restore-purchase UX should be tested with a Play test account'
+
+          {
+            echo '## Google Play / AdMob / Subscription Compliance'
+            echo ''
+            echo "Static checks: failures=$failures warnings=$warnings"
+            echo ''
+            echo '### Automatically checked'
+            echo '- target SDK and application ID'
+            echo '- AdMob SDK, App ID, AD_ID and production/test ad units'
+            echo '- Play Billing subscription implementation and acknowledgement'
+            echo '- in-app privacy disclosure and consent flow'
+            echo '- committed signing material'
+            echo ''
+            echo '### Must be verified outside the repository'
+            echo '- Play Store listing metadata and graphics'
+            echo '- Privacy Policy live URL and Data Safety declaration'
+            echo '- Ads declaration'
+            echo '- Content rating / target audience / app access'
+            echo '- AdMob app readiness and app-ads.txt verification'
+            echo '- Subscription base plan, pricing, offers, countries, tax and cancellation/management UX'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$failures" -gt 0 ]; then
+            exit 1
+          fi
+
+      - name: Build and test debug app
+        run: ./gradlew lintDebug testDebugUnitTest assembleDebug --no-daemon --stacktrace

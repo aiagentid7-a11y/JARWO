@@ -1,0 +1,761 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 8,
+    "identityHash": "9e7c0493e14198a174cdc4bd20117b17",
+    "entities": [
+      {
+        "tableName": "user_profile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `fullName` TEXT NOT NULL, `nik` TEXT NOT NULL, `npwp` TEXT NOT NULL, `hasNpwp` INTEGER NOT NULL, `ptkpStatus` TEXT NOT NULL, `terCategoryOverride` TEXT NOT NULL, `contractType` TEXT NOT NULL, `joinDate` TEXT NOT NULL, `contractEndDate` TEXT, `basicSalary` REAL NOT NULL, `fixedAllowance` REAL NOT NULL, `variableAllowance` REAL NOT NULL, `mealAllowance` REAL NOT NULL, `transportAllowance` REAL NOT NULL, `phoneAllowance` REAL NOT NULL, `remoteAreaAllowance` REAL NOT NULL, `ritasePay` REAL NOT NULL, `hmPay` REAL NOT NULL, `incentivePay` REAL NOT NULL, `isBpjsKesEnabled` INTEGER NOT NULL, `isBpjsJhtEnabled` INTEGER NOT NULL, `isBpjsJpEnabled` INTEGER NOT NULL, `isPph21Enabled` INTEGER NOT NULL, `regionalUmpUmk` REAL NOT NULL, `companyName` TEXT NOT NULL, `jobTitle` TEXT NOT NULL, `workScheduleScheme` TEXT NOT NULL, `defaultShiftType` TEXT NOT NULL, `shiftAllowance` REAL NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullName",
+            "columnName": "fullName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nik",
+            "columnName": "nik",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "npwp",
+            "columnName": "npwp",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasNpwp",
+            "columnName": "hasNpwp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ptkpStatus",
+            "columnName": "ptkpStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "terCategoryOverride",
+            "columnName": "terCategoryOverride",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contractType",
+            "columnName": "contractType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "joinDate",
+            "columnName": "joinDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contractEndDate",
+            "columnName": "contractEndDate",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "basicSalary",
+            "columnName": "basicSalary",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fixedAllowance",
+            "columnName": "fixedAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "variableAllowance",
+            "columnName": "variableAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mealAllowance",
+            "columnName": "mealAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transportAllowance",
+            "columnName": "transportAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneAllowance",
+            "columnName": "phoneAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remoteAreaAllowance",
+            "columnName": "remoteAreaAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ritasePay",
+            "columnName": "ritasePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hmPay",
+            "columnName": "hmPay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "incentivePay",
+            "columnName": "incentivePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsKesEnabled",
+            "columnName": "isBpjsKesEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsJhtEnabled",
+            "columnName": "isBpjsJhtEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsJpEnabled",
+            "columnName": "isBpjsJpEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPph21Enabled",
+            "columnName": "isPph21Enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "regionalUmpUmk",
+            "columnName": "regionalUmpUmk",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "companyName",
+            "columnName": "companyName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "jobTitle",
+            "columnName": "jobTitle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "workScheduleScheme",
+            "columnName": "workScheduleScheme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultShiftType",
+            "columnName": "defaultShiftType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftAllowance",
+            "columnName": "shiftAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "overtime_logs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT NOT NULL, `dayType` TEXT NOT NULL, `hours` REAL NOT NULL, `hourlyRate` REAL NOT NULL, `overtimeMultiplierHours` REAL NOT NULL, `totalAmount` REAL NOT NULL, `taskDescription` TEXT NOT NULL, `shiftType` TEXT NOT NULL, `startTime` TEXT NOT NULL, `endTime` TEXT NOT NULL, `ritaseCount` INTEGER NOT NULL, `ritaseRate` REAL NOT NULL, `hmStart` REAL NOT NULL, `hmEnd` REAL NOT NULL, `hmTotal` REAL NOT NULL, `unitCode` TEXT NOT NULL, `materialType` TEXT NOT NULL, `isApproved` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dayType",
+            "columnName": "dayType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hours",
+            "columnName": "hours",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hourlyRate",
+            "columnName": "hourlyRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "overtimeMultiplierHours",
+            "columnName": "overtimeMultiplierHours",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalAmount",
+            "columnName": "totalAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskDescription",
+            "columnName": "taskDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shiftType",
+            "columnName": "shiftType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startTime",
+            "columnName": "startTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endTime",
+            "columnName": "endTime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ritaseCount",
+            "columnName": "ritaseCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ritaseRate",
+            "columnName": "ritaseRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hmStart",
+            "columnName": "hmStart",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hmEnd",
+            "columnName": "hmEnd",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hmTotal",
+            "columnName": "hmTotal",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unitCode",
+            "columnName": "unitCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "materialType",
+            "columnName": "materialType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isApproved",
+            "columnName": "isApproved",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "leave_records",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `leaveType` TEXT NOT NULL, `startDate` TEXT NOT NULL, `endDate` TEXT NOT NULL, `daysCount` INTEGER NOT NULL, `reason` TEXT NOT NULL, `status` TEXT NOT NULL, `createdAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leaveType",
+            "columnName": "leaveType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "startDate",
+            "columnName": "startDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "endDate",
+            "columnName": "endDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "daysCount",
+            "columnName": "daysCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reason",
+            "columnName": "reason",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "monthly_payroll_history",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `month` INTEGER NOT NULL, `year` INTEGER NOT NULL, `periodLabel` TEXT NOT NULL, `basicSalary` REAL NOT NULL, `fixedAllowance` REAL NOT NULL, `variableAllowance` REAL NOT NULL, `mealAllowance` REAL NOT NULL, `transportAllowance` REAL NOT NULL, `phoneAllowance` REAL NOT NULL, `remoteAreaAllowance` REAL NOT NULL, `ritasePay` REAL NOT NULL, `hmPay` REAL NOT NULL, `incentivePay` REAL NOT NULL, `overtimePay` REAL NOT NULL, `bonusOrThr` REAL NOT NULL, `grossSalary` REAL NOT NULL, `isBpjsKesEnabled` INTEGER NOT NULL, `isBpjsJhtEnabled` INTEGER NOT NULL, `isBpjsJpEnabled` INTEGER NOT NULL, `isPph21Enabled` INTEGER NOT NULL, `bpjsKesEmployee` REAL NOT NULL, `bpjsJhtEmployee` REAL NOT NULL, `bpjsJpEmployee` REAL NOT NULL, `totalBpjsEmployee` REAL NOT NULL, `bpjsKesCompany` REAL NOT NULL, `bpjsJhtCompany` REAL NOT NULL, `bpjsJpCompany` REAL NOT NULL, `bpjsJkkCompany` REAL NOT NULL, `bpjsJkmCompany` REAL NOT NULL, `totalBpjsCompany` REAL NOT NULL, `terCategory` TEXT NOT NULL, `terEffectiveRate` REAL NOT NULL, `pph21Amount` REAL NOT NULL, `isDecemberRecalculation` INTEGER NOT NULL, `annualNetTaxableIncome` REAL NOT NULL, `annualPtkpAmount` REAL NOT NULL, `annualPkpAmount` REAL NOT NULL, `annualPph21Calculated` REAL NOT NULL, `pph21PaidJanNov` REAL NOT NULL, `customDeductionKasbon` REAL NOT NULL, `customDeductionLate` REAL NOT NULL, `customDeductionOther` REAL NOT NULL, `totalCustomDeductions` REAL NOT NULL, `netTakeHomePay` REAL NOT NULL, `notes` TEXT NOT NULL, `createdAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "month",
+            "columnName": "month",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "year",
+            "columnName": "year",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "periodLabel",
+            "columnName": "periodLabel",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "basicSalary",
+            "columnName": "basicSalary",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fixedAllowance",
+            "columnName": "fixedAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "variableAllowance",
+            "columnName": "variableAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mealAllowance",
+            "columnName": "mealAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "transportAllowance",
+            "columnName": "transportAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phoneAllowance",
+            "columnName": "phoneAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "remoteAreaAllowance",
+            "columnName": "remoteAreaAllowance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ritasePay",
+            "columnName": "ritasePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hmPay",
+            "columnName": "hmPay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "incentivePay",
+            "columnName": "incentivePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "overtimePay",
+            "columnName": "overtimePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bonusOrThr",
+            "columnName": "bonusOrThr",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "grossSalary",
+            "columnName": "grossSalary",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsKesEnabled",
+            "columnName": "isBpjsKesEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsJhtEnabled",
+            "columnName": "isBpjsJhtEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isBpjsJpEnabled",
+            "columnName": "isBpjsJpEnabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPph21Enabled",
+            "columnName": "isPph21Enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsKesEmployee",
+            "columnName": "bpjsKesEmployee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJhtEmployee",
+            "columnName": "bpjsJhtEmployee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJpEmployee",
+            "columnName": "bpjsJpEmployee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalBpjsEmployee",
+            "columnName": "totalBpjsEmployee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsKesCompany",
+            "columnName": "bpjsKesCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJhtCompany",
+            "columnName": "bpjsJhtCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJpCompany",
+            "columnName": "bpjsJpCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJkkCompany",
+            "columnName": "bpjsJkkCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJkmCompany",
+            "columnName": "bpjsJkmCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalBpjsCompany",
+            "columnName": "totalBpjsCompany",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "terCategory",
+            "columnName": "terCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "terEffectiveRate",
+            "columnName": "terEffectiveRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pph21Amount",
+            "columnName": "pph21Amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDecemberRecalculation",
+            "columnName": "isDecemberRecalculation",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "annualNetTaxableIncome",
+            "columnName": "annualNetTaxableIncome",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "annualPtkpAmount",
+            "columnName": "annualPtkpAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "annualPkpAmount",
+            "columnName": "annualPkpAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "annualPph21Calculated",
+            "columnName": "annualPph21Calculated",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pph21PaidJanNov",
+            "columnName": "pph21PaidJanNov",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customDeductionKasbon",
+            "columnName": "customDeductionKasbon",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customDeductionLate",
+            "columnName": "customDeductionLate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customDeductionOther",
+            "columnName": "customDeductionOther",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalCustomDeductions",
+            "columnName": "totalCustomDeductions",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "netTakeHomePay",
+            "columnName": "netTakeHomePay",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notes",
+            "columnName": "notes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "app_settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `isProUser` INTEGER NOT NULL, `consentPrivacyAgreed` INTEGER NOT NULL, `bpjsKesSalaryCap` REAL NOT NULL, `bpjsJpSalaryCap` REAL NOT NULL, `jkkRate` REAL NOT NULL, `jkmRate` REAL NOT NULL, `defaultAnnualLeaveQuota` INTEGER NOT NULL, `adFreeUnlockedTimestamp` INTEGER, `themeMode` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isProUser",
+            "columnName": "isProUser",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "consentPrivacyAgreed",
+            "columnName": "consentPrivacyAgreed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsKesSalaryCap",
+            "columnName": "bpjsKesSalaryCap",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bpjsJpSalaryCap",
+            "columnName": "bpjsJpSalaryCap",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "jkkRate",
+            "columnName": "jkkRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "jkmRate",
+            "columnName": "jkmRate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultAnnualLeaveQuota",
+            "columnName": "defaultAnnualLeaveQuota",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "adFreeUnlockedTimestamp",
+            "columnName": "adFreeUnlockedTimestamp",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "themeMode",
+            "columnName": "themeMode",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9e7c0493e14198a174cdc4bd20117b17')"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+name: Bug Scan
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bug-scan-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bug-scan:
+    name: Bug Scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
+
+      - name: Check repository hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -type f \( -name '*.jks' -o -name '*.keystore' -o -name '*.p12' \) -not -path './.git/*' | grep -q .; then
+            echo 'ERROR: signing material must not be committed.'
+            find . -type f \( -name '*.jks' -o -name '*.keystore' -o -name '*.p12' \) -not -path './.git/*'
+            exit 1
+          fi
+          if grep -RInE --exclude-dir=.git --exclude-dir=.gradle --exclude='*.lock' '(password|passwd|secret|api[_-]?key|token)[[:space:]]*[:=][[:space:]]*["'"'][^"'"']{8,}["'"']' .; then
+            echo 'ERROR: possible hard-coded credential found.'
+            exit 1
+          fi
+
+      - name: Validate Gradle configuration
+        run: ./gradlew tasks --all --no-daemon
+
+      - name: Kotlin compile check
+        run: ./gradlew compileDebugKotlin --no-daemon
+
+      - name: Unit tests
+        run: ./gradlew testDebugUnitTest --no-daemon
+
+      - name: Android lint
+        run: ./gradlew lintDebug --no-daemon
+
+      - name: Room migration regression tests
+        run: ./gradlew connectedDebugAndroidTest --no-daemon
+
+      - name: Release preflight
+        run: ./gradlew testReleaseUnitTest --no-daemon
+
+      - name: Release bundle compile check
+        run: ./gradlew bundleRelease --no-daemon -x lintRelease
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+
+      - name: Verify release AAB exists
+        shell: bash
+        run: |
+          set -euo pipefail
+          AAB='app/build/outputs/bundle/release/app-release.aab'
+          test -s "$AAB"
+          echo "AAB found: $AAB"
+          ls -lh "$AAB"
+
+      - name: Verify AAB is signed
+        shell: bash
+        run: |
+          set -euo pipefail
+          AAB='app/build/outputs/bundle/release/app-release.aab'
+          jarsigner -verify -verbose -certs "$AAB" | tee /tmp/jarsigner.txt
+          grep -q 'jar verified' /tmp/jarsigner.txt
+
+      - name: Bug scan summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '## 🐛 GAS Bug Scan'
+            echo ''
+            echo "Commit: \\`${GITHUB_SHA}\`"
+            echo ''
+            echo '- Kotlin compile'
+            echo '- Unit tests'
+            echo '- Android lint'
+            echo '- Room migration / instrumentation tests'
+            echo '- Release preflight'
+            echo '- Release AAB build'
+            echo '- AAB signature verification'
+            echo ''
+            echo 'The workflow fails automatically when a check above fails.'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,69 @@
+name: Production Hardening
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-verify:
+    if: ${{ !contains(github.event.head_commit.message, '[production-hardening]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Apply transactional attendance synchronization
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path('app/src/main/java/com/example/ui/PayrollViewModel.kt')
+          s = path.read_text(encoding='utf-8')
+          original = s
+
+          if 'import androidx.room.withTransaction' not in s:
+              s = s.replace(
+                  'import android.app.Application\n',
+                  'import android.app.Application\nimport androidx.room.withTransaction\n',
+                  1
+              )
+
+          old_ot = '''            repository.addOvertimeLog(log)\n\n            // Sinkronkan ke tabel Absensi\n            val existingAttendance = repository.getAttendanceByDate(date)\n            if (existingAttendance == null) {\n                repository.addAttendanceRecord(\n                    AttendanceRecord(\n                        date = date,\n                        status = if (dayType == "WORKDAY") "HADIR" else "LIBUR",\n                        checkInTime = startTime,\n                        checkOutTime = endTime,\n                        workedHours = hours,\n                        isMealEligible = dayType == "WORKDAY",\n                        isTransportEligible = dayType == "WORKDAY",\n                        notes = "Lembur ($hours jam): $description"\n                    )\n                )\n            }'''
+          new_ot = '''            database.withTransaction {\n                val overtimeId = repository.addOvertimeLog(log)\n\n                // Sinkronkan ke tabel Absensi hanya jika tanggal belum dimiliki sumber lain.\n                val existingAttendance = repository.getAttendanceByDate(date)\n                if (existingAttendance == null) {\n                    repository.addAttendanceRecord(\n                        AttendanceRecord(\n                            date = date,\n                            status = if (dayType == "WORKDAY") "HADIR" else "LIBUR",\n                            checkInTime = startTime,\n                            checkOutTime = endTime,\n                            workedHours = hours,\n                            isMealEligible = dayType == "WORKDAY",\n                            isTransportEligible = dayType == "WORKDAY",\n                            notes = "Lembur ($hours jam): $description",\n                            sourceType = "OVERTIME_SYNC",\n                            sourceId = overtimeId\n                        )\n                    )\n                }\n            }'''
+          if old_ot not in s:
+              raise SystemExit('Overtime synchronization block not found')
+          s = s.replace(old_ot, new_ot, 1)
+
+          old_leave = '''            repository.addLeaveRecord(record)\n\n            val upperType = leaveType.uppercase()'''
+          new_leave = '''            val leaveId = repository.addLeaveRecord(record)\n\n            val upperType = leaveType.uppercase()'''
+          if old_leave not in s:
+              raise SystemExit('Leave insert block not found')
+          s = s.replace(old_leave, new_leave, 1)
+
+          old_leave_loop = '''                while (!startCal.after(endCal)) {\n                    val dateStr = format.format(startCal.time)\n                    repository.addAttendanceRecord(\n                        AttendanceRecord(\n                            date = dateStr,\n                            status = attendanceStatus,\n                            workedHours = 0.0,\n                            isMealEligible = false,\n                            isTransportEligible = false,\n                            notes = "Sinkron dari $leaveType: $reason"\n                        )\n                    )\n                    startCal.add(java.util.Calendar.DAY_OF_MONTH, 1)\n                }'''
+          new_leave_loop = '''                database.withTransaction {\n                    while (!startCal.after(endCal)) {\n                        val dateStr = format.format(startCal.time)\n                        repository.addAttendanceRecord(\n                            AttendanceRecord(\n                                date = dateStr,\n                                status = attendanceStatus,\n                                workedHours = 0.0,\n                                isMealEligible = false,\n                                isTransportEligible = false,\n                                notes = "Sinkron dari $leaveType: $reason",\n                                sourceType = "LEAVE_SYNC",\n                                sourceId = leaveId\n                            )\n                        )\n                        startCal.add(java.util.Calendar.DAY_OF_MONTH, 1)\n                    }\n                }'''
+          if old_leave_loop not in s:
+              raise SystemExit('Leave attendance synchronization block not found')
+          s = s.replace(old_leave_loop, new_leave_loop, 1)
+
+          old_clear = '''        viewModelScope.launch {\n            repository.clearAllEmployeeData()\n            _userMessage.value = "Semua data karyawan dan riwayat telah dibersihkan."\n        }'''
+          new_clear = '''        viewModelScope.launch {\n            database.withTransaction {\n                repository.clearAllEmployeeData()\n            }\n            _userMessage.value = "Semua data karyawan dan riwayat telah dibersihkan."\n        }'''
+          if old_clear in s:
+              s = s.replace(old_clear, new_clear, 1)
+
+          if s == original:
+              raise SystemExit('No transactional changes were applied')
+          path.write_text(s, encoding='utf-8')
+
+      - name: Commit hardening changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/java/com/example/ui/PayrollViewModel.kt
+          git diff --cached --check
+          git commit -m "fix: make attendance sync transactional [production-hardening]"
+          git push

@@ -1,0 +1,41 @@
+name: Atomic Leave Sync Fix
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: ${{ !contains(github.event.head_commit.message, '[atomic-leave-fixed]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Make leave creation atomic
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('app/src/main/java/com/example/ui/PayrollViewModel.kt')
+          s = p.read_text(encoding='utf-8')
+          old = '''            val leaveId = repository.addLeaveRecord(record)\n\n            val upperType = leaveType.uppercase()'''
+          new = '''            val upperType = leaveType.uppercase()'''
+          if old not in s:
+              raise SystemExit('Leave insert marker not found')
+          s = s.replace(old, new, 1)
+
+          old_try = '''            try {\n                val format = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.US)\n                val startCal = java.util.Calendar.getInstance().apply { time = format.parse(startDate)!! }\n                val endCal = java.util.Calendar.getInstance().apply { time = format.parse(endDate)!! }\n\n                database.withTransaction {\n                    while (!startCal.after(endCal)) {'''
+          new_try = '''            try {\n                val format = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.US).apply {\n                    isLenient = false\n                }\n                val startCal = java.util.Calendar.getInstance().apply { time = format.parse(startDate)!! }\n                val endCal = java.util.Calendar.getInstance().apply { time = format.parse(endDate)!! }\n\n                database.withTransaction {\n                    val leaveId = repository.addLeaveRecord(record)\n                    while (!startCal.after(endCal)) {'''
+          if old_try not in s:
+              raise SystemExit('Leave transaction block not found')
+          s = s.replace(old_try, new_try, 1)
+          p.write_text(s, encoding='utf-8')
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/java/com/example/ui/PayrollViewModel.kt
+          git diff --cached --check
+          git commit -m "fix: make leave creation atomic [atomic-leave-fixed]"
+          git push

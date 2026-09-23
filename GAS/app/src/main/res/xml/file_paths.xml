@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="cache" path="." />
+    <cache-path name="payslips" path="payslips/" />
+    <cache-path name="reports" path="reports/" />
+    <cache-path name="tax_reports" path="tax_reports/" />
+    <cache-path name="k3_reports" path="k3_reports/" />
+    <files-path name="files" path="." />
+    <files-path name="documents" path="documents/" />
+    <files-path name="attendance_photos" path="attendance_photos/" />
+</paths>
