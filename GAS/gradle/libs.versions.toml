@@ -44,6 +44,7 @@ googleid = "1.1.1"
 playBilling = "8.0.0"
 playServicesAds = "23.6.0"
 fragment = "1.8.6"
+mlkitFaceDetection = "16.1.7"
 
 
 [libraries]
@@ -103,6 +104,7 @@ googleid = { group = "com.google.android.libraries.identity.googleid", name = "g
 play-billing = { group = "com.android.billingclient", name = "billing-ktx", version.ref = "playBilling" }
 play-services-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "playServicesAds" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+mlkit-face-detection = { group = "com.google.mlkit", name = "face-detection", version.ref = "mlkitFaceDetection" }
 
 
 [plugins]
