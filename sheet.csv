@@ -1,0 +1,701 @@
+DATA BASE KARYAWAN ONE FOR ALL,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+No.,,Nama Tenaga Kerja,Jabatan,( N I K ),Tanggal Lahir,USIA,Jenis Kelamin,Mulai Kerja,Pendidikan,Sertfikasi,Ruang Gaji,Upah*,No BPJS TK,No BPJS KESEHATAN,STATUS,,ALAMAT,Nomor HP,Lokal,Non Lokal
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,PKWT,PKWTT,,,,
+1,1,"M. Ayi Djumarna, ST",KTT-Site Manager,3271062704510001,7-Jun-58,68 Tahun ,Laki-laki,02-Nov-2021,S1,,I/15/3,,18068854373,0002142466615,1,,"Jl.Setia No.2 rt/rw 03/06 komplek kedung badak baru, Desa Kedung Badak, Kec. Tanah Sareal Bogor.",08129325430,,2
+2,2,Sunaryo,Project Manager,,,,Laki-laki,12-Mei-2025,,,,,,,1,,,081327277098,,2
+3,3,Syafrullah,Wakil KTT,7406140105940001,1-Mei-94,32 Tahun ,Laki-laki,09-Sep-2019,S1 Pertambangan,"POP, POM",VI/4/11,,19074132184,0002172822557,1,,"Jl. Tanjung Perak, Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana Sultra",081356763441,1,
+4,4,Lukman Sarifudin,Staff Bidang Umum & Legal,7403020106970001,1-Agu-97,28 Tahun ,Laki-laki,01-Apr-2021,S1,,VI/2/10,,19049212442,0002827464737,1,,"Jln. Sukarno-Hatta kel. Mekar Jaya, Kec. Tiworo Tengah, Muna Barat",082291342373,,2
+,,,,,,,,,,,,,,,,,,,,
+,,HRD,,,,,,,,,,,,,,,,,,
+5,1,Wili Yulistiawan,Ka. HRD,3204090403870003,4-Mar-87,39 Tahun ,Laki-laki,24-Okt-2019,S1 Ekonomi Management,,III/8/2,,20010221529,0001458414606,1,,"KP. Bojong Koneng RT.007/RW.012 Kel. Rancamanyar, Kec.Baleendah Bandung",081320475887,,2
+6,2,Fachri Amrillah,Foreman HR,3201041903940001,19-Mar-94,32 Tahun ,Laki-laki,01-Jan-2026,S1,,,,,,1,,"KP. Sukaraja Kaum RT.01/RW.05 NO.38 Ds. Sukaraja, Kec. Sukaraja, Kab. Bogor",087781621069,,2
+7,3,Kurnia Aji,Staff HRD,3175070408870003,4-Agu-87,38 Tahun ,Laki-laki,05-Jan-2026,S1,,,,,,1,,"Jl. Mawar Merah III/I/109 RT.08/RW.12 Kel. Malaka Jaya, Kec. Duren Sawit, Jakarta Timur",085921832460,,2
+8,4,Rayana Nur,Staff HRD,7406134812940001,8-Des-94,31 Tahun ,Perempuan,18-Okt-2019,S1 Informatika,,VI/4/1,,20010221602,0001730356672,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082386028057,1,
+9,5,Dedi Suhermanto,Protokoler,7471101701870004,17-Jan-87,39 Tahun ,Laki-laki,01-Agu-20,S1,,VI/1/4,,19074132077,0001724926612,1,,"BTN Kendari Permai Blok Y2 No. 9 RT. 013/004 Kel. Padaleu, Kec. Kambu Kota Kendari",081248346266,,2
+10,6,MUDRYKATUN SABATINA,Admin Produksi,7406136812980002,28-Des-98,27 Tahun ,Perempuan,02-Jun-23,S1 Pariwisata,,,,23109460552,0002172586476,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085398709255,1,
+11,7,FADLY TAIB,Admin Produksi,7406130910890001,9-Okt-89,36 Tahun ,Laki-laki,02-Jun-23,D3 Komputer,,,,23109460966,0001941304217,1,,"Desa Puununu Kec. Kabaena Selatan, Kab. Bombana",082381027232,1,
+12,8,AINUL HAYAT,Admin HRD,7406134608000001,6-Agu-00,25 Tahun ,Perempuan,21-Jun-23,S1 PGSD,,,,23109461055,0003545739707,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085240941399,1,
+13,9,Muhammad Irsyad,Admin Produksi,7406131809010001,9/18/2001,24 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082259501883,1,
+14,10,Zul Hijah,Admin Produksi,7404186903010002,3/29/2001,25 Tahun ,Perempuan,27-Nov-25,S1,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085215845395,1,
+15,11,Darman,Admin Produksi,7471061510860002,10/15/1986,39 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Kel. Abeli RT.03/RW.02, Kec. Abeli, Kota Kendari",085241871133,,2
+,,,,,,,,,,,,,,,,,,,,
+,,P2P/GEOLOGI TAMBANG,,,,,,,,,,,,,,,,,,
+16,1,Zainul,Mine Plan Design,7404090707990002,7-Jul-99,27 Tahun ,Laki-laki,02-Feb-2024,S1 Pertambangan,POP,,,,,1,,"Desa Lawela, Kec. Batauga, Kab Buton Selatan",082193202685,,2
+17,2,Prahas Maulana,Grade Control,7471082310890001,23-Okt-89,36 Tahun ,Laki-laki,16-Sep-2019,S2 Manajemen Pendidikan,POP ,VI/4/10,,19074132770,0002922305016,1,,"Tamangapa Raya BTN Ranggon J/2 RT.02/RW.04 Kel. Bangkala, Kec. Manggala Kota Makassar",085341476872,1,
+18,3,AROAFYL ISNAIN,Ass. Grade Control,7406130911930001,9-Nov-93,32 Tahun ,Laki-laki,02-Jun-23,S1 Manajemen,,,,23109460776,0002172586465,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085395642933,1,
+19,4,Arfat Eza,Crew GC,7406060107030015,7/6/2000,26 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082260605699,1,
+20,5,Ardianto,Crew GC,7406052210000001,10/22/2000,25 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Teomokole, Kec. Kabaena, kab. Bombana",082136867748,1,
+21,6,Arif Nurhidayat,Crew GC,7404181711990003,11/17/1999,26 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081241521102,1,
+22,7,Rafli,Crew GC,7404180107050015,10/7/2005,20 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085177914312,1,
+23,8,Ziskia Nurul Utami,Geologist ,1501116306000002,23-Jun-00,26 Tahun ,Perempuan,01-Nov-2023,S1 Geologi Tambang,POP ,,,23165189426,0001906797791,1,,"Taman Jernih Sungai Tutung, Kec. Air Hangat Timur, Kab. Kerinci, Jambi",082287812626,,2
+24,9,Bayu Pradana,Geologist ,3509110703980005,7-Mar-98,28 Tahun ,Laki-laki,5-Feb-2024,S1 Geologi Tambang,POP ,,,,,1,,"Jl. Tegal Banteng RT.06/RW.03, Kesilir Kesilir Krajan, Wuluhan, Jember",085247434050,,2
+25,10,Farhan Bashari Sya'ban,Geologist ,3206362011990005,20-Nov-99,26 Tahun ,Laki-laki,5-Feb-2024,S1 Geologi Tambang,POP ,,,,,1,,"KP. Anto RT.04/RW.02, Kel. Margasari, Kec. Ciawi, Kab. Tasikmalaya, Jawa Barat",081324663405,,2
+26,11,Lazuardi Rahman,Geologist ,3275012609970008,26-Sep-97,28 Tahun ,Laki-laki,1-Des-2025,S1 Geologi Tambang,,,,,,1,,"Jl. Teluk Angsah Permai Blok II D No. 85 RT.03/RW.12 Kel.Bekasi Jaya, Kec. Bekasi Timur",082219710102,,2
+27,12,Fazra Ramadhana,Wellsite,3271060811020021,8-Nov-02,23 Tahun ,Laki-laki,01-Sep-2022,SMK Geologi Tambang,,VI/2/3,,22097485589,0003054356111,1,,"jl. Situpete Pulo RT/RW 001/010, Sukadamai, Taman Sareal.",085714759600,,2
+28,13,Agus,Wellsite,7404182808910001,28-Agu-91,34 Tahun ,Laki-laki,15-Okt-2022,S1 Pertambangan,,VI/2/3,,22129967919,0000948472481,1,,"Desa Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah, Kec Talaga Raya",085145002171,1,
+29,14,Muh. Munzir,Wellsite,7406130709950001,7-Sep-95,30 Tahun ,Laki-laki,17-Okt-2022,S1 Manajemen,,VI/2/3,,22129967901,0000952898681,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082224031455,1,
+30,15,Syakir Fadhlin Arimi,Wellsite,3271042512030006,25-Des-03,22 Tahun ,Laki-laki,01-Nov-2023,SMK Geologi Tambang,,,,23165189350,0001372330596,1,,"Jl. Rajawali No.A13 Curug Indah Kel. Curug Mekar, Kec. Bogor Barat",082123603344,,2
+31,16,Hakim Daniel Ali,Wellsite,3201160203020003,2-Mar-02,24 Tahun ,Laki-laki,01-Nov-2023,SMK Geologi Tambang,,,,23165189459,0002069445262,1,,"Kp. Babakan Cibatok No.25 RT.04/RW.04 Kel. Cibatok, Kec. Cibungbulang Bogor",085817866521,,2
+32,17,Muhamad Bayu Ardana Khesa,Wellsite,3201012707040012,27-Jul-04,21 Tahun ,Laki-laki,01-Nov-2023,SMK Geologi Tambang,,,,23165189442,0003562376163,1,,"Kp. Leuwikopo RT.02/RW.02 Kel. Babakan, Kec. Dramaga Kota Bogor",085893587183,,2
+33,18,Muhammad Akbar Pramudya,Wellsite,3201150909020006,9-Sep-02,23 Tahun ,Laki-laki,11-Mar-2024,SMK Geologi Tambang,,,,,,1,,"Kp. Pabuaran Kulon RT.06/RW.05 Kel. Cibanteng, Kec. Ciampea Kab. Bogor",081312396324,,2
+34,19,Dermawan,Mekanik Bor,3201300507780006,5-Jul-78,48 Tahun ,Laki-laki,01-Jul-2023,SMA,,,,,0001885353096,,2,"Dramaga Kp. Manggis RT.05/RW.04 Kec. Dramaga, Kab. Bogor",082273456696,,2
+35,20,Budi Supardi,Mekanik Bor,3202211505730001,15-Mei-73,53 Tahun ,Laki-laki,10-Jan-2022,SMA,,VI/2/15,,22002358798,0002184570685,1,,"Kp. Ciburial RT. 08 RW 003, Desa Padajaya,Kec. Jampang Kulon, Sukabumi",082256185757,,2
+36,21,Ali Sadikin,Ass. Mekanik Bor,3302181901840001,19-Jan-84,42 Tahun ,Laki-laki,10-Jan-2022,SMA,,VI/3/7,,22002358814,0000527335907,1,,"Desa Pengebatan RT. 02 RW 007, Kec. KarangLewas, Kab. Banyumas",081212402458,,2
+37,22,Jawar,Operator Mesin Bor,3602032911750001,29-Nov-75,50 Tahun ,Laki-laki,01-Feb-2023,SMA,,VI/2/15,,22011802125,0003570610342,1,,"Kel. Cidikit, Kec. Bayah, Lebak",081371200305,,2
+38,23,Asep Saepudin,Mekanik Mesin Bor,3272032807740901,28-Jul-74,51 Tahun ,Laki-laki,01-Feb-2023,SMA,,VI/2/15,,22011802117,0001441920508,1,,Kec. Citamilang Kota Sukabumi,082181656729,,2
+39,24,Adi Kurniawan,Ass. Mekanik Bor,3302182606870003,26-Jun-87,39 Tahun ,Laki-laki,01-Feb-2023,SMA,,VI/3/7,,22011802133,0001139656375,1,,"Kel. Pesing Poneng, Kec. Kebon Jeruk, Jakut",081393261023,,2
+40,25,RULI MAHRAN,Helper Geologi,7406132112870001,21-Des-87,38 Tahun ,Laki-laki,11-Okt-2021,S1 Arsitektur,,VI/1/1,,21082515038,0000954015636,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085396692085,1,
+41,26,FANI,Helper Geologi,7404182812980001,28-Des-98,27 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515053,0000948515624,1,,"Desa Talaga Besar, Kec. Talaga raya, Kab. Buton tengah, Kec. Talaga Raya",082188724690,1,
+42,27,LA ODE RAHMAN,HELPER MEKANIK BOR,7404181010870002,10-Okt-87,38 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461121,0002006233211,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",081324790052,1,
+43,28,AGUS WAHAB,Crew Bor,7406130508900002,5-Agu-90,35 Tahun ,Laki-laki,09-Jun-2023,SMA,,,,23109460701,0000953482206,1,,"Desa Puununu Kec. Kabaena Selatan, Kab. Bombana",082334209798,1,
+44,29,DARWIN,Crew Bor,7404180107930011,1-Jul-93,33 Tahun ,Laki-laki,09-Jun-2023,SD,,,,23109460693,0002827665854,1,,"Desa Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082210191468,1,
+45,30,Nur Eko Prasetyo,Crew Bor,7406052707980001,6/27/1998,28 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Teomokole, Kec. Kabaena, Kab. Bombana",085398139968,1,
+46,31,Akram,Crew Bor,7404180609030002,9/6/2003,22 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",082228378418,1,
+47,32,La Ode Muh. Hafiz,Crew Bor,7404182403060001,6/26/2006,20 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",085257151271,1,
+48,33,Moh. Izwan Cahyadi,Crew Bor,7404182204020001,4/22/2002,24 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",085214056797,1,
+49,34,La Ode Muhamad Fadil,Crew Bor,7404182710060001,10/25/2006,19 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",082190761809,1,
+50,35,Jumaldin,Crew Bor,7404182306980001,20-Jun-99,27 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",082239800681,1,
+51,36,Azbain,Crew Bor,7404180210980001,31-Jan-96,30 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",081249376068,1,
+52,37,Thion Gafar,Crew Bor,7404180107040030,01-Jul-04,22 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",082290326305,1,
+53,38,Ari Wibowo,Crew Bor,7404180107020029,20-Apr-02,24 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082290240350,1,
+54,39,Sabarjat,Crew Bor,7404182303930001,23-Mar-93,33 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",081341104013,1,
+,,,,,,,,,,,,,,,,,,,,
+,,PENGAWAS ,,,,,,,,,,,,,,,,,,
+55,1,Amrin,Peng. Angkutan Tambang,7406062801770001,28-Jan-77,49 Tahun ,Laki-laki,01-Jul-2019,S1 PGSD,POP ,III/5/1,,20010220497,0001830957974,1,,"Ds Lambale, Kec. Kabaena Timur, Kab. Bombana Sultra",082148418927,1,
+56,2,Ishak,Peng. Angkutan Tambang,7402012508740001,25-Agu-74,51 Tahun ,Laki-laki,18-Agu-2019,SMA,POP ,VI/4/9,,19074133273,0001074520001,1,,"Napoosi RT.002/RW.002 Desa Napoosi, Kec. Onembute Kab. Konawe",082344580022,,2
+57,3,Edison R.,Peng. Angkutan Tambang,7401070711690001,7-Nov-69,56 Tahun ,Laki-laki,04-Jun-2024,SLTP,POP ,,,,,1,,Kolaka Timur,081341741575,,2
+58,4,Sugi Herawadi,Pengawas Tambang,7371090108890009,1-Agu-89,36 Tahun ,Laki-laki,01-Jul-2019,SMA,"POP, POM",III/5/1,,20010221412,0002036575866,1,,"Ds Wumbuburo, Kec. Kabaena Timur, Kab, Bombana Sultra",085396746446,1,
+59,5,Saharuddin,Pengawas Tambang,7404051606790002,16-Jun-79,47 Tahun ,Laki-laki,01-Jul-2019,SMP,POP ,III/5/1,,20010220729,0002219305353,1,,Dusun Sauntiri Desa Oengkolaki Kec. Mawasangka Kab. Buton Tengah,082290700179,,2
+60,6,Amrullah Yusuf,Pengawas Tambang,3301221408660003,14-Agu-66,59 Tahun ,Laki-laki,01-Jul-2019,SMA,POP ,III/5/1,,20010221420,0002501059847,1,,"Cilacap, Jawa Tengah",081341747412,1,
+61,7,Sumarto,Pengawas Tambang,3504152206750002,22-Jun-75,51 Tahun ,Laki-laki,17-Agu-2019,SMP,POP ,III/5/1,,20050673621,0001883052731,1,,"Dusun Tempel RT.01/RW.01, Kel. Tanggulkundung, Kec. Besuki Tulungagung",081271311789,,2
+62,8,Muh. Irsan Yunus. D,Pengawas Tambang,7471072406900002,24-Jun-90,36 Tahun ,Laki-laki,10-Sep-2019,SMA,POP,III/5/1,,20010220638,0002367019618,1,,"Jl, Prof Muh. Yamin RT.014/RW.005, Puuwatu Kota Kendari",085242436564,,2
+63,9,Arman,Pengawas Tambang,7406131607800001,16-Jul-80,45 Tahun ,Laki-laki,21-Agu-2019,SMA,POP,VI/4/9,,19074132580,0002901676645,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082395139339,1,
+64,10,Masroni,Pengawas Tambang,7315120701840001,7-Jan-84,42 Tahun ,Laki-laki,19-Agu-2019,SMA,POP,VI/4/9,,19074132945,0001958600711,1,,"Bamba RT.01/RW. 03 Desa Kassa, Kec. Batu Lappa Kab. Pinrang Sulsel",081341626846,,2
+65,11,Amrudin,Pengawas Tambang,7406063112720007 ,31-Des-72,53 Tahun ,Laki-laki,04-Jun-2024,SMA,"POP,POM",,,,,1,,"Kelurahan Dongkala, Kecamatan Kabaena Timur,  Kabupaten Bombana, Provinsi Sulawesi Tenggara",085222568398,1,
+66,12,Muh. Ikrar Aghil,Pengawas Tambang,7406130601930001,6-Jan-93,33 Tahun ,Laki-laki,04-Jun-2024,S1 Pertambangan,POP,,,,,1,,"Desa Batuawu, Kec. Kabaena Selatan, Kab. Bombana ",085204010144,1,
+67,13,Herdin,Pengawas Stokyard,7405191301850001,13-Jan-85,41 Tahun ,Laki-laki,10-Sep-2019,SMA,POP,VI/4/8,,20010221107,0002922331915,1,,"Torobulu Kec. Laeya Kab, Konawe Selatan",082346434011,,2
+68,14,Aslawi Duwi,Pengawas Stokyard,9115010401910001,4-Jan-91,35 Tahun ,Laki-laki,10-Sep-2019,S1 Pertambangan,POP ,VI/4/8,,20010221115,0002922319618,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085398711861,1,
+69,15,La Kaamu,Pengawas Stokyard,7406060107690020,1-Jul-69,57 Tahun ,Laki-laki,27-Jul-2019,SMA,POP ,III/5/2,,09002901339,0001882942007,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",082261135194,1,
+70,16,Azaludin,Pengawas Stokyard,7404180507800001,5-Jul-80,46 Tahun ,Laki-laki,24-Jun-2019,D2,POP ,VI/4/2,,19067984823,0002922084729,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085396289990,1,
+71,17,Juwadi,Pengawas Stokyard,7471012311770001,23-Nov-77,48 Tahun ,Laki-laki,01-Jul-2019,SMP,POP ,VI/4/9,,20010220612,0001882622169,1,,"Lambikasi Rinjani Blok I, Desa lombakasih, Kec. Lantari Jaya, Kab. Bombana",085396741563,,2
+72,18,Azbardin,Pengawas Stokyard,7404182712810001,27-Des-81,44 Tahun ,Laki-laki,12-Jul-2019,SMP,POP ,VI/4/2,,19067984906,0002405950143,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081242950688,1,
+73,19,Amaluddin Udin,Pengawas Jetty,7404181005870002,10-Mei-87,39 Tahun ,Laki-laki,13-Jun-2019,SMA,POP ,VI/4/8,,19067984807,0002922241948,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082290085780,1,
+,,,,,,,,,,,,,,,,,,,,
+,,SURVEYOR,,,,,,,,,,,,,,,,,,
+74,1,Farij Maruf,Surveyor,3201162204990001,22-Apr-99,27 Tahun ,Laki-laki,01-Jun-2024,SMK,,,,,,1,,Jl. Ahmad Tjaoeng Desa Cimanggu II Cibungbulang Kab. Bogor,081272920989,,2
+75,2,Elil Usmar,Helper Survey,7406130806940001,8-Jun-94,32 Tahun ,Laki-laki,11-Jul-2019,S1 Teknik Lingkungan,,VI/1/1,,19067985218,0000954017662,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085256890969,1,
+76,3,Emil,Helper Survey,7406160509960001,1-Mar-95,31 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985556,0001074933538,1,,"Desa Ulungkura Kec. Kabaena Tengah, Kab. Bombana", 082349842426 ,1,
+77,4,Riswanto,Helper Survey,7406151306840001,13-Jun-84,42 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132085,0002901681887,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082187411868,1,
+78,5,Irham Farham Agusmal,Helper Survey,7404071208960003,12-Agu-96,29 Tahun ,Laki-laki,11-Okt-2021,S1 Geografi,,VI/1/1,,21082514700,0000134333076,1,,"Desa Boneoge, Kec. Lakudo Kabupaten Buton Tengah",081354562632,1,
+79,6,DARSON,Helper Survey,7404180703800001,7-Mar-80,46 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514882,0003091407794,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082231255003,1,
+80,7,YUSMAN MAHUSA,Helper Survey,7404181404970001,14-Apr-97,29 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514809,0003257574467,1,,"Dusun pangilia, talaga I, Kec. Talaga raya, Kab. Buton tengah",085335875754,1,
+81,8,ZUL AFRIAN,Helper Survey,7406132404960001,24-Apr-96,30 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514767,0000954018022,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085394260255,1,
+82,9,FAZAKKIR,Helper Survey,7406131202020001,12-Feb-02,24 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082515111,0003257609231,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085341128923,1,
+83,10,Andri Purwanto,Helper Survey,7406130304960001,03-Apr-96,30 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",082296577894,1,
+84,11,Muzair,Helper Survey,7406130103960001,01-Mar-96,30 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082293507780,1,
+85,12,Salimudin,Helper Survey,7404181110000004,10-Sep-99,26 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Wulu, Kec. Talaga Raya, Kab. Buton Tengah",085348888220,1,
+86,13,Yasir,Helper Survey,7406132202940001,22-Feb-94,32 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085256123865,1,
+,,,,,,,,,,,,,,,,,,,,
+,,KEUANGAN & UMUM,,,,,,,,,,,,,,,,,,
+87,1,Koei Tjin Sin,Keuangan,3172012012520005,20-Des-52,73 Tahun ,Laki-laki,05-Jun-2019,SMP,,III/8/4,,08002164146,0001883541699,,2,Muara Karang C5 R.19 RT.002/RW.017 Kel. PLUH Jakarta Utara,082110817689,,2
+88,2,Mahfuz,Staff PPM,7406131808830001,18-Agu-83,42 Tahun ,Laki-laki,18-Jul-2019,S1 Ilmu Komunikasi,POP,VI/3/3,,19067986075,0002922251117,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081354519390,1,
+89,3,Syarlin Akui,Adm Keuangan,7471100106880001,1-Jun-88,38 Tahun ,Laki-laki,10-Nov-20,SMA,,VI/4/9,,13038263334,0001903851325,,2,"Lingk. Limbo Wolio RT.02/RW.02 Kel. Katobengke, Kec. Betoambari Kota Baubau",085394095456,,2
+90,4,Sri Yuliani,Adm Keuangan,7405086011960001,20-Nov-96,29 Tahun ,Perempuan,01-Jul-2020,S1,,VI/1/3,,16047152364,0002195592851,1,,Desa Langgea Kec. Ranomeeto Kab. Konawe Selatan,085343512903,,2
+91,5,Fitria Elvi,Adm Keuangan,7403176812000001,28-Des-00,25 Tahun ,Perempuan,02-Sep-2024,S1 Akuntansi,,,,,,1,,Ds. Banggai RT.02/RW.01 Kel. Banggai Kec. Duruka Kab. Muna,085924555214,,2
+92,6,Hamrin,Nahkoda,7406063012730001,30-Des-73,52 Tahun ,Laki-laki,21-Jun-2019,SMP,,VI/1/4,,19067985986,0001883267357,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",085242420627,1,
+93,7,Naharudin,Nahkoda,7404180107690003,1-Jul-69,57 Tahun ,Laki-laki,01-Agu-2019,SMP,,VI/1/4,,19067985440,0001883146869,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085242709389,1,
+94,8,Rustam,Nahkoda,7404182102820001,21-Feb-82,44 Tahun ,Laki-laki,03-Okt-2019,S1,,VI/1/4,,20010221057,,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082255627210,1,
+95,9,Harianto,Nahkoda,7404182007670001,20-Jul-67,58 Tahun ,Laki-laki,01-Jul-2021,SMP,,VI/1/4,,22082657143,0001972157736,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081316635284,1,
+96,10,Jufri J Killa,Nahkoda,7406130211770001,2-Nov-77,48 Tahun ,Laki-laki,01-Des-2024,SMP,,,,,,,2,"Desa Bungi-Bungi, Kec. Kabaena Timur",082236061577,1,
+97,11,Tasbir,ABK,7404182108830002,21-Agu-83,42 Tahun ,Laki-laki,03-Okt-2019,SMP,,VI/1/1,,20010221073,0002079096906,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082384526256,1,
+98,12,Jufri,ABK,7472051906630001,19-Jun-63,63 Tahun ,Laki-laki,08-Jul-2019,SMP,,VI/1/1,,20010220547,0001883273038,1,,"Kelurahan kodolomoko, Kecamatan Kokalukuna, Kota Bau-Bau, Provinsi Sulawesi Tenggara",081341601693,,2
+99,13,Jabaruddin,ABK,7406062106630001,31-Des-73,52 Tahun ,Laki-laki,01-Agu-2019,SMP,,VI/1/1,,19067985135,0002867105834,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",082247322328,1,
+100,14,Zulmanto,ABK,7406161003960001,20-Mei-96,30 Tahun ,Laki-laki,19-Okt-2019,SMP,,VI/1/1,,20010221081,0000953199347,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085220823373,1,
+101,15,Ila,ABK,7404180403910001,4-Mar-91,35 Tahun ,Laki-laki,01-Sep-2021,SMP,,VI/1/1,,22002548083,0001972157736,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082195859974,1,
+102,16,Adis,Pekarya Bangunan,7404183003760002,30-Mar-76,50 Tahun ,Laki-laki,16-Okt-2025,SMA,,,,,,1,,"Lingk. Wameo, Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085215225988,1,
+103,17,La Ode Supardin,Pekarya Bangunan,7404181603820001,16-Mar-82,44 Tahun ,Laki-laki,16-Okt-2025,SD,,,,,,1,,"Kelurahan Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082285060198,1,
+104,18,Jumaring,Pekarya Bangunan,7404180107710024,1-Jul-71,55 Tahun ,Laki-laki,16-Okt-2025,SD,,,,,,1,,"Desa Kokoe , Kec. Talaga Raya, Kab. Buton Tengah",081376181957,1,
+105,19,Suprianto,Pekarya Bangunan,7404181109880001,11-Sep-88,37 Tahun ,Laki-laki,16-Okt-2025,SMA,,,,,,1,,"Desa Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082260473750,1,
+106,20,La Kune,Pekarya Bangunan,7404180107750035,1-Jul-75,51 Tahun ,Laki-laki,16-Okt-2025,SMP,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",085226236358,1,
+107,21,Azrun,Pekarya Bangunan,7404182905930001,29-Jun-93,33 Tahun ,Laki-laki,16-Okt-2025,SD,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",082226761712,1,
+108,22,Irianto,Pekarya Bangunan,7404180101850001,1-Jan-86,40 Tahun ,Laki-laki,27-Okt-2025,SD,,,,,,1,,"Desa Talaga Dua, Kec. Talaga Raya",082347460145,1,
+109,23,La Ode Abdul Karim,Pekarya Bangunan,7404180701730001,07-Jan-73,53 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",081355477773,1,
+110,24,Waniati,Pekarya masak,7405194107800025,14-Jul-80,46 Tahun ,Perempuan,03-Jul-2019,SMP,,VI/1/4,,11008615020,0001883569274,1,,"puuwulo RT.02/RW02 Kel. Puuwulo, Torobulu, Sultra",085299655427,,2
+111,25,Asriati,Pekarya masak,7406135911750001,19-Nov-75,50 Tahun ,Perempuan,04-Jul-2019,SMP,,VI/1/4,,11011354039,0001883531013,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082196034464,1,
+112,26,Yuliani,Pekarya masak,7406064107730024,1-Jul-73,53 Tahun ,Perempuan,27-Jul-2019,SMP,,VI/1/4,,11040370014,0001883529292,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",082296688773,1,
+113,27,Nurhayati,Pekarya masak,7404185006720001,10-Jun-72,54 Tahun ,Perempuan,01-Sep-2019,SMP,,VI/1/1,,19074133414,0001883542702,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082290889338,1,
+114,28,Sumanti,Pekarya masak,7404184107810019,1-Jul-81,45 Tahun ,Perempuan,01-Jun-2023,SD,,,,23109461113,0001941293709,1,,"Desa Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082297773116,1,
+115,29,Nurleha,Pekarya masak,7404186607960001,26-Mei-96,30 Tahun ,Perempuan,18-Okt-2025,SMA,,,,,,1,,"Desa Kokoe , Kec. Talaga Raya, Kab. Buton Tengah",081280688359,1,
+116,30,Hestina,Pekarya cuci,7404184107820039,15-Feb-91,35 Tahun ,Perempuan,10-Jul-2019,SMP,,VI/1/1,,19067985648,0000948459036,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082296955090,1,
+117,31,Sulastri,Pekarya cuci,7406135702750002,17-Feb-75,51 Tahun ,Perempuan,05-Okt-2020,SMA,,VI/1/1,,21045217136,0002590544147,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082397780007,1,
+118,32,Nimma,Pekarya Cuci,7406134905890001,09-Mei-89,37 Tahun ,Perempuan,27-Nov-2025,SMA,,,,,,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081367049420,1,
+119,33,Sudarmono,OB Kantor KDI,7405191802810001,18-Feb-81,45 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,19024431710,0002921453943,1,,Desa Lamongjaya RT002/RW.004 Kec. Laeya Konawe selatan Sultra,085235852209,,2
+120,34,Agustinus Satya Wardhana,OB Kantor KDI,7405190108730003,21-Agu-73,52 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,17053042721,0002285489204,1,,"Ds. Torobulu, Kab. Konawe Selatan ",082262067057,,2
+121,35,LAHALAKA,Office Boy,9115050103710001,1-Mar-71,55 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082515079,0003257599149,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082297567430,1,
+,,,,,,,,,,,,,,,,,,,,
+,,LAB / PREPARASI,,,,,,,,,,,,,,,,,,
+122,1,"Agus Sutrisno, ST",Ka. Laboratorium,1810011708710005,17-Agu-71,54 Tahun ,Laki-laki,01-Mei-2026,S1,,,,,,1,,"Sidoharjo RT.06/RW.04 Kel. Sidoharjo, Kec. Pringsewu, Lampung",082179666617,,2
+123,2,Jaka Mulyana,Analyst,3204320501950010,5-Jan-95,31 Tahun ,Laki-laki,25-Sep-2019,SMK,POP,VI/4/11,,20010220877,0001882419243,1,,Jl. SMPN 2 Baleendah RT.008/RW.003 Baleendah Bandung,081214046665,,2
+124,3,Annisa Syahriani,Analyst,7302075208980010,12-Agu-98,27 Tahun ,Perempuan,08-Jul-2019,D3,POP,VI/3/7,,19067984732,0002276441291,1,,"Jl. Durian Desa Tanete, Kec. Bulukumba, Sulawesi Selatan",085298357750,,2
+125,4,Nur Inayah,Analyst,7302075701020001,17-Jan-02,24 Tahun ,Perempuan,01-Sep-2024,D3 KIMIA,POP,,,,,1,,"Jl. Lada, Kab. Bulukumba, Sulawesi Selatan",082337096444,,2
+126,5,Abdul Rasyid,Pengawas Preparasi,7404180107630030,1-Jul-63,63 Tahun ,Laki-laki,27-Jul-2019,SMP,,VI/4/8,,12035953327,0001883528166,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085256086353,1,
+127,6,Ramzul Hasan,Pengawas Preparasi,7406131708850001,17-Agu-85,40 Tahun ,Laki-laki,18-Jul-2019,D2,POP,VI/3/3,,19067985796,0000952897195,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082349699849,1,
+128,7,Irwan,Peng. II Preparasi,7404180909940001,9-Sep-94,31 Tahun ,Laki-laki,13-Jun-2019,SMA,,VI/3/3,,19067985564,0001941284529,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085210115272,1,
+129,8,Khairul Amin,Peng. II Preparasi,7406131601910001,16-Jan-91,35 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/3/3,,19067985697,0001940612128,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA", 085299419079 ,1,
+130,9,Nurmaliana,Admin Preparasi,7406135510000001,15-Okt-00,25 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082129906068,1,
+131,10,Nadia,Admin Preparasi,7406066302040001,23-Feb-04,22 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Kel. Dongkala, Kec. Kabaena Timur, Kab. Bombana",081221614289,1,
+132,11,Irfan,Pekarya Preparasi,7404181307960002,13-Jun-96,30 Tahun ,Laki-laki,13-Jun-2019,SMP,,VI/1/1,,19067985259,0001941285183,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085336927804,1,
+133,12,Jadwin,Pekarya Preparasi,7404180107790008,7-Jan-79,47 Tahun ,Laki-laki,13-Jun-2019,SMP,,VI/1/1,,19067984963,0000948475359,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082348128313,1,
+134,13,Jusman,Pekarya Preparasi,7404180107920048,7-Jan-92,34 Tahun ,Laki-laki,16-Jun-2019,SMP,,VI/1/1,,19067984781,0001941285249,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082260468993,1,
+135,14,Rasman,Pekarya Preparasi,7404180107750024,7-Jan-75,51 Tahun ,Laki-laki,16-Jun-2019,SMP,,VI/1/1,,19067985457,0002006232895,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082193824680,1,
+136,15,Aril,Pekarya Preparasi,7404181607070002,6-Mar-00,26 Tahun ,Laki-laki,22-Jun-2019,SMA,,VI/1/1,,19067985366,0002403460539,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082290072958,1,
+137,16,Tomi,Pekarya Preparasi,7404180107950008,24-Jun-00,26 Tahun ,Laki-laki,22-Jun-2019,SMP,,VI/1/1,,19067985093,0000948416253,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",081341771181,1,
+138,17,Bardi,Pekarya Preparasi,7404180107930012,5-Jun-93,33 Tahun ,Laki-laki,22-Jun-2019,SMP,,VI/1/1,,19067985903,0000948415983,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah", 082259014086 ,1,
+139,18,Udin,Pekarya Preparasi,7404180107780010,1-Jul-78,48 Tahun ,Laki-laki,22-Jun-2019,SMP,,VI/1/1,,19067986026,0000948170621,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082248125139,1,
+140,19,Hendiawan,Pekarya Preparasi,7404182205930001,22-Mei-93,33 Tahun ,Laki-laki,24-Jun-2019,SMP,,VI/1/1,,19067985929,0001941284665,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082258257824,1,
+141,20,Marwan,Pekarya Preparasi,7404182807850001,28-Mei-85,41 Tahun ,Laki-laki,24-Jun-2019,SMP,,VI/1/1,,19067984856,0001941285306,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082292018467,1,
+142,21,Misbahudin,Pekarya Preparasi,7406141303830002,13-Mar-83,43 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985127,0002922170613,1,,"Jl. Tanjung Perak, Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana Sultra",082194733317,1,
+143,22,Sudarmin,Pekarya Preparasi,7471012003710003,20-Mar-71,55 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985994,0002172584496,1,,"Desa Batuawu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081341504423,1,
+144,23,Ichsan,Pekarya Preparasi,7406130208820001,15-Sep-84,41 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985275,0002401913654,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081243968380,1,
+145,24,La Ode Hambali,Pekarya Preparasi,7404181604760001,16-Apr-76,50 Tahun ,Laki-laki,10-Jul-2019,SMP,,VI/1/1,,19067985010,0002827661062,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082316513074,1,
+146,25,Sulmin,Pekarya Preparasi,7404180107870060,1-Jul-78,48 Tahun ,Laki-laki,10-Jul-2019,SMP,,VI/1/1,,19067984914,0001941293733,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085246030232,1,
+147,26,Amirullah,Pekarya Preparasi,7404181107900001,11-Jul-90,36 Tahun ,Laki-laki,10-Jul-2019,SMP,,VI/1/1,,19067985705,0001074228142,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085284025152,1,
+148,27,Syaiful Izhar,Pekarya Preparasi,7406131411920001,14-Nov-92,33 Tahun ,Laki-laki,11-Jul-2019,S1 Sosial Politik,,VI/1/1,,19067984948,0002172583383,1,,"Desa Langkema, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081342700304,1,
+149,28,Aznal,Pekarya Preparasi,7406130307790001,3-Jul-79,47 Tahun ,Laki-laki,12-Jul-2019,SMA,,VI/1/1,,19067985036,0000200638618,1,,"Desa Langkema, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082348386849,1,
+150,29,Jusrin,Pekarya Preparasi,7404181211920001,12-Nov-92,33 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/1,,19067985473,0000947616118,1,,"Dusun pangilia, talaga I, Kec. Talaga raya, Kab. Buton tengah",085266638165,1,
+151,30,LA ODE MURSILIN,Pekarya Preparasi,7404183112880004,31-Des-88,37 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067986083,0000948509482,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085255407170,1,
+152,31,Alnazar,Pekarya Preparasi,7406132108950001,21-Agu-95,30 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067985614,0000953578901,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085363619269,1,
+153,32,Zulfikar,Pekarya Preparasi,7406133112940001,31-Des-94,31 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067985572,0002172586397,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085299414847,1,
+154,33,Nurul Iman,Pekarya Preparasi,7406052110950001,21-Okt-94,31 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067985531,0002172886852,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081238468523,1,
+155,34,Nur Amin,Pekarya Preparasi,7406152211860001,22-Nov-86,39 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074133364,0002314332505,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085241735875,1,
+156,35,Mustafa,Pekarya Preparasi,7471010101880004,1-Jan-88,38 Tahun ,Laki-laki,27-Agu-2019,S1,,VI/1/1,,19074132168,0002901673012,1,,"Desa Batuawu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081245770264,1,
+157,36,Yusman Yusuf,Pekarya Preparasi,7406060309700001,3-Sep-70,55 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074133489,0002172900543,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",081228843263,1,
+158,37,Ahsyarullah,Pekarya Preparasi,7406130708960002,7-Agu-96,29 Tahun ,Laki-laki,27-Agu-2019,S1 Ilmu Pemerintahan,,VI/1/1,,19074132598,0002901672764,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082324499096,1,
+159,38,Khairan,Pekarya Preparasi,7406131705830001,17-Mei-83,43 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132606,0000953587798,1,,"Jl. Kodya RT.002/RW.005 Kel. Watu-watu, Kec. Kendari barat Kota Kendari",082191350781,,2
+160,39,Rauf Syazali,Pekarya Preparasi,7406131212930001,22-Des-95,30 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132796,0002901673809,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082262259423,1,
+161,40,Muizuddin,Pekarya Preparasi,7406130405910001,4-Mei-91,35 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074133174,0002172891442,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085299670459,1,
+162,41,Edardin,Pekarya Preparasi,7404181305710001,13-Mei-71,55 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133216,0001074229042,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI /Liwu lompona",082351518452,1,
+163,42,Ririn Setiawan,Pekarya Preparasi,7406131807900001,18-Jul-90,35 Tahun ,Laki-laki,27-Agu-2019,S1,,VI/1/1,,19074132531,0000953482498,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085395522494,1,
+164,43,Mohamad Jamil,Pekarya Preparasi,7406130804850001,8-Apr-85,41 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132333,0002901672134,1,,"Desa Batuawu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082190328889,1,
+165,44,Failuddin,Pekarya Preparasi,7406141906860001,19-Jun-86,40 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133406,0000951327718,1,,"Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana Sultra",082348469359,1,
+166,45,Zulmain,Pekarya Preparasi,7406130707980001,7-Jul-98,28 Tahun ,Laki-laki,28-Agu-2019,SMA,,VI/1/1,,19074131954,0000952856469,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085242247548,1,
+167,46,Bustamin,Pekarya Preparasi,7406130110870001,1-Okt-87,38 Tahun ,Laki-laki,29-Agu-2019,SMP,,VI/1/1,,19074132820,0002921807979,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081244433809,1,
+168,47,Alan Ramadan,Pekarya Preparasi,7406130101970003,1-Jan-97,29 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,20050673571,0002172584902,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081354736805,1,
+169,48,Ridwan Saputra,Pekarya Preparasi,7406140303950001 ,3-Mar-95,31 Tahun ,Laki-laki,17-Sep-2019,S1,,VI/1/1,,19074133604,0002433546641,1,,"Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana Sultra",082280034442,1,
+170,49,"Saddam Al Haris, S.Pi",Pekarya Preparasi,7406142010900001,20-Okt-90,35 Tahun ,Laki-laki,17-Sep-2019,S1 Pendidikan Agama Islam,,VI/1/1,,19074132671,0002901687895,1,,"Desa Baliara, Kec. Kabaena Barat, Kab. Bombana Sultra",085255928307,1,
+171,50,Fakrin,Pekarya Preparasi,7406130412990001,4-Des-99,26 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074133497,0002119075615,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082296900061,1,
+172,51,Muh. Arham,Pekarya Preparasi,7406141312990001,13-Des-99,26 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074132358,0002172824054,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana Sultra",082296294059,1,
+173,52,Eliamin,Pekarya Preparasi,7404181003770001,10-Mar-77,49 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074132234,0001074229536,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah, Kec. Talaga raya, Kab. Buton tengahI /Liwu lompona",085396891078,1,
+174,53,Erris,Pekarya Preparasi,7404181110960001,30-Des-96,29 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074133091,0000948747519,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082280624841,1,
+175,54,Suhardin,Pekarya Preparasi,7472063112890005,25-Jun-89,37 Tahun ,Laki-laki,17-Sep-2019,S1,,VI/1/1,,19074133539,0001075360149,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081245674041,1,
+176,55,Sahdikin,Pekarya Preparasi,7404182101990001,21-Jan-99,27 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074133562,0000948484552,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",081343708584,1,
+177,56,Arman,Pekarya Preparasi,7404182102000001,21-Feb-00,26 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074133455,0001941284834,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085336920763,1,
+178,57,M. Yusuf,Pekarya Preparasi,7404180107780057,1-Jul-78,48 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074133372,0002827658215,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082349143273,1,
+179,58,Anton,Pekarya Preparasi,7404180107730034,1-Jul-73,53 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074132226,0001941285341,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082196312461,1,
+180,59,Rusli Bahar,Pekarya Preparasi,7406062602690001,26-Feb-69,57 Tahun ,Laki-laki,19-Okt-2019,SMP,,VI/1/1,,20050673522,0003257573916,1,,"Tapuhaka, Kec.Kabaena Timur Kab. Bombana SULTRA",082298877503,1,
+181,60,HAMKA,Pekarya Preparasi,7404182207810001,22-Jul-81,44 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514692,0002168291204,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082135056026,1,
+182,61,SARMAN,Pekarya Preparasi,7404180107880047,1-Jul-88,38 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514346,0001941284946,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082123687127,1,
+183,62,ALDIN,Pekarya Preparasi,7406051212970001,12-Des-97,28 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514726,0000133988264,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085313934859,1,
+184,63,JUMIADIN,Pekarya Preparasi,7404181609920001,16-Sep-92,33 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514866,0003091482707,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",081247545188,1,
+185,64,HENGKI SAPUTRA,Pekarya Preparasi,7404182701930001,27-Jan-93,33 Tahun ,Laki-laki,11-Okt-2021,S1 Pendidikan Sejarah,,VI/1/1,,21082514619,0002076810221,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085399814552,1,
+186,65,NAWIR,Pekarya Preparasi,7404180107990049,1-Jul-99,27 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514734,,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085399037609,1,
+187,66,NARUN ABIDIN,Pekarya Preparasi,7404181411910002,14-Nov-91,34 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514890,0002170068164,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085292957614,1,
+188,67,MOH. KARNAIN,Pekarya Preparasi,7406133009970001,30-Sep-97,28 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514627,0002172586151,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082327390570,1,
+189,68,ARDIYANTO,Pekarya Preparasi,7406132505920001,25-Mei-92,34 Tahun ,Laki-laki,11-Okt-2021,S1 Administrasi Negara,,VI/1/1,,21082515137,0000133972299,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085230630854,1,
+190,69,ABDUL RAHMAN,Pekarya Preparasi,7406132202730002,22-Feb-73,53 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515160,0002119075931,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082188101530,1,
+191,70,MUHAMMAD SYAKIR,Pekarya Preparasi,8271061309920002,13-Sep-92,33 Tahun ,Laki-laki,11-Okt-2021,S1 Ekonomi,,VI/1/1,,21082515145,0002977231443,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085298250087,1,
+192,71,AGUS,Pekarya Preparasi,7311042108010002,21-Agu-01,24 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515087,0000932081578,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085256421764,1,
+193,72,Yazid,Pekarya Preparasi,7406161202820001,12-Feb-82,44 Tahun ,Laki-laki,01-Nov-2021,SMA,,VI/1/1,,21082515046,0002172893826,1,,"Desa Ulungkura, Kec. Kabaena Tengah, Kab, Bombana Sultra",082194733365,1,
+194,73,Beny Azhar,Pekarya Preparasi,7414050107740001,1-Jul-74,52 Tahun ,Laki-laki,1-Jun-22,SMP,,UMP,,22082657093,0003519783415,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085221856853,1,
+195,74,Sukirman,Pekarya Preparasi,7404182704790001,27-Apr-79,47 Tahun ,Laki-laki,1-Jun-22,SMA,,UMP,,22082657119,0003091450026,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082131717531,1,
+196,75,Azhar Djuku,Pekarya Preparasi,7406060911830002,9-Nov-83,42 Tahun ,Laki-laki,1-Jun-22,SMP,,UMP,,22082657127,0002172822377,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085338625295,1,
+197,76,LUTFIL HADI,Pekarya Preparasi,7406130801030001,8-Jan-03,23 Tahun ,Laki-laki,02-Jun-23,SMK,,,,23109460743,0002172586263,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",'082214585463,1,
+198,77,ABD. HALIM,Pekarya Preparasi,7406131801820001,18-Jan-82,44 Tahun ,Laki-laki,02-Jun-23,SMP,,,,23109460933,0002172584676,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085241406460,1,
+199,78,QAULUL MUSABIK,Pekarya Preparasi,7406130109940001,1-Sep-94,31 Tahun ,Laki-laki,02-Jun-23,S1,,,,23109460735,0000953610478,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082188765751,1,
+200,79,M. SAKIN,Pekarya Preparasi,7406130807920001,8-Jul-92,34 Tahun ,Laki-laki,02-Jun-23,SMA,,,,23109461238,0003545747188,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082213115393,1,
+201,80,SAHDAN,Pekarya Preparasi,7404180107020021,23-Nov-02,23 Tahun ,Laki-laki,02-Jun-23,SMA,,,,23109460537,0001941284643,1,,Desa Kokoe Kec. Talaga Raya Kab. Bombana,082311614062,1,
+202,81,JUMADIL,Pekarya Preparasi,7404180107840031,1-Jul-84,42 Tahun ,Laki-laki,02-Jun-23,SD,,,,23109461246,0001074227995,1,,Desa Kokoe Kec. Talaga Raya Kab. Bombana,082292640857,1,
+203,82,YOGI,Pekarya Preparasi,7404182808000001,28-Agu-01,24 Tahun ,Laki-laki,02-Jun-23,SMA,,,,23109460727,0001883542285,1,,Desa Kokoe Kec. Talaga Raya Kab. Bombana,082261856569,1,
+204,83,ILHAM KURNIAWAN,Pekarya Preparasi,7406130406030001,4-Jun-03,23 Tahun ,Laki-laki,02-Jun-23,SMA,,,,23109460636,0000953306875,1,,"Desa Pongkalaero Kec. Kabaena Selatan, Kab. Bombana",082158253981,1,
+205,84,HERIHIDAYAT,Pekarya Preparasi,7404181105030001,11-Mei-03,23 Tahun ,Laki-laki,02-Jun-23,SMA,,,,23109461048,0002405959143,1,,Desa Kokoe Kec. Talaga Raya Kab. Buton Tengah,082127319412,1,
+206,85,FANDI FADLI AL RASYID,Pekarya Preparasi,7406132001000001,20-Jan-00,26 Tahun ,Laki-laki,10-Jun-23,S1,,,,23109460990,0001320761913,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",082290235239,1,
+207,86,Arjun,Pekarya Preparasi,7404281408970002,18-Jul-97,28 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082316269107,1,
+208,87,Israfil Ismail,Pekarya Preparasi,7406131912020001,19-Des-03,22 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",085272172954,1,
+209,88,Indra Putra Jaya,Pekarya Preparasi,7406050911970001,10-Jan-97,29 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082290608794,1,
+210,89,Astasil Akhsyar,Pekarya Preparasi,7406132207940001,22-Jul-94,31 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082111232994,1,
+211,90,Abd. Salam,Pekarya Preparasi,7406130206000001,02-Jun-00,26 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082292467550,1,
+212,91,Al Kharis,Pekarya Preparasi,7406130807840001,08-Jul-84,42 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082189466995,1,
+213,92,Sabaruddin,Pekarya Preparasi,7406132004880001,20-Apr-88,38 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082393397630,1,
+214,93,Nazarudin Rifa'i,Pekarya Preparasi,7406133101040001,31-Jan-04,22 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082398188385,1,
+215,94,Musyafa,Pekarya Preparasi,7406130506820001,05-Jun-82,44 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082118846791,1,
+216,95,Murziki,Pekarya Preparasi,7404180101030002,01-Jan-03,23 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga Besar Kec. Talaga Raya, Kab. Buton Tengah",082291416363,1,
+217,96,Muh. Alif Saputra. H,Pekarya Preparasi,7406131307050001,24-Jul-05,20 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",082324487822,1,
+218,97,Afrizal Ramadhan,Pekarya Preparasi,7404182012020001,20-Nov-02,23 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Desa Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",082278964170,1,
+219,98,Muhammad Afrizal,Pekarya Preparasi,7406131404030002,14-Apr-03,23 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082271102685,1,
+220,99,Sadrin,Pekarya Preparasi,3526031209810004,15-Sep-81,44 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Jl. Air Terjun No. 07 RT.03/RW.04 Kel. Tunjung, Kec. Burneh, Kab. Bangkalan Jawa Timur",085257364019,,2
+221,100,Asrifal Yusli,Pekarya Preparasi,7404181103880001,11-Mar-88,38 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",082290061622,1,
+222,101,Syakirun Jazil,Pekarya Preparasi,7406130404030003,04-Apr-03,23 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082346205879,1,
+223,102,Hudawi Prananza,Pekarya Preparasi,1276032304980002,23-Apr-98,28 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Jl. Kayu Laut LK.IV RT.04/RW.04 Kel. Damar Sari, Kec. Padang Hilir, Kota Tebing Tinggi",085772469402,,2
+224,103,Afrizal Izami,Pekarya Preparasi,7404181906050001,19-Jun-05,21 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",085381330458,1,
+225,104,Niko Andrean Wahyu,Pekarya Preparasi,7406131305040001,13-Mei-04,22 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082348970783,1,
+226,105,Moh. Arif,Pekarya Preparasi,3310140202800001,02-Feb-80,46 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Troditan RT.01/RW.01, Kel. Bolopleret, Kec. Juwireng, Kab. Klaten",085265120915,,2
+227,106,Afnan Azra,Pekarya Preparasi,7406132303030002,23-Mar-03,23 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082210731017,1,
+228,107,Khairul Muttaqin,Pekarya Preparasi,7406131812030002,18-Des-03,22 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082290733431,1,
+229,108,Ferdi,Pekarya Preparasi,7404181609040001,16-Sep-04,21 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",082296829681,1,
+230,109,Oman Ahmad,Pekarya Preparasi,7404180312060001,13-Des-06,19 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",082126862402,1,
+231,110,Alwan,Pekarya Preparasi,7404180504870001,05-Apr-87,39 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081213429008,1,
+232,111,Zukaudin,Pekarya Preparasi,7404183112800003,31-Des-80,45 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085216420584,1,
+233,112,Darmawi,Pekarya Preparasi,7404180107900015,01-Jul-90,36 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081373313398,1,
+234,113,Heriansah,Pekarya Preparasi,7404182408030001,24-Agu-03,22 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082210643216,1,
+235,114,Ajo,Pekarya Preparasi,7404183112700004,31-Des-70,55 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081327653288,1,
+236,115,Zariami,Pekarya Preparasi,7404180107860053,01-Jul-86,40 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082297089711,1,
+,,,,,,,,,,,,,,,,,,,,
+,,TIM SAMPLER,,,,,,,,,,,,,,,,,,
+237,1,LA ODE FIKO SARDA SAID,Sampler,7404180212980001,2-Feb-96,30 Tahun ,Laki-laki,10-Jul-2019,SMA,,VI/1/1,,19067985408,0002922246527,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082291718445,1,
+238,2,Budiarjo,Sampler,7404180107770031,1-Jul-74,52 Tahun ,Laki-laki,13-Jun-2019,SMP,,VI/1/1,,19067985952,0002922167968,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah", 082188981562 ,1,
+239,3,Restu Azam,Sampler,7404181706000002,17-Jun-00,26 Tahun ,Laki-laki,13-Jun-2019,SMP,,VI/1/1,,19067984997,0003091506974,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah", 081367478909 ,1,
+240,4,La Saharu,Sampler,7404180107780035,1-Jul-75,51 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133257,0000948280184,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081241504169,1,
+241,5,Yolleng,Sampler,7406130507780001,5-Jul-78,48 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074131996,0001941304072,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082398058166,1,
+242,6,Haris Bin Daeng Paga,Sampler,7414051801750001,18-Jan-75,51 Tahun ,Laki-laki,10-Sep-2019,SMP,,VI/1/1,,19074132960,0002901684475,1,,"Ling. Baru Kel. Talaga 1, Kec. Talaga Raya Kab. Buton Tengah",085394791937,,2
+243,7,Yuslan,Sampler,7404181005980001,10-Mei-98,28 Tahun ,Laki-laki,10-Sep-2019,SMK,,VI/1/1,,19074132135,0002122563969,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082248974521,1,
+244,8,Asnawi,Sampler,7404183010910001,30-Okt-91,34 Tahun ,Laki-laki,10-Sep-2019,S1 Pendidikan Sejarah,,VI/1/1,,19074131939,0002901684958,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082151407734,1,
+245,9,La Ode Mmuhammad Azlan,Sampler,7404180811930001,8-Nov-93,32 Tahun ,Laki-laki,10-Sep-2019,SMA,,VI/1/1,,19074133315,0002901685386,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082283515575,1,
+246,10,Acik,Sampler,7404181108800001,11-Agu-80,45 Tahun ,Laki-laki,11-Sep-2019,SMP,,VI/1/1,,19074133042,0001074228052,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",081340315574,1,
+247,11,Mirwan,Sampler,7404181503960001,15-Mar-96,30 Tahun ,Laki-laki,11-Sep-2019,SMP,,VI/1/1,,19074133596,0000948485799,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082373634077,1,
+248,12,Orin Zikri,Sampler,7404181701010002,17-Jan-01,25 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074132937,0002901690933,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",085335153389,1,
+249,13,MARIS,Sampler,7404181112760001,11-Des-76,49 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514577,0002883871552,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",082193010426,1,
+250,14,ARDI SAFAR,Sampler,7404182610890001,26-Okt-89,36 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514858,0001790218798,1,,"Dusun Liwu lompana, Talaga, Kec. Talaga raya, Kab. Buton tengah",081373204162,1,
+251,15,FARHAN ,Sampler,7404180306040004,3-Jun-04,22 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514585,0002933633632,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",082354952029,1,
+252,16,IVON SAPUTRA,Sampler,7404181708990001,17-Agu-99,26 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514965,0002430190304,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082228347013,1,
+253,17,MUHAMMAD RUSLAN,Sampler,7404180707010003,7-Jul-01,25 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514684,0000948764463,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081369884611,1,
+254,18,DARMIN,Sampler,7472060912910001,4-Des-91,34 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514601,0002367929575,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082253041063,1,
+255,19,IQBAL AFFANDI,Sampler,7302031303950004,13-Mar-95,31 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514759,0003257598093,1,,"Desa Lembanna, Kec Bonto Bahari Kabupaten Bulukumba",081241051492,1,
+256,20,M. Iqbal,Sampler,7406132604820001,26-Apr-82,44 Tahun ,Laki-laki,01-Jun-2022,SMA,,UMP,,22082657135,0002172822377,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082157565930,1,
+257,21,ARDIAN RAMADHAN,Sampler,7406130811040001,8-Nov-04,21 Tahun ,Laki-laki,02-Jun-23,SMP,,,,23109461162,0000952903517,1,,"Desa Pongkalaero Kec. Kabaena Selatan, Kab. Bombana",082346506285,1,
+258,22,La Ode Rusli Said,Sampler,7404182202040001,22-Feb-04,22 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Lingk Peo Mekar Jaya Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085342005403,1,
+259,23,Akil Mubara,Sampler,7404180807040001,08-Jul-04,22 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",082261992360,1,
+260,24,La Andi,Sampler,7404181711900001,17-Nov-90,35 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082298994423,1,
+261,25,Amsur,Sampler,7404181212920001,12-Des-92,33 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",082187250720,1,
+262,26,Muh Iman,Sampler,7404183010050001,30-Okt-05,20 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",085213292983,1,
+263,27,La Ode Gian Saputra,Sampler,7414050411050001,04-Nov-05,20 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",085129973528,1,
+264,28,Rawal Ramadan,Sampler,7406132005980001,20-Mei-98,28 Tahun ,Laki-laki,27-Nov-25,S1,,,,,,1,,"Desa Batuawu, Kec. Kabaena Selatan, Kab. Bombana",082292822102,1,
+265,29,Amiludin,Sampler,7404182311900002,23-Nov-90,35 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",082191038022,1,
+266,30,Dasrun,Sampler,7404181012890001,10-Des-89,36 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",082214716037,1,
+267,31,Andika,Sampler,7404180107050046,01-Jul-05,21 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082346272910,1,
+268,32,La iki,Sampler,7404180107050046,04-Jul-88,38 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",082148129482,1,
+269,33,Muhamad Neza Fariane,Sampler,7404182012050001,20-Des-05,20 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085136178141,1,
+270,34,Rifki Zulfahmi,Sampler,7406132904000001,29-Apr-00,26 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",085210628969,1,
+271,35,La Ode Husmin,Sampler,7404180309980001,03-Sep-98,27 Tahun ,Laki-laki,27-Nov-25,SMP,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",082296478334,1,
+272,36,Mardin. S,Sampler,7405011807920001,18-Jul-92,33 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082185513885,1,
+273,37,Baim,Sampler,7404180107070025,01-Jul-07,19 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082297854874,1,
+274,38,Mustafi,Sampler,7404182707850001,27-Jul-85,40 Tahun ,Laki-laki,27-Nov-25,D2,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082217671677,1,
+275,39,Faril Junian,Sampler,7404090706070001,07-Jun-07,19 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Lakambau Kec. Batauga, Kab. Buton Selatan",085137975883,,2
+276,40,Soma,Sampler,7404180107990013,07-Okt-06,19 Tahun ,Laki-laki,27-Nov-25,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081326740752,1,
+277,41,Tamsir,Sampler,7404180102820001,01-Feb-82,44 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082290093610,1,
+278,42,Hasrudin,Sampler Mixing,7404182512870001,25-Des-87,38 Tahun ,Laki-laki,18-Okt-2019,SMA,,VI/1/1,,20010220893,0002922254379,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082299575204,1,
+279,43,Irfan Darman,Sampler Mixing,7404232512930001,25-Des-93,32 Tahun ,Laki-laki,18-Okt-2019,SMA,,VI/1/1,,20010220901,0002922285396,1,,"Dusun Tira-Tira Desa Wasuamba, Kec. Lasalimu Kab. Buton",081340838684,,2
+280,44,Jusman,Sampler Mixing,7406131708800001,17-Agu-80,45 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/1,,20010220927,0002172892307,1,,"Desa Langkema, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082385999577,1,
+281,45,Syamsul,Sampler Mixing,7406132112750001,21-Des-75,50 Tahun ,Laki-laki,18-Okt-2019,SMA,,VI/1/1,,20010220935,0002172583181,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082286491603,1,
+282,46,Nur Alnisa,Lab Katanax,7404184112010001,01-Des-01,24 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",085394913674,1,
+283,47,Nursela,Lab Katanax,7404184806000002,08-Jun-00,26 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085394719833,1,
+,,,,,,,,,,,,,,,,,,,,
+,,LOADING MASTER,,,,,,,,,,,,,,,,,,
+284,1,Abdul Arsyad,QC/Master Loading,7406062508740001,25-Agu-74,51 Tahun ,Laki-laki,27-Agu-2019,SMK,POP,III/5/3,,19074132549,0001941309279,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",082348960080,1,
+285,2,Sardin,Checker,7405111501880001,15-Jan-88,38 Tahun ,Laki-laki,24-Jun-2019,SMA,,VI/1/1,,19067984799,0002827819304,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085213711984,1,
+286,3,La Mala,Checker,7404250101920001,1-Jan-92,34 Tahun ,Laki-laki,27-Agu-2019,S1 Ilmu Sosial & Politik,,VI/1/1,,19074133331,0002403464758,1,,"Mawasangka, Kab. Butong Tengah Tengah, Kab. Buton Tengah Sultra",085240909992,,2
+287,4,Alimin Nuhing,Checker,7471031107870002,11-Jul-87,39 Tahun ,Laki-laki,27-Jul-2019,SMP,,VI/1/4,,20050673605,0001883540373,1,,"Batu Atas, Buton Selatan,  Provinsi Sulawesi Tenggara ",085241874563,,2
+288,5,Aldisyah,Checker,7404181703000001,17-Mar-00,26 Tahun ,Laki-laki,11-Sep-2019,SMK,,VI/1/1,,19074132713,0002174455743,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082261850167,1,
+289,6,Amzan,Checker,7404180808800001,8-Agu-80,45 Tahun ,Laki-laki,10-Jul-2019,SMP,,VI/1/1,,19067985739,0001886314893,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081344109519,1,
+290,7,Asrar Mahyudin,Checker,1276031707750001,20-Jul-75,50 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985002,0002197032489,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085298737533,1,
+291,8,Armin,Checker,7406130202890001,2-Feb-89,37 Tahun ,Laki-laki,1-Jun-22,SMA,,UMP,,22082657028,0000952898275,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085333182332,1,
+292,9,Jois,Checker,7404181508000001,15-Agu-00,25 Tahun ,Laki-laki,10-Sep-2019,SMA,,VI/1/1,,19074133547,0002122563958,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082292249886,1,
+293,10,ABDI ANGGA SAPUTRA,Checker,7405090705970001,7-Mei-97,29 Tahun ,Laki-laki,02 Juni 2023,SMK,,,,23109460883,0000952933645,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",081262849227,1,
+294,11,NURICHSAN,Checker,7371122310990005,23-Okt-99,26 Tahun ,Laki-laki,02 Juni 2023,S1 ,,,,23109460818,0001268674042,1,,"Tamangapa Raya BTN Ranggon J/2 RT.2/RW. 11 Kec. Manggala, Kota Makassar",082259427671,,2
+295,12,Yusuf,Checker,7406060909990002,09-Sep-99,26 Tahun ,Laki-laki,27 November 2025,SMA,,,,,,1,,"Kel. Dongkala, Kec. Kabaena Timur, Kab. Bombana",082291904179,1,
+296,13,La Ode Zufu,Stoper,7404180107730022,01-Jul-73,53 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074132978,0002170065341,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082217894989,1,
+297,14,Nurzaman,Stoper,7406131112800001,11-Des-80,45 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/1,,20010220992,0002922285429,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082192012244,1,
+298,15,Marifa,Stoper,7406132711930003 ,27-Nov-94,31 Tahun ,Laki-laki,18-Okt-2019,SMA,,VI/1/1,,20010221016,0002922285609,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085256821023,1,
+299,16,Hasanudin,Stoper,7404183112790001,31-Des-79,46 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/1,,20010221024,0000948291658,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082194803129,1,
+300,17,Laode Muzni,Stoper,7404180203800001,02-Mar-80,46 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/1,,20010221032,0002749169698,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",081364353391,1,
+301,18,NOMAN SAPUTRA,Stoper,7406060212950002,30-Jul-02,23 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515236,0000954149916,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",081215058221,1,
+302,19,Baje',Stoper,7317011706900001,17-Jun-90,36 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515186,0000940850638,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081241977733,1,
+303,20,IHSAN,Stoper,7404180107800009,01-Jul-80,46 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515244,0001074227848,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082289658963,1,
+304,21,Asep Rasidin Syah,Stoper,7404182810960001,08-Sep-96,29 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Jl. Kaleb Warai RT.03/RW.02 Kel. Samabusa, Kec. Teluk Kimi, Kota Nabire",085372247155,,2
+305,22,Muh. Widiawan Yudisfira. A,Stoper,7404111602900001,16-Feb-90,36 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Jl. Mayjen Sutoyo No.11 RT.02/RW.01, Kel. Wale, Kec. Wolio, Kota Baubau",085166093538,,2
+306,23,Wiga Ardin,Stoper,7406050901990002,09-Jan-99,27 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Desa Rahadopi, Kec. Kabaena, Kab. Bombana",082298360019,1,
+,,,,,,,,,,,,,,,,,,,,
+,,DRIVER,,,,,,,,,,,,,,,,,,
+307,1,Agustian,Driver,7472071708800001,17-Agu-80,45 Tahun ,Laki-laki,11-Jun-2019,SMA,,VI/1/5,,20010220513,0001081022703,1,,"Jl. Panglima Polim RT.003/RW.003, Kel. Kaobula, Kec. Batupoaro Kota Baubau",081344884300,,2
+308,2,Kamarudin,Driver,7472050505780003,5-Mei-78,48 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/5,,20010220570,0000193626281,1,,"Jl. Gajahmada No. 97 RT.002/RW.001, Kel. Tanganapada, Kec. Murhum Kota Baubau",081344442044,,2
+309,3,Asdar tahir,Driver,7406061603780001,31-Des-78,47 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/5,,20010220620,0002921938929,1,,"Ds.Toli-Toli Kec. Kabaena Timur, Kab. Bombana",082336416278,1,
+310,4,Amin Ritonga,Driver,7406140109700001,1-Sep-70,55 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/5,,20010220851,0000953611997,1,,"Kel. Sikeli, Kec. Kabaena barat, kab. Bombana Sultra",085242635525,1,
+311,5,Paharuddin,Driver,7309071711780001,17-Nov-78,47 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/5,,20010220786,0002473568921,1,,"Kel. Sikeli, Kec. Kabaena barat, kab. Bombana Sultra",082282792540,1,
+312,6,Asba,Driver,7404050107830116,1-Jul-83,43 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/5,,20010220844,0001074196337,1,,"Mawasangka, Kab. Butong Tengah, Kab. Butong Tengah",085241849044,,2
+313,7,Hamsa,Driver,7404050901740001,9-Jan-74,52 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/5,,19067985754,0002369465021,1,,"Mawasangka, Kab. Butong Tengah, Kab. Butong Tengah", 081340184766 ,,2
+314,8,Rian Hidayat Azali,Driver,7404181412910001,14-Des-91,34 Tahun ,Laki-laki,10-Jul-2019,SMA,,VI/1/5,,19067985382,0000949028343,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082187457407,1,
+315,9,LA ODE SABARUDIN,Driver,7404182705760001,27-Mei-76,50 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/5,,19067986042,0002827663143,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082217459387,1,
+316,10,Aisi,Driver,7404180107830023,1-Jul-83,43 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/5,,19067985390,0001941292888,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082324993840,1,
+317,11,La Ode Muhammad Alkar Alimin,Driver,7406130503890001,5-Mar-89,37 Tahun ,Laki-laki,21-Agu-2019,SMA,,VI/1/5,,19074132481,0002172892083,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085396091581,1,
+318,12,Ahmad Yasin,Driver,7406140806810001,8-Jun-81,45 Tahun ,Laki-laki,21-Agu-2019,SMP,,VI/1/5,,19074131947,0000952955651,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085343831973,1,
+319,13,Salman,Driver,7404052104730001,21-Apr-73,53 Tahun ,Laki-laki,19-Agu-2019,SMP,,VI/1/5,,19074132705,0002901676072,1,,"Mawasangka, Kab. Butong Tengah",085398770671,,2
+320,14,Amsar,Driver,7406160206780001,2-Jun-78,48 Tahun ,Laki-laki,19-Agu-2019,SMA,,VI/1/5,,19074132259,0001895054163,1,,"Desa Lengoara, Kec. Kabaena Tengah, Kab. Bombana Sultra",081241909050,1,
+321,15,Supriadi,Driver,7317090408790002,4-Agu-79,46 Tahun ,Laki-laki,19-Agu-2019,SMP,,VI/1/5,,19074132739,0002267177771,1,,Dusun Sidodadi RT.002/RW.001 Kel. Se'pong Kec. Lamasi Kab. Luwu,082339393334,,2
+322,16,Lansono,Driver,8106010101610006,1-Jan-69,57 Tahun ,Laki-laki,08-Sep-2019,SMP,,VI/1/5,,19074133026,0002921839121,1,,"Dusun Waitasi Desa Kairatu, Kec. Kairatu Kab. Seram bagian barat",085240295164,,2
+323,17,La Bala,Driver,7403222906700001,29-Jun-70,56 Tahun ,Laki-laki,30-Okt-2019,SMP,,VI/1/5,,20010221149,0000949860009,1,,Kel. Lawama RT.001/RW.001 Kec. Tongkuno Selatan Kab. Muna,085243163994,,2
+324,18,Jumaing,Driver,7317043012890002,30-Des-89,36 Tahun ,Laki-laki,30-Okt-2019,SMP,,VI/1/5,,20010221156,0000940380658,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082251959994,1,
+325,19,Andi Hamsah,Driver,7309093112810017,31-Des-81,44 Tahun ,Laki-laki,30-Okt-2019,SMP,,VI/1/5,,20010221180,0002826065114,1,,"Dsn. Pattunuang Desa Samangki, Kec. Simbang Kab. Maros",085343979188,,2
+326,20,Trisno,Driver,7406060107880015,20-Sep-89,36 Tahun ,Laki-laki,01-Nov-2019,SMA,,VI/1/5,,20010221222,0002172578242,1,,"Ds Lambale Kec. Kabaena Timur, Kab. Bombana",085144387274,1,
+327,21,LA GUNARDIN,Driver,7404180105890001,1-Mei-89,37 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/5,,21045216674,0002943626793,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082293901104,1,
+328,22,DARLIN,Driver,7406130605780001,6-Mei-78,48 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/5,,21045216906,0000952896846,1,,"Desa  Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085396992400,1,
+329,23,SALMAN HIDAYAT,Driver,7406131901840001,19-Jan-84,42 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/5,,21045217045,0002172892972,1,," Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085211171882,1,
+330,24,BOY ARYSANDHY,Driver,7406151001950001,10-Jan-95,31 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/5,,21045216880,0002172902736,1,,"Desa Eemokolo, Kec. Kabaena Utara Kab. Bombana",082194259026,1,
+331,25,AMIRUDIN. S,Driver,7406141505840001,15-Mei-84,42 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/5,,21045216849,0003103631559,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082261164661,1,
+332,26,SAFRUN,Driver,7406132706860001,27-Jun-86,40 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/5,,21045217037,0003257068937,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082370204606,1,
+333,27,Oskar,Driver,7406063112770002,31-Des-77,48 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/5,,21082514320,0002900879695,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",085340537165,1,
+334,28,La Ode Muhamad Taufik,Driver,7472061909890002,19-Sep-89,36 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/5,,21082514544,0002219576613,1,,"Jl. Sijawangkati RT.003/RW.003 Dusun Lamangga, Kec. Murhum Kota Baubau",081342286336,,2
+335,29,Muh. Ikbal,Driver,7406141805950001,18-Mei-95,31 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/5,,21082514395,0000951367814,1,,"Kel. Sikeli, Kec. Kabaena barat, kab. Bombana Sultra",085247777311,1,
+336,30,Ardianto,Driver,7406141008890001,10-Agu-89,36 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/5,,21082514387,0002509491374,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana Sultra",082232429923,1,
+337,31,Arsik,Driver,7404050805800001,8-Mei-80,46 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/5,,21082514460,0002827569666,1,,"Ling. Moluno Desa Mawasangka, Kab. Butong Tengah",085340824241,,2
+338,32,Patta Andi,Driver,7406161111840002,11-Nov-84,41 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/5,,21082514478,0003069512109,1,,"Desa Ulungkura, Kec. Kabaena Tengah",082265263387,1,
+339,33,Randi Alfiandri,Driver,7406131606960001,16-Jun-96,30 Tahun ,Laki-laki,01-Jun-2022,SMA,,VI/1/5,,22082657176,0002172583585,1,,"Desa Langkema, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082283734840,1,
+340,34,M. ASPIN,Driver,7406131311780001,13-Nov-78,47 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/2,,21082514841,0002119557251,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085320039693,1,
+341,35,ASMAN HARIS,Driver,7404182602800001,26-Feb-80,46 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/1,,21045216864,0003103732631,1,,Dusun Batu Kel. Talaga Dua Kec. Talaga Raya Kab. Buton Tengah,082296772139,1,
+342,36,YUSRIL AL RASYID,Driver,7406131008020001,10-Agu-02,23 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461014,0002172583596,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",082260490636,1,
+343,37,NASRUDDIN,Driver,7406140107850014,1-Jul-85,41 Tahun ,Laki-laki,02 Juni 2023,SMP,,,,23109460925,0002943400836	,1,,"Lingk. Tanjung Perak Kel. Sikel Kec. Kabaena Barat, Kab. Bombana",082210937473,1,
+344,38,ASRI,Driver,7404050304820001,3-Apr-82,44 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461022,0002246789878,1,,"Lingk. Pasar Lama Kel. Mawasangka, Kec. Mawasangka, Kab. Buton Tengah",081245666851,,2
+345,39,BASRUN,Driver,7404051710850001,17-Okt-85,40 Tahun ,Laki-laki,02 Juni 2023,S1,,,,23109460958,0002017159896,1,,"Lingk. Pokawa kawa Desa Watolo, Kec. Mawasangka, Kab. Buton Tengah",082298347809,,2
+346,40,AZHAR,Driver,7406062804930001,28-Apr-93,33 Tahun ,Laki-laki,04-Jun-2023,SMA,,,,23109460685,0003261049749,1,,"Desa Puununu Kec. Kabaena Selatan, Kab. Bombana",082146725068,1,
+347,41,Sudarlin,Driver,9208011107860001,11-Jul-86,40 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Jl. Labuke, Kel. labalawa, Kec, Betoambari Kota Baubau",082211932920,,2
+348,42,Muh.Ansar,Driver,7406061504820001,15-Apr-82,44 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Desa Balo, kec, Kabaena Timur",085331085778,1,
+349,43,Nofrizal,Driver,7404180711950001,7-Nov-95,30 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Dusun Lantinea, Desa Lengora, Kec, Kabaena Tengah",082397776157,1,
+350,44,Alkhaidir,Driver,7406050607870001,6-Jul-87,39 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Desa Puu Nunu, Kec, Kabaena Selatan",082346747129,1,
+351,45,La Ode Nurdin Sidi,Driver,7404051911790001,19-Nov-79,46 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Lingk. Landeu, Desa Mawasangka, Kec, Mawasangka",082228145235,,2
+352,46,Arianto,Driver,9109012107950001,26-Jul-96,29 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Desa Pangilia, kec, Talaga Raya",085349597858,1,
+353,47,Fadil,Driver,7406132111930001,21-Nov-93,32 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Olondoro, Desa Rahadopi, Kec, Kabaena",081210846649,1,
+354,48,Agusfin Tobade,Driver,7406051408000001,14-Agu-00,25 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Desa Batuawu, kec, Kabaena Selatan",085213801346,1,
+355,49,Irwan,Driver,7404182110960001,21-Okt-96,29 Tahun ,Laki-laki,21-Okt-2025,SMA,,,,,,1,,"Lingk, Wameo, Desa Talaga Satu, Kec, Talaga Raya",082239573506,1,
+356,50,Ferdian ,Driver,7404180208030001,2-Agu-99,26 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Lingk, Peomekar Jaya. Desa Talaga Satu Kec. Talaga Raya",081267699386,1,
+357,51,Abdul Haris,Driver,1208281203780001,12-Mar-78,48 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Kel. Doule, Kec. Rumbia, Kab. Bombana",082264879538,,2
+358,52,Ihram Gandi,Driver,7406062602880002,26-Feb-88,38 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",085281656724,1,
+359,53,Jonanda,Driver,7406051212840001,12-Des-84,41 Tahun ,Laki-laki,27-Okt-2025,SMK,,,,,,1,,"Kel. Teomokole, Kec. Kabaena, Kab, Bombana",085133121685,1,
+360,54,Alfajar,Driver,7404181010000003,6-Jul-00,26 Tahun ,Laki-laki,27-Okt-2025,SMK,,,,,,1,,"Dusun Daratan 1, Desa Kokoe, Kec. Talaga Raya",082247328179,1,
+361,55,Kamal Aripin,Driver,7404180307960002,3-Jul-96,30 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Dusun Pangilia, Desa Pangilia, Kec. Talaga Raya",085314105613,1,
+362,56,Darman,Driver,7406130408050001,4-Agu-05,20 Tahun ,Laki-laki,27-Okt-2025,SD,,,,,,1,,"Desa Puununu Kec, Kabaena Selatan",085167444642,1,
+363,57,Paris Pria Tama. M,Driver,7315120507980002,5-Jul-98,28 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Dusun Bamba, Desa Kassa, Kec, Batu Lappa Kab. Pinrang",085657033089,,2
+364,58,Hendri Gunawan ,Driver,7406063012000001,4-Jun-99,27 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Desa Toli-toli, Kec. Kabaena Timur, Kab. Bombana",081279893384,1,
+365,59,Kaimuddin Bou,Driver,7201041805800001,18-Mei-80,46 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Desa Biak,RT.02/RW.06, Kel. Biak, Kec. Luwuk Utara, Banggai",085399998463,,2
+366,60,Abas,Driver,7404181711870001,17-Nov-87,38 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Desa Liwulompona, Kec. Talaga Raya",085594026057,1,
+367,61,Junaidin,Driver,7404181707970001,11-Apr-97,29 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Desa Talaga II, Kec. Talaga Raya",085217172170,1,
+368,62,Asrul,Driver,7404180709010001,7-Sep-01,24 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Lingk. Sangkurisa, Kel. Talaga I Kec. Talaga Raya ",085129403006,1,
+369,63,Rusli,Driver,7402151410920001,14-Okt-92,33 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana",082191297809,1,
+370,64,Mustaming,Driver,7401182105990005,21-Mei-99,27 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Lingk. Tanjung Perak Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",085314809108,1,
+371,65,Safaruddin Bin Baharuddin,Driver,7403220407970001,4-Jul-97,29 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Dusun Tengah Desa Talaga II, Kec. Talaga Raya",082151424109,1,
+372,66,Azlan Nugraha,Driver,7404181405000001,14-Mei-00,26 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Lingk. Baru Kel. Talaga I Kec. Talaga Raya, Kab. Buton Tengah",082214261290,1,
+373,67,Sofiyan Hidayat. T,Driver,7404181202930002,12-Feb-93,33 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Dusun Peropa, Desa Talaga Besar, Kec. Talaga Raya",081218868729,1,
+374,68,Ahmat Sharul,Driver,7472011706010001,17-Jun-01,25 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Dusun Lama Desa Liwulompona, Kec. Talaga Raya",081213953957,1,
+375,69,Rahmat,Driver,7404181712960001,17-Des-96,29 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Dusun Lawa, Desa Liwulompona, Kec. Talaga Raya",082215625895,1,
+376,70,Andri Irawan,Driver,7406061210940002,12-Okt-84,41 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Lengora, Kec. Kabaena Tengah, Kab. Bombana",085213841662,1,
+377,71,Kasminto Biadi,Driver,7404182705880001,27-Mei-88,38 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Dusun Bungi Desa Liwulompona, Kec. Talaga Raya",081344016507,1,
+378,72,Rusdianto Indo,Driver,7407010907900001,9-Jul-90,36 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",085194341026,1,
+379,73,Arifin,Driver,7406150704840001,7-Apr-84,42 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Mapila Dusun Pising, Kabaena Utara, Kab, Bombana",081346350649,1,
+380,74,Guntur Maulana Abas,Driver,7406061604980001,16-Apr-98,28 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",085281515618,1,
+381,75,Muh. Sigit  Arya Lumintang,Driver,7406063012000002,30-Des-00,25 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",082187516013,1,
+382,76,Fadli Irawan,Driver,7406060212030001,2-Des-03,22 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Wumbuburo, Kec. Kabaena Timur, Kab. Bombana",085177124729,1,
+383,77,Asfan,Driver,7404182003930001,29-Mar-93,33 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Desa Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",082296394448,1,
+384,78,Biran Ortega,Driver,7404180306000002,3-Jun-00,26 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Dusun Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",082315192212,1,
+385,79,Mizar Alhabi,Driver,7404051404980002,14-Apr-98,28 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Lingk. Tengah Desa Mawasangka. Kec. Mawasangka, Kab. Buton Tengah",085299661964,,2
+386,80,Denish Candra Setiawan,Driver,7406130909060001,9-Sep-06,19 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",085213876411,1,
+387,81,Adrian Mbaa,Driver,6471052008850009,27-Des-85,40 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Lingk. Moluno, Desa Mawasangka, Kec. Mawasangka, Kab. Buton Tengah",082197161765,,2
+388,82,Muhammad Arif Hidayat,Driver,7404052507870002 ,25-Jul-87,38 Tahun ,Laki-laki,13-Nov-2025,D2,,,,,,1,,"Lingk. Pasar Lama, Desa Mawasangka, Kec. Mawasangka, Kab. Buton Tengah",085397305298,,2
+389,83,Ahmad Nur,Driver,7404052911870001,29-Nov-87,38 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Lingk. Landeu, Desa Mawasangka, Kec. Mawasangka, Kab. Buton Tengah",085311743796,,2
+390,84,Mokole Ryan Imel Darisman Saputra,Driver,7406061905910001,19-Mei-91,35 Tahun ,Laki-laki,13-Nov-2025,S1,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",081241404304,1,
+391,85,La Rian,Driver,7404052603940002,26-Mar-94,32 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Lingk. Katibu, Desa Watolo, Kec. Mawasangka, Kab. Buton Tengah",082297090110,,2
+392,86,Syahrul Taufik,Driver,7306052101010005,21-Jan-01,25 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Lebong, Kel. Lonjoboko, Kec. Paranglo, Kab. Gowa",085133046249,,2
+393,87,Rahmat Ali Kasim,Driver,7404182406960001,24-Jun-96,30 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Dusun Bungi Desa Liwulompona, Kec. Talaga Raya",081354739620,1,
+394,88,Syahril,Driver,7406141601050001,16-Jan-05,21 Tahun ,Laki-laki,13-Nov-2025,SMP,,,,,,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana",082290472683,1,
+395,89,Astar,Driver,7406060103720001,1-Mar-72,54 Tahun ,Laki-laki,13-Nov-2025,SD,,,,,,1,,"Desa Toli-toli, Kec. Kabaena Timur, Kab. Bombana",085210139269,1,
+396,90,Awaluddin,Driver,7406060808840003,8-Agu-84,41 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Desa Bungi-bungi, Kec. Kabaena Timur, Kab. Bombana",085394781632,1,
+397,91,Dirham,Driver,7404102704790001,27-Apr-79,47 Tahun ,Laki-laki,13-Nov-2025,SMA,,,,,,1,,"Dusun Buku Desa Wawoangi, Kec. Sampolawa, Kab. Buton Selatan",081229735939,,2
+398,92,Yusuf,Driver,7404052709040001,27-Sep-04,21 Tahun ,Laki-laki,15-Nov-2025,SMP,,,,,,1,,"Lingk. Tanah Misi, Kel. Bastiong Talangame, Kec. Kota Ternate Selatan, Malut",081232884103,,2
+399,93,Baheruddin,Driver,7404180912920001,9-Des-92,33 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/2,,20010221230,0002922285914,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",082396260717,1,
+400,94,Riyen Afrizal,Driver,7406051204940001,21-Apr-94,32 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074133513,0002270213638,1,,"Desa Rahadopi, Kec. Kabaena Bombana Sultra",085256294478,1,
+401,95,Ebit,Driver,7404183010890001,30-Okt-89,36 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/2,,19074132754,0002901680739,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",082188722051,1,
+402,96,Suherman,Driver,7404052705730004,27-Mei-73,53 Tahun ,Laki-laki,07-Jan-2026,SMA,,,,,,1,,"KP. Cisarua Girang Kel. Warnasari, Kec. Sukabumi, Kab. Sukabumi",085394286699,,2
+403,97,Alhamdan Hamrin,Driver DT,7404051805000001,18-Mei-00,26 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067986109,0000948641409,1,,"Mawasangka, Kab. Butong Tengah",082293643476,,2
+404,98,Hardiansyah,Driver DT,7406131901950001,19-Jan-95,31 Tahun ,Laki-laki,18-Jul-2019,S1 Geografi,,VI/1/1,,19067985309,0000200869964,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082192201112,1,
+405,99,KADARUSMAN,Driver DT,7406130604840001,6-Apr-84,42 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514924,0001557766798,1,,"Desa Batuawu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085247294279,1,
+406,100,Welly Soryanto,Driver LV Kantor KDI,3404152007930002,20-Jul-93,32 Tahun ,Laki-laki,01-Agu-2020,SMA,,VI/1/2,,20050673597,0001555461382,1,,"UPT. Tolihe Desa Palangga, Kecamatan Palangga, Kab. Konawe Selatan",085341061282,,2
+407,101,Ratno,Driver LV Kantor KDI,7405080511850003,5-Nov-85,40 Tahun ,Laki-laki,01-Okt-2021,SMA,,VI/1/2,,21070970120,0002581110145,1,,"Desa Langgea, Kec. Ranomeeto. Kabupate Konawe Selatan",085241771954,,2
+408,102,Juriyanto Karimin,Driver LV Kantor KDI,7405081905950001,19-Mei-95,31 Tahun ,Laki-laki,15-Jan-2021,SMA,,VI/1/2,,21045217219,0000210769255,1,,"Jl. Poros Bandara Halu Oleo, Kel. Ranooha Kec. Ranometo Konawe Selatan",082189298571,,2
+,,,,,,,,,,,,,,,,,,,,
+,,OPERATOR,,,,,,,,,,,,,,,,,,
+409,1,Abdul Kadir Arifin,Operator BD,7406051206750001,12-Jun-75,51 Tahun ,Laki-laki,21-Jun-2019,SMP,,VI/1/6,,20010220828,0001882633937,1,,"Desa Rahampuu, Kec. Kabaena Barat Bombana, Sultra",085346307908,1,
+410,2,Ahmad Fauzan,Operator BD,7404182410860001,24-Okt-86,39 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/6,,20010220604,0002827658046,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah", 082194499363 ,1,
+411,3,Ld. Bayanudin,Operator BD,7404180107820003,1-Jul-82,44 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/6,,20010220521,0002922012606,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082260469354,1,
+412,4,La Ode Sahimudin,Operator BD,7404182705840003,27-Mei-84,42 Tahun ,Laki-laki,18-Agu-2019,SMA,,VI/1/6,,19074133570,0000948632681,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085256130342,1,
+413,5,TOI BATIN,Operator BD,7404241578900001,15-Jul-89,37 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/6,,21045217300,0001073961595,1,,"Jl. Bangka Desa Ambuau Indah, Kec. Lasalimu Selatan, Kab. Buton",082197698003,1,
+414,6,JOKO NURHADI,Operator BD,7406152204790001,22-Apr-79,47 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/6,,21045217177,0003071082071,1,,"Desa Sangia Makmur Kec. Kabaena Utara, Kab. Bombana",082193019709,1,
+415,7,LA AMUDI,Operator BD,7406152204790001,1-Jul-74,52 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045216658,0003257064663,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082271393254,1,
+416,8,Inengah Agus Riadiona,Operator GD,7472041105850001,11-Mei-85,41 Tahun ,Laki-laki,25-Agu-2019,SMA,,VI/1/6,,19074133471,0002401008636,1,,Kel. Labunia RT/RW.001 Kec. Wakorumba Selatan Kab. Muna,085341504942,,2
+417,9,Ridwan,Operator PC,7302100307920005,3-Jul-92,34 Tahun ,Laki-laki,29-Jun-2019,SMP,,VI/1/6,,20010220596,0001560319525,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana Sultra",082291966088,1,
+418,10,Hermanto,Operator PC,7406131008880001,10-Agu-88,37 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/6,,19067985721,0000952914925,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA", 082339957004 ,1,
+419,11,Eli Sumarto,Operator PC,7406130809810001,8-Sep-81,44 Tahun ,Laki-laki,01-Jul-2019,SMP,,VI/1/6,,20010221479,0001845779196,1,,"Desa Teomokole Kec.Kabaena Selatan, Kab. Bombana SULTRA", 081242210042 ,1,
+420,12,Faisal,Operator PC,7404182207870001,22-Jul-87,38 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/6,,19067985374,,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",081276905535,1,
+421,13,Wahyu,Operator PC,7404180510800001,5-Okt-80,45 Tahun ,Laki-laki,19-Agu-2019,SMP,,VI/1/6,,19074132903,0002901677106,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085231209250,1,
+422,14,Darmono,Operator PC,7404180301810001,3-Jan-81,45 Tahun ,Laki-laki,19-Agu-2019,SMP,,VI/1/6,,19074132911,0002174440792,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085242541826,1,
+423,15,Aslan Moha,Operator PC,7406140312810001,3-Des-81,44 Tahun ,Laki-laki,19-Agu-2019,SMP,,VI/1/6,,19074133620,0002901677308,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana Sultra",082188104167,1,
+424,16,La Sarudin,Operator PC,7404241506830001,15-Jun-83,43 Tahun ,Laki-laki,20-Agu-2019,SMP,,VI/1/6,,19074133265,0000956986582,1,,Jl. Tanjung Kel. Harapan Jaya Kec. Lasalimu Selatan Kab. Buton,082192531683,,2
+425,17,Hermanto,Operator PC,7410020505730001,5-Mei-73,53 Tahun ,Laki-laki,20-Agu-2019,SMA,,VI/1/6,,19074131988,0001075128761,1,,Kambowa Kec. Kambowa Kab. Buton Utara,082299445117,,2
+426,18,Garudin,Operator PC,7404180107780059,7-Feb-79,47 Tahun ,Laki-laki,20-Agu-2019,SMP,,VI/1/6,,19074132366,0002901676803,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",082358863189,1,
+427,19,Nawiruddin,Operator PC,7404051203660002,12-Mar-66,60 Tahun ,Laki-laki,25-Agu-2019,SMP,,VI/1/6,,19074133190,0002369457696,1,,"Ling. Katibu Desa Wotolo Kec Mawasangka, Kab. Butong Tengah",082347905615,,2
+428,20,Udin,Operator PC,7404180107770020,1-Jul-77,49 Tahun ,Laki-laki,29-Agu-2019,SMP,,VI/1/6,,19074132325,0002901677332,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",081262578406,1,
+429,21,Irwan Amir,Operator PC,7406132910950001,29-Okt-95,30 Tahun ,Laki-laki,09-Sep-2019,SMA,,VI/1/6,,19074133430,0002901683518,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082195212161,1,
+430,22,Asdar,Operator PC,7404181012900001,10-Des-90,35 Tahun ,Laki-laki,30-Okt-2019,SMP,,VI/1/6,,20010221594,0002922290763,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",081363810245,1,
+431,23,MAZLAN,Operator PC,7414051312830001,13-Des-83,42 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/6,,21045216633,0002405950211,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI",082291730194,1,
+432,24,ALIMUDIN,Operator PC,7404180107900035,1-Jul-90,36 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045216799,0000948460241,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082251014336,1,
+433,25,MOH. YAMAN,Operator PC,7406131208900002,12-Agu-90,35 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/6,,21045216708,0003257066057,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085320039499,1,
+434,26,ABDULLAH RIANDI,Operator PC,7406131305800001,13-Mei-80,46 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045216757,0003103530669,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085341715325,1,
+435,27,RELI KUSWANTO,Operator PC,7406050601930002,30-Des-93,32 Tahun ,Laki-laki,12-Jun-2021,SMA,,VI/1/6,,21045216971,0003257067172,1,,Desa Rahadopi Kec. Kabaena Kab. Bombana,081244013618,1,
+436,28,FIRMAN,Operator PC,7406050601930002,19-Mar-83,43 Tahun ,Laki-laki,12-Jun-2021,S1,,VI/1/6,,21045216930,0002001521913,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081341530200,1,
+437,29,SUNAR,Operator PC,7406132502910001,25-Feb-91,35 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045217086,0000952871354,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085239854186,1,
+438,30,HAERUDDIN,Operator PC,7315120404950001,4-Apr-95,31 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045216955,0001071820822,1,,"Bilajeng RT/RW 001 Kel. Kassa, Kec. Batu Lappa Kab. Pinrang",082395113030,1,
+439,31,TANISE,Operator PC,6408131005790004,10-Mei-79,47 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045217102,0000933356351,1,,Gattungeng RT/RW.001 Kel. Pallawa Kec. Tellu Limpoe Kab. Bone,082192531647,1,
+440,32,RASMIN,Operator PC,7406142105810001,21-Mei-81,45 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/6,,21045217011,0002172824267,1,,"Desa Baliara Selatan, Kec. Kabaena Barat, Kab. Bombana Sultra",082291297379,1,
+441,33,ERWIN,Operator PC,7406131405740001,14-Mei-74,52 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/6,,21082514551,0002172893692,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082349924431,1,
+442,34,IRVAN MARWAN,Operator PC,7406140510980001,5-Okt-98,27 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/6,,21082514486,0002313680152,1,,"Desa Baliara Selatan, Kec. Kabaena Barat",082296293675,1,
+443,35,ROSANDI,Operator PC,7302071703000003,17-Mar-00,26 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/6,,21082514502,0001731525243,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082191168438,1,
+444,36,ARSINTA,Operator PC,7472072012920001,28-Des-92,33 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/6,,21082514569,0001254736427,1,,"Desa Kolese, Kec. Lea-Lea Kota Bau-Bau",081245800570,,2
+445,37,BERLIN BIN GAZALI,Operator PC,7403010107810237,1-Apr-80,46 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/6,,21082514452,0000949500382,1,,"Desa Kangkunae, Kec. Maginti Kabupaten Muna Barat",081312025587,,2
+446,38,MUHAMMAD FADHIIL AL HAKIM,Operator PC,8101061903000001,19-Mar-00,26 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461170,0001292937985,1,,Wahai RT.007 Kec. Seram Utara Kab. Maluku Tengah,081342575445,,2
+447,39,SYAHRAN,Operator PC,7404230803920001,8-Mar-92,34 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461006,0001863976678,1,,Kota Baubau,085146256308,,2
+448,40,IBNU ALYASIN,Operator PC,7472022305010001,23-Mei-01,25 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461063,0002367900145,1,,"Jl. Pattimura RT.01/RW.02 Kel. Wangkanapi, Kec. Wolio Kota Baubau",082225538483,,2
+449,41,SURATNO,Operator PC,3172013006550008,30-Jun-55,71 Tahun ,Laki-laki,06 Juni 2023,SD,,,,23109460784,0001337240823,1,,"Jl. Muara Baru RT. 015/RW.017 Kel. Penjaringan, Kec. Penjaringan, Jakarta Utara",081316588081,,2
+450,42,ANWAR ANTON,Operator PC,7404180601930001,4-Apr-94,32 Tahun ,Laki-laki,02 Juni 2023,S1,,,,23109461154,0001337240823,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",081335231735,1,
+451,43,Usman,Operator BD,7315120205910001,1-Mei-91,35 Tahun ,Laki-laki,27-Okt-2025,SMA,,,,,,1,,"Dusun Bulisu, Desa Kassa, Kec, Batu Lappa Kab. Pinrang",085256489698,,2
+452,44,Lutfi,Operator PC,7406131107980001,10-Nov-98,27 Tahun ,Laki-laki,21-Okt-25,SMA,,,,,,1,,"Desa Teomokole, Kec, Kabaena",082160607515,1,
+453,45,Dahlan,Operator PC,7404181011010001,15-Feb-00,26 Tahun ,Laki-laki,21-Okt-25,SMA,,,,,,1,,"Dusun Tengah, Desa Talaga II, kec, Talaga Raya",081344646998,1,
+454,46,Aswin Hidayat Duwi,Operator PC,9115010612970001,6-Des-97,28 Tahun ,Laki-laki,27-Okt-25,SMA,,,,,,1,,"Lingk. Baru, Desa Talaga Satu, Kec. Talaga Raya",082252094196,1,
+455,47,Muhammad Fadli,Operator PC,7315122204970002,22-Apr-97,29 Tahun ,Laki-laki,27-Okt-25,SMK,,,,,,1,,"Dusun Bulisu, Desa Kassa, Kec, Batu Lappa Kab. Pinrang",082144444909,,2
+456,48,Gilang Herlambang,Operator PC,1905063112060001,31-Des-06,19 Tahun ,Laki-laki,27-Okt-25,SMK,,,,,,1,,"Pinang Belarik, Kec. Ujan Mas Kab. Muara Enim, Sumatra Selatan",083174320524,,2
+457,49,Sudarjo,Operator PC,7404101801870001,18-Jan-87,39 Tahun ,Laki-laki,27-Okt-25,SMK,,,,,,1,,"Dusun Galu, Desa Dongkala, Kac. Kabaena Timur",082249026580,1,
+458,50,Hasanudin,Operator PC,7404181303020002,13-Mar-02,24 Tahun ,Laki-laki,27-Okt-25,SMA,,,,,,1,,Desa Talaga Dua. Kec Talaga Raya,082245240649,1,
+459,51,Adiatno,Operator PC,7404182706960001,27-Jun-96,30 Tahun ,Laki-laki,27-Okt-25,SMK,,,,,,1,,"Dusun Tolando, Desa Pangilia, Kec. Talaga Raya",082193960787,1,
+460,52,Muhammad Sazali,Operator PC,7404182605000002,26-Mei-99,27 Tahun ,Laki-laki,27-Okt-25,SMK,,,,,,1,,"Desa Liwulompona, Kec. Talaga Raya",085216417996,1,
+461,53,Arlin,Operator PC,7404180503990001,7-Apr-97,29 Tahun ,Laki-laki,27-Okt-25,SMA,,,,,,1,,"Desa Kokoe, Kec Talaga Raya",082293655238,1,
+462,54,Khaerul,Operator PC,7406152003980002,20-Mar-98,28 Tahun ,Laki-laki,13-Nov-25,SMP,,,,,,1,,"Jl. Bangau Desa Wumbulasa, Kec. Kabaena Utara, Kab. Bombana",082191035449,1,
+463,55,Wardin,Operator BD,7414050509810001,5-Sep-81,44 Tahun ,Laki-laki,13-Nov-25,SD,,,,,,1,,"Dusun Banabungi, Desa Talaga Besar, Kec. Talaga Raya",085231923958,1,
+464,56,Sarman,Operator PC,7472062009870003,20-Sep-87,38 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Ling. Bariya, Kel. Baadia, Kec. Murhum, Kota Baubau",082142652976,,2
+465,57,Firman,Operator PC,7406140107900006,5-Jan-90,36 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Lingk. Sangkurisa, Kel. Talaga I, Kec. Talaga Raya",082215421565,1,
+466,58,Cakra,Operator PC,7405130901000001,9-Jan-99,27 Tahun ,Laki-laki,13-Nov-25,SD,,,,,,1,,"Dusun I RT.01 Kel. Benua, Kec. Benua, Kab. Konawe Selatan",085397674528,,2
+467,59,Samin,Operator PC,7404182107020001,21-Jul-02,23 Tahun ,Laki-laki,13-Nov-25,SD,,,,,,1,,Dusun Wulu Utara Desa Wulu Kec. Talaga Raya,082236438208,1,
+468,60,Duslin,Operator PC,7404051407010001,14-Jul-00,26 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Lingk. Katibu Desa Watolo, Kec. Mawasangka, Kab. Buton Tengah",081245644908,,2
+469,61,Faril Ismail,Operator PC,7406130607010001,6-Jul-01,25 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",085129455667,1,
+470,62,Idin Suparman,Operator PC,7404181505950001,15-Mei-95,31 Tahun ,Laki-laki,13-Nov-25,SMP,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",082395313092,1,
+471,63,Rifan,Operator PC,7404180107030009,1-Jul-03,23 Tahun ,Laki-laki,13-Nov-25,SD,,,,,,1,,"Desa Wulu Kec. Talaga Raya, Kab. Buton Tengah",082249100794,1,
+472,64,Azwin,Operator PC,7406132407960001,24-Jul-96,29 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082213271938,1,
+473,65,Kadek Suriade,Operator PC,7406150102920001,1-Feb-92,34 Tahun ,Laki-laki,13-Nov-25,SD,,,,,,1,,"Desa Wumbulasa, Kec. Kabaena Utara Kab. Bombana",081244589647,1,
+474,66,Yugis,Operator PC,7404182807990001,28-Jul-99,26 Tahun ,Laki-laki,13-Nov-25,SMA,,,,,,1,,"Desa Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",082214201844,1,
+475,67,La Ode Eliadin,Operator BD,7404181603800001,16-Mar-80,46 Tahun ,Laki-laki,15-Nov-25,SMA,,,,,,1,,"Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082131114711,1,
+476,68,Aslan Azami,Operator BD,7404181012020002,12/10/2002,23 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Dusun Wameo, Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082288555957,1,
+477,69,Hazairin,Operator PC,7371060902910003,2/9/1991,35 Tahun ,Laki-laki,27-Nov-25,SMA,,,,,,1,,"Desa Tapuhaka, Kec. Kabaena Timur, Kab. Bombana",082193918099,1,
+,,,,,,,,,,,,,,,,,,,,
+,,WORKSHOP,,,,,,,,,,,,,,,,,,
+478,1,"Syahdan Dinar,ST",Pengawas Mekanik,7371130203760022,2-Mar-76,50 Tahun ,Laki-laki,04-Jun-2024,S1,POP,,,,,1,,"Perum Pesona Pelangi Jl. Nila No.12A RT.01/RW.01, Kel. Gunung Sari, Kec. Rappocini Makassar",081343658787,,2
+479,3,Suwargani Intawijaya,Mekanik,3211061101850003,1-Mar-85,41 Tahun ,Laki-laki,01-Jul-2019,SMA,POP,III/5/3,,19050687102,0001876445357,,2,"Dusun Cigangsa RT.03/RW.04 Kel. Cijati, Kec. Situraja Kab. Sumedang",081356552439,,2
+480,3,Sarno,Mekanik,3304091708830004,17-Agu-83,42 Tahun ,Laki-laki,17-Okt-2019,SMA,,VI/4/8,,20010221305,0001809134897,1,,"Tidu RT.01/Rw.03 Kel Tidu, Kec. Bukateja Kab. Purbalingga",085241936211,,2
+481,4,Iwan Gunawan,Mekanik,3209371212760002,12-Des-76,49 Tahun ,Laki-laki,01-Jul-2023,SMA,,,,,0001897385128,,2,"Blok Kedung Dadap, RT.12/RW.03, Beberan Palimanan, Kab. Cirebon ",082111601699,,2
+482,5,Suparjo,Mekanik Diesel,3404061107590001,11-Jul-59,67 Tahun ,Laki-laki,02-Agu-2019,SMA,,III/5/1,,08002164815,0001883543354,1,,"Jl. Affandi Boropadan No. 55 RT.02/RW 036 Kel. Condongcatur,Kec. Depok, Sleman Yogyakarta",085328115390,,2
+483,6,Ali Musafir,Admin Workshop,7406130806980001,6/8/1998,28 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",082349921773,1,
+484,7,Habib,Helper Mekanik,7406130111960002,1-Nov-96,29 Tahun ,Laki-laki,21-Jun-2019,SMP,,VI/1/1,,19067985937,0000952865458,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA", 081242163640 ,1,
+485,8,Kahar Muzakar,Mekanik Junior,7406130110950001,1-Okt-95,30 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/5,,19067985747,0000953498428,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082348226658,1,
+486,9,Budi,Mekanik Junior,7404180107850034,1-Jul-85,41 Tahun ,Laki-laki,22-Jun-2019,SMP,,VI/1/5,,19067985168,0000948448359,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah", 081239152863 ,1,
+487,10,Muh. Ricky Malindo,Mekanik Junior,7404181106950002,17-Jun-95,31 Tahun ,Laki-laki,22-Jun-2019,D3 Teknik Mesin,,VI/1/5,,19067985788,0002006233031,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082335184805,1,
+488,11,Sarman,Helper Mekanik,7404182411830003,24-Nov-83,42 Tahun ,Laki-laki,24-Jun-2019,SMP,,VI/1/1,,19067985416,0002922090063,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082298603424,1,
+489,12,Kamaruddin,Mekanik Junior,7406132505940002,25-Mar-94,32 Tahun ,Laki-laki,01-Jul-2019,SMA,,VI/1/5,,19074132952,0000953262854,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082345661994,1,
+490,13,Sumarlin Sahibuddin,Helper Mekanik,7404051211770001,12-Nov-77,48 Tahun ,Laki-laki,05-Agu-2019,SMP,,VI/1/4,,11011355242,0002056475125,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082347483703,1,
+491,14,Asrul,Helper Mekanik,7406132004980001,31-Des-00,25 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132572,0000953524124,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082334261200,1,
+492,15,La Suri,Helper Mekanik,7404182003810001,20-Mar-81,45 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074132424,0002901679356,1,,"Talaga besar, Kec. Talaga raya, Kab. Buton tengah",082259412918,1,
+493,16,Jusran,Helper Mekanik,7317014408910001,21-Jun-95,31 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074132812,0000940641524,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081267279309,1,
+494,17,Ali Bai,Mekanik Junior,7404182801870001,28-Jan-87,39 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/5,,19074132614,0001972156498,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",081343777788,1,
+495,18,Aswan Kasim,Mekanik Junior,7406162001890002,20-Jan-89,37 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/5,,19074132697,0002921831706,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082191990017,1,
+496,19,Asrul,Helper Mekanik,7406162006920001,20-Jun-92,34 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132622,0001074933527,1,,"Desa Manuru, Kec. Kabaeana Tengah Kab. Bombana Sultra",082217704110,1,
+497,20,Ardi Winarto,Helper Mekanik,7406141010840001,10-Okt-84,41 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133737,0000954568416,1,,"Desa Rahantari, Kec. Kabaena Barat Kab. Bombana",085343914797,1,
+498,21,Herman,Helper Mekanik,7404181301910001,13-Jan-91,35 Tahun ,Laki-laki,25-Okt-2019,SMP,,VI/1/1,,20010221289,0002827658575,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",085398025459,1,
+499,22,HAERUDIN,Helper Mekanik,7404180510890001,5-Okt-89,36 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514304,0001071820822,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",085397053089,1,
+500,23,BADRUL LAYALI,Helper Mekanik,7406130710950001,7-Okt-95,30 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514981,0002172893207,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082346369623,1,
+501,24,ISMAIL MANYUR,Helper Mekanik,7601031910920006,19-Okt-92,33 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514593,0002069714428,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082349291237,1,
+502,25,RIDWAN,Helper Mekanik,7406130511880001,5-Nov-88,37 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514833,0003257648583,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082271204395,1,
+503,26,Khudring,Helper Mekanik,7406132302910001,23-Feb-91,35 Tahun ,Laki-laki,27-Agu-2019,S1 Manajemen,,VI/1/1,,19074133505,0000953523055,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082299153813,1,
+504,27,AFDAL,Helper Mekanik,7406130508720001,5-Agu-72,53 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514353,0002643622007,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085341567663,1,
+505,28,SAIFIL AFDAL,Helper Mekanik,7406163112900001,30-Sep-90,35 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514973,0002591320162,1,,"Desa Enano, Kec. Kabaena Tengah",085247827984,1,
+506,29,Khairil Amri Kobat,Helper Mekanik,1218071602960001,10-Feb-96,30 Tahun ,Laki-laki,01-Jun-2022,SMA,,UMP,,22082657150,0001241957755,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082397754423,1,
+507,30,JAMIL SALEH,Helper Mekanik,7406132412000001,24-Des-00,25 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461139,0000953470168,1,,"Desa Puununu Kec. Kabaena Selatan, Kab. Bombana",082271638895,1,
+508,31,ZULKARAM,Helper Mekanik,7406132005020002,20-Mei-02,24 Tahun ,Laki-laki,02 Juni 2023,SMK,,,,23109461071,0003561489832	,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082271579545,1,
+509,32,IKHSAN ALIF PRATAMA,Helper Mekanik,7406141002010001,26-Jul-01,24 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461212,0000951368545,1,,"Lingk. Tanjung Perak Kel. Sikel Kec. Kabaena Barat, Kab. Bombana",082290122456,1,
+510,33,DIMAS HADI SANTOSO,Helper Mekanik,3504150909990001,9-Sep-99,26 Tahun ,Laki-laki,02 Juni 2023,SMK,,,,23109460768,0002937752065,1,,Besole RT.05/RW. 04 Kec. Besuki Kab. Tulungagung,082228640564,,2
+511,34,HARUN,Helper Mekanik,7472041003830001,10-Mar-83,43 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109461220,0000957066366,1,,"Ling. Makmur RT.02/RW.02 Desa Liabuku Kec. Bungi, Kota Baubau",081340115847,,2
+512,35,RAJUDIN,Helper Mekanik,7404180606800001,6-Mei-80,46 Tahun ,Laki-laki,02 Juni 2023,SD,,,,23109461279,0003091512159,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082246639393,1,
+513,36,"HENDRA, S.IP",Helper Mekanik,3524191308830001,13-Agu-83,42 Tahun ,Laki-laki,02 Juni 2023,S1 ,,,,23109460644,0002172575057,1,,"Desa Tirongkotua, Kec. Kabaena, Kab. Bombana",081334198490,1,
+514,37,Fahril Agit Saputra,Helper Mekanik,7406062908070001,29-Agu-07,18 Tahun ,Laki-laki,01 Agustus 2025,SMA,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",085122481024,1,
+515,38,Rizwan Ronaldin Azali,Helper Mekanik,7404180108000003,1-Agu-00,25 Tahun ,Laki-laki,10-Jul-2019,SMA,,VI/1/1,,19067985200,0000949030413,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085336502236,1,
+516,39,Irfan Mahendra,Helper Mekanik,7406142804970001,28-Apr-97,29 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Jl. Tanjung Perak No.31 Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",087859043528,1,
+517,40,Laode Fazlin,Helper Mekanik,9205181001020003,10-Jan-02,24 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Lingk Baru Kel. Talaga I, Kec. Talaga Raya, Kab, Buton Tengah",081281327310,1,
+518,41,Burhanuddin,Helper Mekanik,7317012006050001,20-Agu-05,20 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Dusun Buntu Alla Kec. Basse Sangtempe, Kab. Luwu Sulawesi Selatan",082271652774,,2
+519,42,Ruslan,Helper Mekanik,7406050610970001,06-Okt-97,28 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",081356177582,1,
+520,43,Hamiadin,Helper Mekanik,7404180506010001,05-Jun-01,25 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Desa Wulu Kec. Talaga Raya, Kab. Buton Tengah",081247972165,1,
+521,44,Rahmat Takdir,Helper Mekanik,7404182808950002,28-Agu-95,30 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",085369392818,1,
+522,45,Ofrin Albua,Helper Mekanik,7404181802090001,18-Feb-09,17 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Dusun Tengah Desa Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",085148219462,1,
+523,46,Damar,Helper Mekanik,7404181305080001,13-Mei-07,19 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Dusun Baru Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085119915096,1,
+524,47,Hudrat,Helper Mekanik,7406130312990001,03-Des-99,26 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082258816748,1,
+525,48,Anggi Wahyu Syahputra,Helper Mekanik,7406140109050001,23-Mar-05,21 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Lingk. Tg.Perak Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",082262539797,1,
+526,49,Daniel Mohammed Albah,Helper Mekanik,7404182411040001,24-Nov-04,21 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Wulu Kec. Talaga Raya, Kab. Buton Tengah",082210689857,1,
+527,50,Muhamat Ali,Helper Mekanik,7406131703050001,19-Mar-05,21 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",081330390822,1,
+528,51,Alan,Helper Mekanik,7404181011980001,10-Nov-96,29 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Molono Kec. Siompu Barat, Kab. Buton Selatan",085211906980,,2
+529,52,La Ludi,Helper Mekanik,7404180107860025,01-Jul-86,40 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082252112346,1,
+530,53,Muhammad Rafli Harun Alrasyid,Helper Mekanik,7404181507020001,15-Jul-02,24 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082215618395,1,
+531,54,Mohamad Zuhud,Helper Mekanik,9203011307990005,13-Jul-99,27 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kebun Kelapa RT.17 Kel. Fak-fak Selatan, Kec. Fak-Fak, Papua Barat",082114481598,,2
+532,55,La Ode Aldivas ,Helper Mekanik,7404181801030001,18-Jan-03,23 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",082346505617,1,
+533,56,Asbar,Helper Mekanik,7404180107800035,01-Jul-80,46 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085148143520,1,
+534,57,Bayu Fikran,Helper Mekanik,7404180107060030,01-Jul-06,20 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085211214066,1,
+535,58,Ilham Saputra,Helper Mekanik,7406211608970003,16-Agu-97,28 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Lakomea, Kec. Rarowatu, Kab. Bombana",085220784797,,2
+536,59,Moh. Rizal Fazilla,Helper Mekanik,7404181705070001,17-Mei-07,19 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082343654250,1,
+537,60,Jeri,Helper Mekanik,7404180112980001,01-Des-98,27 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082291312053,1,
+538,61,Yusrianto,Helper Mekanik,7471070903920003,09-Mar-92,34 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082228942474,1,
+539,62,Alif Awaluddin,Helper Mekanik,3523190705010005,07-Mei-01,25 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Jl. Beringin Kel. Abeli, Kec. Abeli Kota Kendari",082156761570,,2
+540,63,Gusman,Helper Mekanik,9207012007910001,20-Jul-91,34 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",085251709289,1,
+541,64,Sumarno,Helper Mekanik,7406140507940001,07-Sep-94,31 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",082312306163,1,
+542,65,Sahri Amrin,Helper Mekanik,7406061203010001,12-Mar-01,25 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Lambale, Kec. Kabaena Timur, Kab. Bombana",081343082243,1,
+543,66,Kuzardin,Helper Mekanik,7404181504940001,15-Apr-94,32 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga Besar, Kec. Talaga Raya, Kab. Buton Tengah",082211438715,1,
+544,67,Andita,Helper Mekanik,7404180301970001,15-Okt-95,30 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",085134349346,1,
+545,68,Tamrin,Welder,7404180107760038,8-Agu-71,54 Tahun ,Laki-laki,13-Jul-2019,SMP,JURU LAS,VI/1/5,,19067985432,0002270210938,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",081245204496,1,
+546,69,Laode Rasiu,Welder,7406063112730006,31-Des-73,52 Tahun ,Laki-laki,18-Okt-2019,SMP,JURU LAS,VI/1/5,,20010221313,0002621544952,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",081244836422,1,
+547,70,La Ode Sufudin,Welder,7406181406750002,17-Mei-74,52 Tahun ,Laki-laki,29-Agu-2020,SMP,JURU LAS,VI/1/5,,22012228379,0002172576317,1,,"Dongkala, Kec.Kabaena Timur Kab. Bombana SULTRA",085341135050,1,
+548,71,Asnu,Welder,7404202711760001,27-Nov-76,49 Tahun ,Laki-laki,10-Agu-2021,SMP,JURU LAS,VI/1/5,,22002548091,0002369054621,1,,"Ds. Waindawula, Kec. Siompu, Kab. Buton Selatan",085340833335,,2
+549,72,Almin,Welder,7406130503910001,6-Mar-91,35 Tahun ,Laki-laki,10-Agu-2021,SMA,JURU LAS,VI/1/5,,22002548067,0001982373164,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082214588797,1,
+550,73,La Ode Jaudin,Welder,7406060711830002,07-Nov-83,42 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kel. Dongkala, Kec. Kabaena Timur, Kab. Bombana",082271545968,1,
+,,,,,,,,,,,,,,,,,,,,
+,,LOGISTIK,,,,,,,,,,,,,,,,,,
+551,1,Sumarno,Pengawas Distribusi,3324020707750005,7-Jul-75,51 Tahun ,Laki-laki,27-Jul-2019,SMA,POP,VI/4/1,,11011355234,0001883143675,1,,"Bogo Sari, Desa Tambah Rejo, RT. 001 / RW /,001, Kecamatan Pagerruyung, Kabupaten Kendal, Provinsi Jawa Tengah",081382997733,,2
+552,2,Mahrom Nawawi,Admin Logistik,1811070605970005,10-Jul-97,29 Tahun ,Laki-laki,17-Jun-2019,SMA,,VI/1/3,,19067985622,0002325948219,1,,Bangun Jaya RT.014/RW.004 Kel. Bangun Jaya Kec. Tanjung Raya Kab. Mesuji,085381284140,,2
+553,3,Reksi Iskandar,Admin Logistik,3208292110980003,21-Okt-98,27 Tahun ,Laki-laki,22-Okt-2022,S1 Geografi,,VI/2/3,,22129967893,0003320637647,1,,"Desa Karangkancana,Kec. Karangkancana, Kuningan, Jawa Barat", 082126648180,,2
+554,4,MARIO SAPUTRA,Admin Logistik,7471031303000001,13-Apr-00,26 Tahun ,Laki-laki,08-Jun-2023,SMK,,,,23109461196,0002328229326,1,,"Jl. Sanggoleo RT.04/RW.02 Kel. Watubangga, Kec. Baruga Kota Kendari",085256343653,,2
+555,5,Abdul Halim,Logistik,7406130405720001,4-Mei-72,54 Tahun ,Laki-laki,21-Jun-2019,SMA,,VI/1/1,,19067985085,0002314040343,1,,"Desa Batuawu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081255568581,1,
+556,6,Imam Mustarif,Logistik,1811070403860002,4-Mar-86,40 Tahun ,Laki-laki,27-Jul-2019,SMA,,VI/1/4,,11028765177,0002325947769,1,,"Bangun Raya, Kecamatan Tanjung Raya, Kabupaten Mesuji, Provinsi Bandar Lampung ",082248120149,,2
+557,7,Lukman,Logistik,7471100402900002,4-Feb-90,36 Tahun ,Laki-laki,27-Agu-2019,D3 Perpustakaan & Kearsipan,,VI/1/1,,19074133661,0002901677905,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082198816058,1,
+558,8,Marjuki,Logistik,7406132503880001,25-Mar-88,38 Tahun ,Laki-laki,28-Agu-2019,SMP,,VI/1/1,,19074132044,0002921809667,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085256890781,1,
+559,9,Roni,Logistik,7404181706850001,17-Jun-85,41 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133307,0002901678028,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",082293657583,1,
+560,10,Sarson,Logistik,7406062005820001,20-Mei-82,44 Tahun ,Laki-laki,14-Sep-2022,SMP,,UMP,,22129967950,0002172898427,1,,"Desa Tapuhaka, Kec Kabaena Timur",085242361472,1,
+561,11,Rasyidin,Logistik,7406130708910001,31-Des-95,30 Tahun ,Laki-laki,17-Okt-2022,S1 Ekonomi,,UMP,,22129967935,,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085244704587,1,
+562,12,Awan Akbar,Logistik,7406160505920001,5-Mei-92,34 Tahun ,Laki-laki,17-Okt-2022,SMA,,UMP,,22129967885,0000954123939,1,,"Desa Tapuhaka, Kec Kabaena Timur",082290374024,1,
+563,13,SUMADIN,Logistik,7406050107850010,1-Jul-85,41 Tahun ,Laki-laki,09-Jun-2023,SD,,,,23109460719,0003116739881,1,,"Sampalakambula RT.02/RW.01 Desa Tirongkotua, Kec. Kabaena, Kab. Bombana",082261969548,1,
+564,14,Sudirman,Logistik,7406162303790001,23-Mar-79,47 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Ulungkura, Kec. Kabaena Tengah, Kab. Bombana",085398768832,1,
+565,15,M. Juan Rifai,Logistik,1811072406940003,24-Jun-94,32 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Bangun Jaya RT.18/RW.05 Kec. Tanjung Raya, Kab. Mesuji, Lampung",082279106671,,2
+566,16,Gungun Gunawan,Logistik,3206241106820011,11-Jun-82,44 Tahun ,Laki-laki,16-Des-2025,S1,,,,,,1,,"KP. Cikadongdong RT.02/RW.02, Kel. Cikadongdong, Kec. Singaparna, Tasikmalaya",081234567567,,2
+567,17,La Ili Hizira,Driver Logistik,7404181312860001,13-Des-86,39 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/2,,19067985671,0001883145429,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengah",082194104817,1,
+568,18,Sukri,Driver Logistik,7406140107750032,1-Jul-75,51 Tahun ,Laki-laki,12-Jun-2021,SMP,,VI/1/2,,21045217060,0000953237384,1,,"Desa Baliara, Kec. Kabaena Barat Kab. Bombana",085211186997,1,
+,,,,,,,,,,,,,,,,,,,,
+,,LISTRIK,,,,,,,,,,,,,,,,,,
+569,1,Asran,Helper Listrik,7406140903780001,9-Mar-78,48 Tahun ,Laki-laki,21-Agu-2019,SMA,,VI/1/1,,20010220760,0002973413531,1,,"Kel. Sikeli, Kec. Kabaena Barat Kab. Bombana",082345662758,1,
+570,2,Saripuddin,Helper Listrik,7406140107730010,25-Des-73,52 Tahun ,Laki-laki,17-Sep-2019,SMA,,VI/1/1,,19074132507,0000953926648,1,,"Kel. Sikeli, Kec. Kabaena Barat Kab. Bombana",082292940607,1,
+571,3,Elianto,Helper Listrik,7472011012840001,10-Des-84,41 Tahun ,Laki-laki,11-Okt-2021,S1 Pendidikan Agama Islam,,VI/1/1,,19074132382,0001941226187,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085341524523,1,
+572,4,SYAFARUDIN AKUI,Helper Listrik,7472050210900001,20-Agu-90,35 Tahun ,Laki-laki,11-Okt-2021,S1 Pendidikan Sejarah,,VI/1/1,,21082514825,0002080345274,1,,Desa Kadolo Kec. Kokalukuna Kota Baubau,085394809211,,2
+573,5,MUNAWIR,Helper Listrik,7406130711870001,7-Nov-87,38 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082514783,,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082210866164,1,
+574,6,Sugiarto Hafied,Helper Listrik,7472061003880002,10-Mar-88,38 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Jl. Betoambari RT.02/RW.06, Kel. Lamangga, Kec. Murhum Kota Baubau",085242486353,,2
+575,7,Hamnizar,Helper Listrik,9207033112840001,31-Des-84,41 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082194380871,1,
+576,8,Iswan Gandi,Helper Listrik,7406061805830001,18-Mei-83,43 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab, Bombana",085341829539,1,
+577,9,Laode Nomang,Helper Teknisi AC,7172072509882005,24-Mar-88,38 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kaulele Desa Katilombu, Kec. Sampolawa, Kab. Buton Selatan",082231139941,,2
+578,10,Hairin Ortega,Helper Teknisi AC,7404184207020001,02-Jun-02,24 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Wulu, Kec. Talaga Raya, Kab. Buton Tengah",081356713514,1,
+,,,,,,,,,,,,,,,,,,,,
+,,LINGKUNGAN,,,,,,,,,,,,,,,,,,
+579,1,Hasman,Pengawas Lingkungan,7406130409880001,4-Sep-88,37 Tahun ,Laki-laki,23-Okt-2019,S1 Teknik Lingkungan,"POP,PROPER",VI/3/6,,20010221370,0002922288355,1,,"Desa Langgea RT.08/RW.02 Kec. Ranomeeto, Kab. Konawe Selatan",082191354101,1,
+580,2,Indra Setiawan,Pengawas Lingkungan,7410011306980001,13-Jun-98,28 Tahun ,Laki-laki,01-Des-2023,S1 Teknik Pertanian,POP,,,,0002170594765,1,,"Jl. Mata Air RT.01/RW.01 Kel. Bangkudu, Kec. Kulisusu Buton Utara",082293101403,,2
+581,3,Nurmadina,Admin Lingkungan,7404185611000001,11/16/2000,25 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081331515449,1,
+582,4,Salsabila,Admin Lingkungan,9115044309010001,9/5/2001,24 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Pangilia, Kec. Talaga Raya, Kab. Buton Tengah",081227995849,1,
+583,5,Daharudin,Pekarya Lingkungan,7404180710810001,7-Okt-81,44 Tahun ,Laki-laki,20-Jul-2019,S1 Ilmu Pertanian,,VI/1/1,,19067985283,0002056487703,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082272766343,1,
+584,6,Macca,Pekarya Lingkungan,7404180107690025,1-Jul-69,57 Tahun ,Laki-laki,27-Jul-2019,SMP,,VI/1/4,,11028765425,0001883542127,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082257253452,1,
+585,7,Idarius,Pekarya Lingkungan,7404181402730001,14-Feb-73,53 Tahun ,Laki-laki,05-Agu-2019,S1,,VI/1/4,,16021319336,0001387601065,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082190553803,1,
+586,8,Harjum,Pekarya Lingkungan,7404182305880002,23-Mei-88,38 Tahun ,Laki-laki,18-Okt-2019,SMA,,VI/1/1,,20010221354,0001967213136,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082290652209,1,
+587,9,Salahudin Nurdin Effendy,Pekarya Lingkungan,7472060812920002,8-Des-92,33 Tahun ,Laki-laki,18-Okt-2019,S1 Akuntansi,,VI/1/1,,20010221362,0001075360858,1,,"Mawasangka, Kab. Butong Tengah",082335299065,1,
+588,10,JEFRI GANEFO,Pekarya Lingkungan,7404182706950001,27-Jun-95,31 Tahun ,Laki-laki,11-Okt-2021,S1 Pendidikan Fisika,PROPER,VI/1/1,,21082515061,0000948320458,1,,"Dusun Liwu Lompona, Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082291423341,1,
+589,11,JUNADIN,Pekarya Lingkungan,7406131708790001,17-Agu-79,46 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515103,0003257157712,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",081271149910,1,
+590,12,MUH SARATUNSARA HUSAIN,Pekarya Lingkungan,7407032011930001,20-Nov-93,32 Tahun ,Laki-laki,11-Okt-2021,D3 Agribisnis,,VI/1/1,,21082515012,0000134635421,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082211086515,1,
+591,13,MD. Alhafis,Pekarya Lingkungan,7404181904070001,4/19/2007,19 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082211086468,1,
+592,14,Fauzi Rahmat,Pekarya Lingkungan,7404182405070001,5/24/2007,19 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",085946599969,1,
+593,15,Kamlis,Pekarya Lingkungan,7404180107900037,7/1/1990,36 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082196538722,1,
+594,16,Manton,Pekarya Lingkungan,7406063112930001,12/31/1993,32 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Watumotobe Kec. Kapontori, Kab, Buton",082347903705,,2
+595,17,La Zaonu,Pekarya Lingkungan,7404180107870013,7/1/1987,39 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Liwulompona, Kec. Talaga Raya, Kab. Buton Tengah",082252485317,1,
+596,18,Ambo,Pekarya Lingkungan,7404180107770001,7/1/1970,56 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082214511828,1,
+597,19,Ridwan,Pekarya Lingkungan,7404180107770034,7/1/1977,49 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",081342565330,1,
+598,20,Darno,Pekarya Lingkungan,7404181212800001,12/12/1980,45 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga I Kec. Talaga Raya, Kab. Buton Tengah",085282303415,1,
+599,21,Mustang,Pekarya Lingkungan,7404181202790001,2/12/1979,47 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082189468956,1,
+,,,,,,,,,,,,,,,,,,,,
+,,SECURITY,,,,,,,,,,,,,,,,,,
+600,1,La Ode Muhsar,Kord. Security,7404180202680001,2-Feb-68,58 Tahun ,Laki-laki,05-Agu-2019,SMP,,VI/4/8,,16021319310,0002056470906,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082184720601,1,
+601,2,Sucipto,Asisten Keamanan,7405082012670001,20-Des-67,58 Tahun ,Laki-laki,01-Agu-2023,SMA,,,,23165189376,0001104412162,1,,"Langgea Jl. Kamboja RT.009/RW.004, Ds. Langgea , Kec. Ranomeeto, Kab. Konawe Selatan",085242615162,,2
+602,3,La Ode Arman,Security,7404182903770001,29-Mar-77,49 Tahun ,Laki-laki,10-Jul-2019,SMA,,VI/1/1,,19067986067,0002827663031,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082256281086,1,
+603,4,La Bani,Security,8203051211650001,17-Nov-65,60 Tahun ,Laki-laki,16-Jul-2019,SMA,,VI/1/1,,19067986000,0001105278131,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082155296202,1,
+604,5,Tazrim,Security,7404180207910001,2-Jul-91,35 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067985291,0002369487532,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengahI /Liwu lompona",082216372704,1,
+605,6,Nur Amin Mappaello.  B,Security,7301081911910001,19-Nov-91,34 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074133638,0002172557529,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082259431021,1,
+606,7,Nasrullah,Security,7406051009750001,10-Sep-75,50 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132317,0002901677815,1,,"Desa Teomokole, Kec. Kabaena Kab, Bombana",081343234789,1,
+607,8,Kadri,Security,7406130712840001,7-Des-84,41 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074133380,0002172585363,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082170333177,1,
+608,9,Safarudin,Security,7404182012960004,20-Des-96,29 Tahun ,Laki-laki,27-Agu-2019,SMA,,VI/1/1,,19074132721,0000948780865,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082281569827,1,
+609,10,La Ode Ismail,Security,7404180505690001,5-Mei-69,57 Tahun ,Laki-laki,17-Sep-2019,SMP,,VI/1/1,,19074132242,0002481648952,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",082189611251,1,
+610,11,Herman Hamrin,Security,7404050910840002,9-Okt-84,41 Tahun ,Laki-laki,17-Sep-2019,S1,,VI/1/1,,19074133422,0002922326493,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085218328852,1,
+611,12,Sam Bin La enda,Security,7404182005650001,20-Mei-65,61 Tahun ,Laki-laki,18-Okt-2019,SMP,,VI/1/1,,20010221396,0002922285644,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085322500929,1,
+612,13,Asran Tasbih,Security,1905011008710002,10-Agu-71,54 Tahun ,Laki-laki,12-Jul-2019,SMP,,VI/1/1,,19067985119,0002922245076,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082143200907,1,
+613,14,Musmuliyadi Hayadi,Security,7404182006730001,20-Jun-73,53 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/1,,19067984815,0002827656595,1,,"Talaga 2, Kec. Talaga raya, Kab. Buton tengah",081343706231,1,
+614,15,La Ode Amiluddin,Security,7404182906760001,29-Jun-76,50 Tahun ,Laki-laki,27-Agu-2019,SMP,,VI/1/1,,19074133711,0002827656404,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",081266196194,1,
+615,16,Laduwi,Security,9115010101660001,1-Jan-66,60 Tahun ,Laki-laki,10-Sep-2019,SMA,,VI/1/1,,20010220885,0000383043971,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085283122341,1,
+616,17,Kopman,Security,7404181203600001,12-Mar-60,66 Tahun ,Laki-laki,24-Jun-2019,SMP,,VI/1/1,,19067985606,0002922087622,1,,"Talaga Besar, Kec. Talaga raya, Kab. Buton tengahI ",081354519389,1,
+617,18,JEKI,Security,7404181705870001,17-Mei-87,39 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082515152,0002369484483,1,,"Dusun pangilia, talaga I, Kec. Talaga raya, Kab. Buton tengah",082118399235,1,
+618,19,AMRULLAH,Security,7406130601710001,6-Jan-71,55 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515277,0003257154911,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082299373321,1,
+619,20,ASRAR,Security,7406132202730001,22-Feb-73,53 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515020,0000953589701,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082188265542,1,
+620,21,KAHARUDDIN,Security,7406130106700001,1-Jun-70,56 Tahun ,Laki-laki,11-Okt-2021,SMP,,VI/1/1,,21082515129,0002172891993,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",085295632962,1,
+621,22,NANANG SURAHMAN,Security,7471011112750003,11-Des-75,50 Tahun ,Laki-laki,11-Okt-2021,SMA,,VI/1/1,,21082514940,0002975381662,1,,"kel. Mandonga, Kec. Mandonga Kota Kendari",081350788303,,2
+622,23,Faisal,Security,7404180107770043,7/1/1977,49 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Talaga II Kec. Talaga Raya, Kab. Buton Tengah",082261129903,1,
+623,24,Samsul Bahri,Security,7404181011850001,11/10/1985,40 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga II, Kec. Talaga Raya, Kab. Buton Tengah",081319237896,1,
+624,25,Sudarlin,Security,7404182203800001,4/11/1981,45 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082278129160,1,
+625,26,Rusli,Security,7406140205700001,5/2/1970,56 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082188106098,1,
+626,27,Hardin,Security,7406061404690001,4/14/1969,57 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",081241099546,1,
+627,28,Nursalam,Security,7472011010800001,10/19/1981,44 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Lingk. Waborobo RT.03/RW.02, Kel. Waborobo, Kec. Betoambari, Kota Baubau",085217396723,,2
+628,29,La Ode Kasman,Security,7404180107770002,10/10/1977,48 Tahun ,Laki-laki,27-Nov-2025,SMP,,,,,,1,,"Talaga I, Kec. Talaga Raya, Kab. Buton Tengah",082262615763,1,
+629,30,Suhardy,Security Kantor KDI,7471033005910001,30-Mei-91,35 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,12008524782,0001882933672,1,,BTN Bukit Cempaka Kendari,082193106477,,2
+630,31,Irjayanto,Security Kantor KDI,7405050101740002,10-Mei-82,44 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,20050673613,0001882931635,1,,Tetenggabo Konawe Selatan,082193843948,,2
+631,32,Uhwan Nur Putra,Security Kantor KDI,7405191305780001,13-Mei-78,48 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,11008614965,0001882794251,1,,"Ds. Torobulu, Kab. Konawe Selatan ",081340065708,,2
+632,33,La Ode Irwanas,Security Kantor KDI,7405192512820006,25-Des-82,43 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,11008614023,0001883581942,1,,Desa Wonua Kongga Konawe Selatan,082395275868,,2
+633,34,Badrun,Security Kantor KDI,7405141802710001,18-Feb-71,55 Tahun ,Laki-laki,01-Feb-2020,SMA,,VI/1/1,,11008613306,0001882476505,1,,Desa Labokeo Konawe Selatan,085299983147,,2
+634,35,RUSLIN AFANDI,Security Kantor KDI,7471042501940001,25-Jan-94,32 Tahun ,Laki-laki,02 Juni 2023,SMA,,,,23109460974,0000955148657,1,,"Jl. Kampung Baru Rt.002/RW.001, Kel. Anduonohu Kec. Poasia Kota Kendari",082236638246,,2
+,,,,,,,,,,,,,,,,,,,,
+,,KESKER,,,,,,,,,,,,,,,,,,
+635,1,Somaun,HSE,3201160306700008,3-Jun-70,56 Tahun ,Laki-laki,02-Nov-2024,,,,,,,1,,Kp. Jatake RT.02/RW.05 Kel. Cimanggu I Kec. Cibungbulang Bogor,081382844920,,2
+636,2,Syahrul,Safety Patroli,7472020111700001,1-Nov-70,55 Tahun ,Laki-laki,19-Agu-2019,SMA,,VI/4/9,,20010221321,0002367900123,1,,Jl. Pattimura RT.001/RW.002 Kel. Wangkanapi Kec. Wolio Kota Baubau,081310399409,,2
+637,3,Tegas Adisonda Nugroho,Admin K3,7406063011030001,30-Nov-03,22 Tahun ,Laki-laki,01-Agu-2025,SMA,,,,,0002068742755,1,,"Desa Tapuhaka, Kec, Kabaena Timur Kab. Bombana",081245644606,1,
+638,4,Irawati,Admin K3,7404187001990002,1/30/1999,27 Tahun ,Perempuan,27-Nov-2025,S1,,,,,,1,,"Desa Kokoe Kec. Talaga Raya, Kab. Buton Tengah",082262693021,1,
+639,5,MAHFUD SADIK,Kesker ,7404182410910001,24-Okt-91,34 Tahun ,Laki-laki,11-Okt-2021,S1 Ekonomi,,VI/1/1,,21082515269,0002976748795,1,,"Talaga 1, Kec. Talaga raya, Kab. Buton tengah",085213720831,1,
+640,6,Idris Nur,Kesker ,7406131807730002,18-Jul-73,52 Tahun ,Laki-laki,18-Jul-2019,SMA,,VI/1/1,,19067985978,0001941303644,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082214295066,1,
+641,7,Mashuli,Kesker ,7406130601850001,6-Jan-85,41 Tahun ,Laki-laki,18-Jul-2019,SMP,,VI/1/1,,19067984872,0002922165371,1,,"Desa Pongkalaero, Kec.Kabaena Selatan, Kab. Bombana SULTRA",082290240371,1,
+642,8,Tony,Kesker,2172042410910002,24-Okt-91,34 Tahun ,Laki-laki,01-Jun-2022,SMA,,UMP,,22082657184,,1,,Desa Ulungkura Kec. Kabaena Tengah kab. Bombana,085263685282,1,
+643,9,"ANJAR JAYA, S.SOS",Kesker,7406132007880002,20-Jul-88,37 Tahun ,Laki-laki,02 Juni 2023,S1 ,,,,23109460545,0002827949174,1,,"Desa Langkema, Kec. Kabaena Selatan, Kab. Bombana",082260489921,1,
+644,10,AWAL RAHMAT ARSI,Kesker,7302032302000001,23-Feb-00,26 Tahun ,Laki-laki,02 Juni 2023,SMP,,,,23109460677,0003248059825,1,,Desa Kokoe Kec. Talaga Raya Kab. Bombana,081347031207,1,
+645,11,ANGGA SAPUTRA,Kesker,7406061501960001,15-Jan-96,30 Tahun ,Laki-laki,02 Juni 2023,S1,,,,23109460826,0002172900565,1,,"Desa Balo, Kec. Kabaena Timur, Kab. Bombana",082269854229,1,
+646,12,Edwan Yayansyah,Kesker,7401072603000001,26-Mar-00,26 Tahun ,Laki-laki,05-Nov-2025,S1 ,,,,,,1,,"Dusun I WataremaKel. Sopura, Kec. Pomalaa, Kab. Kolaka",082312417373,,2
+647,13,Rismaulina,Kesker,7404186707980001,27-Jul-98,27 Tahun ,Perempuan,05-Nov-2025,S1 ,,,,,,1,,"Lingk. I Kel. Talaga I, Kec. Talaga Raya, Kab. Buton Raya",081359480175,1,
+648,14,Kamaluddin,Kesker,7406131206990001,7/31/1999,26 Tahun ,Laki-laki,27-Nov-2025,S1,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",082271202315,1,
+649,15,Andi Anggara,Kesker,7406130510020002,10/5/2002,23 Tahun ,Laki-laki,27-Nov-2025,D3,,,,,,1,,"Desa Puununu, Kec. Kabaena Selatan, Kab. Bombana",085298301734,1,
+650,16,Khairul Amal Aditama,Kesker,7406130303920001,3/3/1992,34 Tahun ,Laki-laki,27-Nov-2025,SMA,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",081342497779,1,
+651,17,La Ode Andi Wiliam,Kesker,7404180310030001,10/3/2003,22 Tahun ,Laki-laki,27-Nov-2025,SD,,,,,,1,,"Kokoe, Kec. Talaga Raya, Kab. Buton Tengah",082378876083,1,
+,,,,,,,,,,,,,,,,,,,,
+,,KLINIK,,,,,,,,,,,,,,,,,,
+652,1,Darsun,Perawat,7406060906920001,9-Jun-92,34 Tahun ,Laki-laki,10-Jul-2019,D3 Perawat,,VI/3/3,,20010220802,0001430747717,1,,Desa Balo Kec. Kabaena Timur Kab. Bombana,085394333223,1,
+653,2,Lilis Sukriyah Ningsih,Perawat,7471094908870004,9-Agu-87,38 Tahun ,Perempuan,10-Jul-2019,D3 Perawat,,VI/3/3,,20010220810,0002430176398,1,,"Kel. Wua Wua, Kec. Wua Wua Kota Kendari",085256534741,,2
+654,3,Ela Seprianti,Perawat,7406136509960001,25-Sep-96,29 Tahun ,Perempuan,10-Jul-2019,D3 Perawat,,VI/3/3,,20010220711,0000953293533,1,,"Desa Puununu, Kec.Kabaena Selatan, Kab. Bombana SULTRA", 085242791625 ,1,
+655,4,IKHSAN MAULANA MUSLIM,Perawat,3202111102980003,11-Feb-98,28 Tahun ,Laki-laki,02 Juni 2023,D3 Perawat,,,,23109461188,0000061585582,1,,"Dusun Reteno RT.002 Desa Langkema Kec. Kabaena Selatan, Kab. Bombana",081381592019,1,
+656,5,PUJI SETYA ASTUTI,Perawat,7406147110020002,31-Okt-02,23 Tahun ,Perempuan,02 Juni 2023,D3 Perawat,,,,23109461261,0000133992922,1,,"Kel. Sikeli, Kec. Kabaena Barat, Kab. Bombana",081233228104,1,
+657,6,Tary Uswatun Hasanah,Admin Klinik,7406137007020001,7/30/2002,23 Tahun ,Perempuan,27-Nov-2025,D4 Analis Kesehatan,,,,,,1,,"Desa Pongkalaero, Kec. Kabaena Selatan, Kab. Bombana",085398679940,1,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+*NIK 16 Digit Angka,,,,,,,,,,,,,,,,,,,,
+*Nomor Hape Wajib diisi,,,,,,,,,,,,,,,,,,,,
