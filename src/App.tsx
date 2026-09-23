@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { useAuth } from './components/AuthGate';
 import companyLogo from './assets/images/company_logo_1785406862950.jpg';
 import { Employee } from './types';
 import DashboardOverview from './components/DashboardOverview';
@@ -30,6 +31,7 @@ import {
 } from 'lucide-react';
 
 export default function App() {
+  const { profile, logout, hasAccess } = useAuth();
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const saved = localStorage.getItem('theme');
@@ -472,8 +474,13 @@ export default function App() {
     { id: 'directory', label: 'Direktori Karyawan', icon: Users }
   ];
 
-  return (
-    <div className="min-h-screen bg-slate-950 text-slate-300 flex flex-col font-sans" id="app-root">
+  const visibleNavItems = navItems.filter(item => item.id === 'dashboard' || item.id === 'directory' ? (profile?.role === 'Admin' || profile?.role === 'HR') : hasAccess(item.id === 'orgstructure' ? 'orgstructure' : item.id, 'view'));
+
+  useEffect(() => {
+    if (activeTab !== 'dashboard' && !visibleNavItems.some(item => item.id === activeTab)) setActiveTab('dashboard');
+  }, [activeTab, profile?.role]);
+
+   bg-slate-950 text-slate-300 flex flex-col font-sans" id="app-root">
       {/* 1. PROFESSIONAL HEADER */}
       <header className="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-30 shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
@@ -514,6 +521,14 @@ export default function App() {
             </button>
 
             {/* Status Indicator */}
+            <div className="hidden sm:flex items-center gap-2 px-3 py-2 rounded-xl border border-slate-700/50 bg-slate-800/80">
+              <div className="text-right">
+                <div className="text-[10px] text-white font-bold">{profile?.full_name}</div>
+                <div className="text-[9px] text-blue-400 font-semibold">{profile?.role}</div>
+              </div>
+              <button onClick={logout} className="text-[10px] px-2 py-1 rounded-lg bg-slate-700 hover:bg-red-600 text-slate-300 hover:text-white">Keluar</button>
+            </div>
+
             <div className="bg-slate-800/80 px-2.5 py-1.5 md:px-3.5 md:py-2 rounded-xl border border-slate-700/50 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse font-normal" />
               <span className="text-[10px] md:text-xs text-slate-300 font-semibold whitespace-nowrap">
@@ -556,7 +571,7 @@ export default function App() {
               </div>
 
               <div className="flex-1 overflow-y-auto space-y-1.5 pr-1 py-2">
-                {navItems.map(item => {
+                {visibleNavItems.map(item => {
                   const Icon = item.icon;
                   const isActive = activeTab === item.id;
                   return (
@@ -601,7 +616,7 @@ export default function App() {
         {/* 2. DESKTOP STICKY SIDEBAR (LISTING DOWNWARDS) */}
         <aside className="hidden md:flex md:flex-col md:w-64 bg-slate-900 border-r border-slate-800 shrink-0 sticky top-[73px] sm:top-[76px] h-[calc(100vh-76px)] overflow-y-auto z-25">
           <nav className="flex-1 p-3 space-y-1">
-            {navItems.map(item => {
+            {visibleNavItems.map(item => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
               return (
