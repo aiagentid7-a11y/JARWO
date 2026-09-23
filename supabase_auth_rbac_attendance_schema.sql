@@ -21,6 +21,15 @@ ALTER TABLE public.user_roles ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.role_permissions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.attendance_records ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "Users read own role permissions" ON public.role_permissions;
+CREATE POLICY "Users read own role permissions" ON public.role_permissions
+FOR SELECT TO authenticated USING (
+  EXISTS (
+    SELECT 1 FROM public.user_roles r
+    WHERE r.user_id = auth.uid() AND r.role = public.role_permissions.role
+  )
+);
+
 DROP POLICY IF EXISTS "attendance_employee_own_or_management" ON public.attendance_records;
 CREATE POLICY "attendance_employee_own_or_management" ON public.attendance_records
 FOR SELECT TO authenticated USING (
