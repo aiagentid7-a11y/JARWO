@@ -25,40 +25,48 @@ jobs:
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
-      - name: Verify Hermes and configure credential pool
+      - name: Configure Hermes with Atria
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
-          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
+          ATRIA_API_KEY: ${{ secrets.ATRIA_API_KEY }}
         run: |
           set -euo pipefail
 
           hermes --version
           hermes doctor --fix || true
 
-          test -n "$OPENROUTER_API_KEY" || {
-            echo "::error::OPENROUTER_API_KEY belum tersedia di GitHub Actions Secrets."
+          test -n "$ATRIA_API_KEY" || {
+            echo "::error::ATRIA_API_KEY belum tersedia di GitHub Actions Secrets."
             exit 1
           }
 
-          # Hermes creates/updates ~/.hermes/config.yaml itself.
-          # Do NOT hand-edit YAML: use Hermes' supported config command.
-          hermes config set credential_pool_strategies.openrouter round_robin
+          # Atria exposes an OpenAI-compatible Chat Completions endpoint.
+          # Keep the key in the GitHub secret; do not write it into the repo.
+          hermes config set model.default Atria-Dawn-Preview
+          hermes config set model.provider custom
+          hermes config set model.base_url https://api.atria-asi.ai/v1
+          hermes config set model.key_env ATRIA_API_KEY
           hermes config check
 
-          echo "=== Hermes credential pool ==="
-          hermes auth list openrouter
+          echo "=== Hermes model configuration ==="
+          hermes config get model || true
 
-          echo "=== Credential availability ==="
-          echo "OpenRouter key #1: available"
-          [ -n "${OPENROUTER_API_KEY_2:-}" ] && echo "OpenRouter key #2: available" || echo "OpenRouter key #2: not configured"
-          [ -n "${OPENROUTER_API_KEY_3:-}" ] && echo "OpenRouter key #3: available" || echo "OpenRouter key #3: not configured"
-
-      - name: Run Hermes
+      - name: Test Atria API
         env:
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
-          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
+          ATRIA_API_KEY: ${{ secrets.ATRIA_API_KEY }}
+        run: |
+          set -euo pipefail
+          echo "Testing Atria Chat Completions endpoint..."
+          RESPONSE="$(curl -fsS https://api.atria-asi.ai/v1/chat/completions             -H "Authorization: Bearer $ATRIA_API_KEY"             -H "Content-Type: application/json"             -d '{
+              "model": "Atria-Dawn-Preview",
+              "messages": [{"role": "user", "content": "Reply with exactly: ATRIA_OK"}],
+              "max_tokens": 16
+            }')"
+          echo "$RESPONSE"
+          echo "$RESPONSE" | grep -q "ATRIA_OK"
+
+      - name: Run Hermes with Atria
+        env:
+          ATRIA_API_KEY: ${{ secrets.ATRIA_API_KEY }}
           HERMES_PROMPT: ${{ inputs.prompt }}
         run: |
           set -o pipefail
