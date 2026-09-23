@@ -49,10 +49,17 @@ jobs:
           text = path.read_text() if path.exists() else ""
           if "credential_pool_strategies:" not in text:
               text = text.rstrip() + "\n\ncredential_pool_strategies:\n  openrouter: round_robin\n"
-          if "model:\n" not in text:
-              text = text.rstrip() + "\n\nmodel:\n  provider: openrouter\n"
-          elif "provider: openrouter" not in text:
-              text = text.rstrip() + "\n\n# CI override\nmodel:\n  provider: openrouter\n"
+          import re
+          model_match = re.search(r"(?m)^model:\n((?:^[ \\t].*\\n?)*)", text)
+          if model_match:
+              block = model_match.group(0)
+              if not re.search(r"(?m)^  provider:\\s*\\S+", block):
+                  block = block.rstrip() + "\\n  provider: openrouter\\n"
+              else:
+                  block = re.sub(r"(?m)^  provider:\\s*.*$", "  provider: openrouter", block)
+              text = text[:model_match.start()] + block + text[model_match.end():]
+          else:
+              text = text.rstrip() + "\\n\\nmodel:\\n  provider: openrouter\\n"
           path.write_text(text.rstrip() + "\n")
           PY
 
