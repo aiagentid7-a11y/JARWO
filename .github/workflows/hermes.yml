@@ -1,0 +1,40 @@
+name: Hermes Agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "Prompt untuk Hermes Agent"
+        required: false
+        default: "Jalankan pemeriksaan singkat terhadap repository ini dan laporkan hasilnya."
+
+jobs:
+  hermes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout JARWO
+        uses: actions/checkout@v4
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Verify Hermes
+        run: |
+          hermes --version
+          hermes doctor
+
+      - name: Run Hermes
+        env:
+          HERMES_PROMPT: ${{ inputs.prompt }}
+        run: |
+          hermes chat -q "$HERMES_PROMPT" | tee hermes-output.txt
+
+      - name: Upload Hermes output
+        uses: actions/upload-artifact@v4
+        with:
+          name: hermes-output
+          path: hermes-output.txt
