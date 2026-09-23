@@ -7,6 +7,9 @@ on:
         description: "Prompt untuk Hermes Agent"
         required: false
         default: "Jalankan pemeriksaan singkat terhadap repository ini dan laporkan hasilnya."
+  push:
+    branches:
+      - main
 
 jobs:
   hermes:
@@ -22,22 +25,46 @@ jobs:
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
-      - name: Verify Hermes
+      - name: Verify Hermes and repair config
         run: |
           hermes --version
           hermes doctor --fix || true
 
-      - name: Configure Hermes credential pool
+      - name: Verify OpenRouter credential pool
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
+          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
         run: |
+          test -n "$OPENROUTER_API_KEY" || {
+            echo "::error::OPENROUTER_API_KEY belum tersedia di GitHub Actions Secrets."
+            exit 1
+          }
+
           CONFIG="$HOME/.hermes/config.yaml"
-          if ! grep -q '^credential_pool_strategies:' "$CONFIG"; then
+          if grep -q '^credential_pool_strategies:' "$CONFIG"; then
+            echo "Credential pool strategy sudah ada."
+          else
             cat >> "$CONFIG" <<'EOF'
 
 credential_pool_strategies:
   openrouter: round_robin
 EOF
           fi
-          hermes auth list openrouter || true
+
+          echo "OpenRouter key #1 tersedia: yes"
+          if [ -n "$OPENROUTER_API_KEY_2" ]; then
+            echo "OpenRouter key #2 tersedia: yes"
+          else
+            echo "OpenRouter key #2 tersedia: no"
+          fi
+          if [ -n "$OPENROUTER_API_KEY_3" ]; then
+            echo "OpenRouter key #3 tersedia: yes"
+          else
+            echo "OpenRouter key #3 tersedia: no"
+          fi
+
+          hermes auth list openrouter
 
       - name: Run Hermes
         env:
@@ -46,8 +73,7 @@ EOF
           OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
           OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
         run: |
-          hermes auth list openrouter || true
-          hermes chat --provider openrouter --model openrouter/free -q "$HERMES_PROMPT" | tee hermes-output.txt
+          hermes chat -q "$HERMES_PROMPT" | tee hermes-output.txt
 
       - name: Upload Hermes output
         if: always()
