@@ -76,6 +76,13 @@ fun MoreFeaturesHubScreen(
 
     val items = listOf(
         MoreFeatureItem(
+            label = "Verifikasi Presensi Employee",
+            description = "Deteksi satu wajah dengan CameraX + ML Kit dan periksa lokasi perangkat serta indikasi mock location sebelum presensi.",
+            icon = Icons.Default.Face,
+            badgeColor = { it.cyanBg }, iconColor = { it.cyan },
+            targetTab = 13
+        ),
+        MoreFeatureItem(
             label = "Audit K3 (Kepatuhan Jam Kerja)",
             description = "Audit kepatuhan jam kerja & batas lembur 4 jam/hari serta 18 jam/minggu sesuai PP 35/2021 & Permenaker 27/2021.",
             icon = Icons.Default.HealthAndSafety,
