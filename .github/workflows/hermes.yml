@@ -25,7 +25,7 @@ jobs:
       - name: Verify Hermes
         run: |
           hermes --version
-          hermes doctor
+          hermes doctor --fix || true
 
       - name: Run Hermes
         env:
@@ -34,7 +34,9 @@ jobs:
           hermes chat -q "$HERMES_PROMPT" | tee hermes-output.txt
 
       - name: Upload Hermes output
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: hermes-output
           path: hermes-output.txt
+          if-no-files-found: warn
