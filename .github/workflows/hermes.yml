@@ -27,11 +27,27 @@ jobs:
           hermes --version
           hermes doctor --fix || true
 
+      - name: Configure Hermes credential pool
+        run: |
+          CONFIG="$HOME/.hermes/config.yaml"
+          if ! grep -q '^credential_pool_strategies:' "$CONFIG"; then
+            cat >> "$CONFIG" <<'EOF'
+
+credential_pool_strategies:
+  openrouter: round_robin
+EOF
+          fi
+          hermes auth list openrouter || true
+
       - name: Run Hermes
         env:
           HERMES_PROMPT: ${{ inputs.prompt }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
+          OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
         run: |
-          hermes chat -q "$HERMES_PROMPT" | tee hermes-output.txt
+          hermes auth list openrouter || true
+          hermes chat --provider openrouter --model openrouter/free -q "$HERMES_PROMPT" | tee hermes-output.txt
 
       - name: Upload Hermes output
         if: always()
