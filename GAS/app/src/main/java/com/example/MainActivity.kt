@@ -164,7 +164,7 @@ fun MainApp(viewModel: PayrollViewModel) {
         containerColor = colors.background,
         contentWindowInsets = WindowInsets.safeDrawing,
         topBar = {
-            if (selectedTab in 5..12 && selectedTab != 10) {
+            if (selectedTab in 5..13 && selectedTab != 10) {
                 Surface(
                     color = colors.surface,
                     shadowElevation = if (colors.isDark) 0.dp else 3.dp,
@@ -205,6 +205,7 @@ fun MainApp(viewModel: PayrollViewModel) {
                                     9 -> "Panduan Klaim BPJS (JHT/JKM/JKK/JKP)"
                                     11 -> "Presensi & Absensi Harian"
                                     12 -> "Audit K3 • Kepatuhan Jam Kerja"
+                                    13 -> "Verifikasi Presensi Employee"
                                     else -> ""
                                 },
                                 fontWeight = FontWeight.Bold,
@@ -380,6 +381,9 @@ fun MainApp(viewModel: PayrollViewModel) {
                         onNavigateToProfile = { selectedTab = 4 },
                         onNavigateToCalendar = { selectedTab = 6 },
                         onOpenProDialog = { viewModel.openProDialog() }
+                    )
+                    13 -> EmployeeVerificationScreen(
+                        onBack = { selectedTab = 10 }
                     )
                     12 -> AuditK3Screen(
                         userProfile = userProfile,
