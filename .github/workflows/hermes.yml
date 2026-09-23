@@ -25,55 +25,56 @@ jobs:
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
-      - name: Verify Hermes and repair config
-        run: |
-          hermes --version
-          hermes doctor --fix || true
-
-      - name: Verify OpenRouter credential pool
+      - name: Verify Hermes and configure credential pool
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
           OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
         run: |
+          set -euo pipefail
+          hermes --version
+          hermes doctor --fix || true
           test -n "$OPENROUTER_API_KEY" || {
             echo "::error::OPENROUTER_API_KEY belum tersedia di GitHub Actions Secrets."
             exit 1
           }
-
           CONFIG="$HOME/.hermes/config.yaml"
-          if grep -q '^credential_pool_strategies:' "$CONFIG"; then
-            echo "Credential pool strategy sudah ada."
-          else
-            cat >> "$CONFIG" <<'EOF'
+          mkdir -p "$HOME/.hermes"
+          touch "$CONFIG"
 
-credential_pool_strategies:
-  openrouter: round_robin
-EOF
-          fi
+          python3 - "$CONFIG" <<'PY'
+          import sys
+          from pathlib import Path
+          path = Path(sys.argv[1])
+          text = path.read_text() if path.exists() else ""
+          if "credential_pool_strategies:" not in text:
+              text = text.rstrip() + "\n\ncredential_pool_strategies:\n  openrouter: round_robin\n"
+          if "model:\n" not in text:
+              text = text.rstrip() + "\n\nmodel:\n  provider: openrouter\n"
+          elif "provider: openrouter" not in text:
+              text = text.rstrip() + "\n\n# CI override\nmodel:\n  provider: openrouter\n"
+          path.write_text(text.rstrip() + "\n")
+          PY
 
-          echo "OpenRouter key #1 tersedia: yes"
-          if [ -n "$OPENROUTER_API_KEY_2" ]; then
-            echo "OpenRouter key #2 tersedia: yes"
-          else
-            echo "OpenRouter key #2 tersedia: no"
-          fi
-          if [ -n "$OPENROUTER_API_KEY_3" ]; then
-            echo "OpenRouter key #3 tersedia: yes"
-          else
-            echo "OpenRouter key #3 tersedia: no"
-          fi
-
+          echo "=== Hermes config ==="
+          grep -A3 -E '^(model:|credential_pool_strategies:)' "$CONFIG" || true
+          echo "=== OpenRouter credential pool ==="
           hermes auth list openrouter
+          echo "=== Credential availability ==="
+          echo "OpenRouter key #1: available"
+          [ -n "${OPENROUTER_API_KEY_2:-}" ] && echo "OpenRouter key #2: available" || echo "OpenRouter key #2: not configured"
+          [ -n "${OPENROUTER_API_KEY_3:-}" ] && echo "OpenRouter key #3: available" || echo "OpenRouter key #3: not configured"
 
       - name: Run Hermes
         env:
-          HERMES_PROMPT: ${{ inputs.prompt }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_API_KEY_2: ${{ secrets.OPENROUTER_API_KEY_2 }}
           OPENROUTER_API_KEY_3: ${{ secrets.OPENROUTER_API_KEY_3 }}
+          HERMES_PROMPT: ${{ inputs.prompt }}
         run: |
-          hermes chat -q "$HERMES_PROMPT" | tee hermes-output.txt
+          set -o pipefail
+          PROMPT="${HERMES_PROMPT:-Jalankan pemeriksaan singkat terhadap repository ini dan laporkan hasilnya.}"
+          hermes chat -q "$PROMPT" 2>&1 | tee hermes-output.txt
 
       - name: Upload Hermes output
         if: always()
