@@ -3,14 +3,9 @@ import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
 import ErrorBoundary from './components/ErrorBoundary.tsx';
 import AuthGate from './components/AuthGate.tsx';
+import './lib/apiFetchInterceptor';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ErrorBoundary>
-      <AuthGate>
-        <App />
-      </AuthGate>
-    </ErrorBoundary>
-  </StrictMode>,
+  <StrictMode><ErrorBoundary><AuthGate><App /></AuthGate></ErrorBoundary></StrictMode>,
 );
