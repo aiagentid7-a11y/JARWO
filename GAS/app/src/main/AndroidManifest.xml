@@ -44,7 +44,7 @@
             android:name="google_analytics_default_allow_ad_personalization_signals"
             android:value="false" />
         <activity
-            android:name="com.example.MainActivity"
+            android:name="com.aiagentid7.payrollemployee.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplication">
