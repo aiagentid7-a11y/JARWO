@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-  namespace = "com.example"
+  namespace = "com.aiagentid7.payrollemployee"
   compileSdk { version = release(36) { minorApiLevel = 1 } }
 
   defaultConfig {
-    applicationId = "com.cataleya.gasapp"
+    applicationId = "com.aiagentid7.payrollemployee"
     minSdk = 24
     targetSdk = 36
     versionCode = 18
@@ -25,7 +25,7 @@ android {
 
   signingConfigs {
     create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
+      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/payroll-upload-key.jks"
       val keystoreFile = file(keystorePath)
       val storePwd = System.getenv("STORE_PASSWORD")
       val keyAliasEnv = System.getenv("KEY_ALIAS") ?: "upload"
