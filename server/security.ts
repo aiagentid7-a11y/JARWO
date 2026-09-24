@@ -4,8 +4,9 @@ import {
 } from '../src/types';
 import crypto from 'crypto';
 
-// Secret key for AES-256 field encryption at rest (simulating pgcrypto / Supabase Vault secret)
-const ENCRYPTION_SECRET = process.env.FIELD_ENCRYPTION_SECRET || 'hr-employee-pro-super-secret-key-32b!';
+// Encryption key must be supplied by the deployment environment.
+// Never ship a default/fallback secret in source control.
+const ENCRYPTION_SECRET = process.env.FIELD_ENCRYPTION_SECRET || "";
 
 /**
  * AES-256-CBC Field Encryption Helper
@@ -13,6 +14,9 @@ const ENCRYPTION_SECRET = process.env.FIELD_ENCRYPTION_SECRET || 'hr-employee-pr
 export function encryptSensitiveField(plainText: string | number): string {
   if (plainText === undefined || plainText === null || plainText === '') return '';
   const textStr = String(plainText);
+  if (!ENCRYPTION_SECRET) {
+    throw new Error("FIELD_ENCRYPTION_SECRET is not configured.");
+  }
   try {
     const iv = crypto.randomBytes(16);
     const key = crypto.scryptSync(ENCRYPTION_SECRET, 'salt', 32);
@@ -21,7 +25,7 @@ export function encryptSensitiveField(plainText: string | number): string {
     encrypted += cipher.final('hex');
     return `${iv.toString('hex')}:${encrypted}`;
   } catch (err) {
-    return `ENC[${Buffer.from(textStr).toString('base64')}]`;
+    throw new Error("Sensitive field encryption failed.");
   }
 }
 
@@ -32,11 +36,9 @@ export function decryptSensitiveField(cipherText: string): string {
   if (!cipherText || typeof cipherText !== 'string') return '';
   if (!cipherText.includes(':') && !cipherText.startsWith('ENC[')) return cipherText;
 
-  if (cipherText.startsWith('ENC[')) {
-    const base64 = cipherText.replace('ENC[', '').replace(']', '');
-    return Buffer.from(base64, 'base64').toString('utf8');
+  if (!ENCRYPTION_SECRET) {
+    return '*** ENKRIPSI BELUM DIKONFIGURASI ***';
   }
-
   try {
     const [ivHex, encryptedHex] = cipherText.split(':');
     const iv = Buffer.from(ivHex, 'hex');
