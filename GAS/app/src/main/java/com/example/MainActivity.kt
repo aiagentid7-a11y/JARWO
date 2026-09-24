@@ -213,7 +213,7 @@ fun MainApp(viewModel: PayrollViewModel) {
                                 color = colors.textPrimary
                             )
                             Text(
-                                text = "GAS • Personal Payroll",
+                                text = "Payroll Employee • HR & Payroll",
                                 fontSize = 10.sp,
                                 color = colors.textMuted
                             )
