@@ -33,6 +33,7 @@ import {
   decryptSensitiveField,
   maskSensitiveField
 } from "./server/security";
+import { requireAuth, authorizeApiRequest } from "./server/auth";
 
 dotenv.config();
 
@@ -213,6 +214,27 @@ app.use("/api", (req, res, next) => {
   res.setHeader("Expires", "0");
   res.setHeader("Surrogate-Control", "no-store");
   next();
+});
+
+// All API access is authenticated and then authorized server-side.
+// The client UI is not a security boundary.
+app.use("/api", requireAuth);
+app.use("/api", authorizeApiRequest);
+
+app.get("/api/auth/me", (req, res) => {
+  const user = req.authUser!;
+  res.json({
+    success: true,
+    profile: {
+      user_id: user.id,
+      email: user.email,
+      full_name: user.name,
+      role: user.role,
+      department: user.department ?? null,
+      employee_id: user.employeeId ?? null,
+      status: user.status
+    }
+  });
 });
 
 // 1. Get all employees
@@ -689,11 +711,12 @@ app.get("/api/security/roles", (req, res) => {
 // POST /api/security/roles/:roleId - Update Module Permissions Matrix for a Role
 app.post("/api/security/roles/:roleId", (req, res) => {
   try {
-    const { permissions, currentUserEmail = 'admin.hr@company.com', currentUserRole = 'Admin' } = req.body;
-    
-    // RBAC Check
-    if (currentUserRole !== 'Admin') {
-      return res.status(403).json({ error: "Akses Ditolak: Hanya Admin yang berhak memperbarui matriks RBAC." });
+    const { permissions } = req.body;
+    const currentUserEmail = req.authUser!.email;
+    const currentUserRole = req.authUser!.role;
+
+    if (!Array.isArray(permissions)) {
+      return res.status(400).json({ error: "permissions harus berupa array." });
     }
 
     const updated = updateRolePermissions(req.params.roleId, permissions);
@@ -703,7 +726,7 @@ app.post("/api/security/roles/:roleId", (req, res) => {
 
     // Record Audit Log
     recordAuditLog(
-      'usr-001',
+      req.authUser!.id,
       currentUserEmail,
       currentUserRole,
       'UPDATE',
@@ -732,10 +755,12 @@ app.get("/api/security/users", (req, res) => {
 // POST /api/security/users - Create or Update System User Role
 app.post("/api/security/users", (req, res) => {
   try {
-    const { id, email, name, role, department, employeeId, currentUserEmail = 'admin.hr@company.com', currentUserRole = 'Admin' } = req.body;
+    const { id, email, name, role, department, employeeId } = req.body;
+    const currentUserEmail = req.authUser!.email;
+    const currentUserRole = req.authUser!.role;
 
-    if (currentUserRole !== 'Admin') {
-      return res.status(403).json({ error: "Akses Ditolak: Hanya Admin yang berhak mengelola akun pengguna." });
+    if (!["Admin", "HR", "Manager", "Employee"].includes(role)) {
+      return res.status(400).json({ error: "Role pengguna tidak valid." });
     }
 
     if (!email || !name || !role) {
@@ -786,12 +811,7 @@ app.post("/api/security/users", (req, res) => {
 // GET /api/security/audit-logs - Query Audit Trail Logs
 app.get("/api/security/audit-logs", (req, res) => {
   try {
-    const { userId, tableName, action, startDate, endDate, search, requesterRole = 'Admin' } = req.query;
-
-    // RBAC Security Gate: Only Admin or HR can inspect audit logs
-    if (String(requesterRole) !== 'Admin' && String(requesterRole) !== 'HR') {
-      return res.status(403).json({ error: "Akses Ditolak: Hanya role Admin dan HR yang dapat mengakses Jejak Audit System." });
-    }
+    const { userId, tableName, action, startDate, endDate, search } = req.query;
 
     const logs = getFilteredAuditLogs(
       userId ? String(userId) : undefined,
@@ -825,7 +845,8 @@ app.get("/api/security/encrypted-catalog", (req, res) => {
 // POST /api/security/test-encryption - Test Encrypt, Decrypt, and Role Masking
 app.post("/api/security/test-encryption", (req, res) => {
   try {
-    const { plainText, fieldType = 'wage', requesterRole = 'Employee' } = req.body;
+    const { plainText, fieldType = 'wage' } = req.body;
+    const requesterRole = req.authUser!.role;
     
     if (!plainText) {
       return res.status(400).json({ error: "Teks teruji tidak boleh kosong." });
@@ -848,7 +869,7 @@ app.post("/api/security/test-encryption", (req, res) => {
 
     // Record audit event for sensitive access
     recordAuditLog(
-      'usr-test', 'user.test@company.com', requesterRole, 'VIEW_SENSITIVE', 'encrypted_test_field', 'TEST-001',
+      req.authUser!.id, req.authUser!.email, requesterRole, 'VIEW_SENSITIVE', 'encrypted_test_field', 'TEST-001',
       null, { fieldType, isMasked }, req.ip
     );
 
