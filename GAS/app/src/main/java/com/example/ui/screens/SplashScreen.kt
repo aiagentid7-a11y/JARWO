@@ -158,7 +158,7 @@ fun SplashScreen(
                 // Logo Container with Image
                 Image(
                     painter = painterResource(id = R.drawable.gas_official_logo_1787324079317),
-                    contentDescription = "GAS Logo - Gajiku Aman Selalu",
+                    contentDescription = "Payroll Employee",
                     modifier = Modifier
                         .size(210.dp)
                         .clip(CircleShape),
