@@ -782,7 +782,7 @@ app.post("/api/security/users", (req, res) => {
       savedUser = appUsersStore[existingIdx];
 
       recordAuditLog(
-        'usr-001', currentUserEmail, currentUserRole, 'UPDATE', 'user_roles', savedUser.id, oldVal, savedUser, req.ip
+        req.authUser!.id, currentUserEmail, currentUserRole, 'UPDATE', 'user_roles', savedUser.id, oldVal, savedUser, req.ip
       );
     } else {
       savedUser = {
@@ -798,7 +798,7 @@ app.post("/api/security/users", (req, res) => {
       appUsersStore.unshift(savedUser);
 
       recordAuditLog(
-        'usr-001', currentUserEmail, currentUserRole, 'CREATE', 'user_roles', savedUser.id, null, savedUser, req.ip
+        req.authUser!.id, currentUserEmail, currentUserRole, 'CREATE', 'user_roles', savedUser.id, null, savedUser, req.ip
       );
     }
 
@@ -834,7 +834,7 @@ app.get("/api/security/encrypted-catalog", (req, res) => {
     res.json({
       success: true,
       catalog: ENCRYPTED_FIELDS_CATALOG,
-      encryptionMethod: "AES-256-CBC (pgcrypto at-rest / Supabase Vault)",
+      encryptionMethod: "AES-256-CBC server-side; PostgreSQL pgcrypto schema is separate and not used by this endpoint",
       serverRoleOnlyDecrypt: true
     });
   } catch (err: any) {
