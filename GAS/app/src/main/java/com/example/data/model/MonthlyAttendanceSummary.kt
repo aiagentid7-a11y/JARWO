@@ -1,4 +1,4 @@
-package com.aiagentid7.payrollemployee.data.model
+package com.example.data.model
 
 /**
  * Model rekap kehadiran dan tunjangan kehadiran (Uang Makan & Uang Transport) bulanan
