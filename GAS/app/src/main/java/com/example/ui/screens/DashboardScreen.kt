@@ -91,7 +91,7 @@ fun DashboardScreen(
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
                         Text(
-                            text = "GAS",
+                            text = "Payroll Employee",
                             fontSize = 22.sp,
                             fontWeight = FontWeight.ExtraBold,
                             letterSpacing = (-0.5).sp,
@@ -115,7 +115,7 @@ fun DashboardScreen(
                         }
                     }
                     Text(
-                        text = "Personal Payroll",
+                        text = "Employee Payroll & HR",
                         fontSize = 11.5.sp,
                         color = colors.textMuted
                     )
