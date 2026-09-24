@@ -1,4 +1,4 @@
-package com.aiagentid7.payrollemployee.data.model
+package com.example.data.model
 
 /**
  * Dokumentasi Skrip Database SQLite (DDL SQL) Lengkap
