@@ -1,4 +1,4 @@
-package com.aiagentid7.payrollemployee.data.model
+package com.example.data.model
 
 import androidx.room.Entity
 import androidx.room.Index
