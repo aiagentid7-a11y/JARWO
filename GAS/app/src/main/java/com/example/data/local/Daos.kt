@@ -1,7 +1,7 @@
-package com.aiagentid7.payrollemployee.data.local
+package com.example.data.local
 
 import androidx.room.*
-import com.aiagentid7.payrollemployee.data.model.*
+import com.example.data.model.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
