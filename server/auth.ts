@@ -160,3 +160,62 @@ export function requireRoles(...roles: AppRole[]) {
     return next();
   };
 }
+
+export function authorizeApiRequest(req: Request, res: Response, next: NextFunction) {
+  const role = req.authUser?.role;
+  if (!role) return res.status(401).json({ error: "Autentikasi diperlukan." });
+
+  const path = req.path;
+  const method = req.method.toUpperCase();
+
+  if (path === "/auth/me") return next();
+
+  const allow = (roles: AppRole[]) => roles.includes(role);
+
+  // Master employee and payroll-sensitive operations.
+  if (path === "/employees" && method === "GET") {
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Hanya Admin/HR yang dapat melihat seluruh data karyawan." });
+  }
+  if (path.startsWith("/employees") || path === "/upload-excel") {
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Operasi master karyawan memerlukan role Admin/HR." });
+  }
+
+  if (path.startsWith("/dashboard-state")) {
+    return allow(["Admin", "HR", "Manager"]) ? next() : res.status(403).json({ error: "Akses dashboard ditolak." });
+  }
+
+  if (path.startsWith("/actuary")) {
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Data aktuaria hanya dapat diakses Admin/HR." });
+  }
+
+  if (path.startsWith("/regulations") || path.startsWith("/minimum-wages")) {
+    if (method === "GET" || path.endsWith("/check-compliance")) return next();
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Perubahan regulasi/UMP hanya dapat dilakukan Admin/HR." });
+  }
+
+  if (path.startsWith("/security/roles")) {
+    return method === "GET"
+      ? (allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Akses RBAC ditolak." }))
+      : (role === "Admin" ? next() : res.status(403).json({ error: "Hanya Admin yang dapat mengubah RBAC." }));
+  }
+
+  if (path.startsWith("/security/users")) {
+    return method === "GET"
+      ? (allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Akses pengguna sistem ditolak." }))
+      : (role === "Admin" ? next() : res.status(403).json({ error: "Hanya Admin yang dapat mengelola pengguna." }));
+  }
+
+  if (path.startsWith("/security/audit-logs")) {
+    return role === "Admin" ? next() : res.status(403).json({ error: "Audit log hanya dapat diakses Admin." });
+  }
+
+  if (path.startsWith("/security/encrypted-catalog") || path.startsWith("/security/test-encryption")) {
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "Akses data terenkripsi ditolak." });
+  }
+
+  if (path === "/chat") {
+    return allow(["Admin", "HR"]) ? next() : res.status(403).json({ error: "AI Copilot dengan akses data HR hanya tersedia untuk Admin/HR." });
+  }
+
+  return next();
+}
