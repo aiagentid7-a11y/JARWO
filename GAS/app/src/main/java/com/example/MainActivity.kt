@@ -1,4 +1,4 @@
-package com.aiagentid7.payrollemployee
+package com.example
 
 import android.os.Build
 import android.os.Bundle
@@ -40,14 +40,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.aiagentid7.payrollemployee.ui.PayrollViewModel
-import com.aiagentid7.payrollemployee.ui.components.AdMobBanner
+import com.example.ui.PayrollViewModel
+import com.example.ui.components.AdMobBanner
 import androidx.lifecycle.lifecycleScope
-import com.aiagentid7.payrollemployee.ui.components.PrivacyPolicyDialog
-import com.aiagentid7.payrollemployee.ui.components.ProUpgradeDialog
-import com.aiagentid7.payrollemployee.ui.screens.*
-import com.aiagentid7.payrollemployee.ui.theme.*
-import com.aiagentid7.payrollemployee.domain.util.DeviceUtils
+import com.example.ui.components.PrivacyPolicyDialog
+import com.example.ui.components.ProUpgradeDialog
+import com.example.ui.screens.*
+import com.example.ui.theme.*
+import com.example.domain.util.DeviceUtils
 import com.google.android.gms.ads.MobileAds
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
