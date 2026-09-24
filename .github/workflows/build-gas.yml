@@ -1,4 +1,4 @@
-name: Build GAS Release AAB
+name: Build Payroll Employee Release AAB
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
       - ".github/workflows/build-gas.yml"
 
 jobs:
-  build-gas:
+  build-payroll-employee:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -35,23 +35,23 @@ jobs:
 
       - name: Prepare upload keystore
         env:
-          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          PAYROLL_KEYSTORE_BASE64: ${{ secrets.PAYROLL_KEYSTORE_BASE64 }}
+          PAYROLL_STORE_PASSWORD: ${{ secrets.PAYROLL_STORE_PASSWORD }}
+          PAYROLL_KEY_PASSWORD: ${{ secrets.PAYROLL_KEY_PASSWORD }}
+          PAYROLL_KEY_ALIAS: ${{ secrets.PAYROLL_KEY_ALIAS }}
         run: |
           set -euo pipefail
-          test -n "${KEYSTORE_BASE64:-}" || { echo "KEYSTORE_BASE64 belum tersedia"; exit 1; }
-          test -n "${STORE_PASSWORD:-}" || { echo "STORE_PASSWORD belum tersedia"; exit 1; }
-          test -n "${KEY_PASSWORD:-}" || { echo "KEY_PASSWORD belum tersedia"; exit 1; }
-          KEY_ALIAS="${KEY_ALIAS:-upload}"
-          echo "$KEYSTORE_BASE64" | base64 -d > my-upload-key.jks
-          test -s my-upload-key.jks
-          keytool -list -keystore my-upload-key.jks -storepass "$STORE_PASSWORD" -alias "$KEY_ALIAS" >/dev/null
-          echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/GAS/my-upload-key.jks" >> "$GITHUB_ENV"
-          echo "STORE_PASSWORD=$STORE_PASSWORD" >> "$GITHUB_ENV"
-          echo "KEY_PASSWORD=$KEY_PASSWORD" >> "$GITHUB_ENV"
-          echo "KEY_ALIAS=$KEY_ALIAS" >> "$GITHUB_ENV"
+          test -n "${PAYROLL_KEYSTORE_BASE64:-}" || { echo "PAYROLL_KEYSTORE_BASE64 belum tersedia"; exit 1; }
+          test -n "${PAYROLL_STORE_PASSWORD:-}" || { echo "PAYROLL_STORE_PASSWORD belum tersedia"; exit 1; }
+          test -n "${PAYROLL_KEY_PASSWORD:-}" || { echo "PAYROLL_KEY_PASSWORD belum tersedia"; exit 1; }
+          PAYROLL_KEY_ALIAS="${PAYROLL_KEY_ALIAS:-upload}"
+          echo "$PAYROLL_KEYSTORE_BASE64" | base64 -d > payroll-upload-key.jks
+          test -s payroll-upload-key.jks
+          keytool -list -keystore payroll-upload-key.jks -storepass "$PAYROLL_STORE_PASSWORD" -alias "$PAYROLL_KEY_ALIAS" >/dev/null
+          echo "KEYSTORE_PATH=${GITHUB_WORKSPACE}/GAS/payroll-upload-key.jks" >> "$GITHUB_ENV"
+          echo "PAYROLL_STORE_PASSWORD=$PAYROLL_STORE_PASSWORD" >> "$GITHUB_ENV"
+          echo "PAYROLL_KEY_PASSWORD=$PAYROLL_KEY_PASSWORD" >> "$GITHUB_ENV"
+          echo "PAYROLL_KEY_ALIAS=$PAYROLL_KEY_ALIAS" >> "$GITHUB_ENV"
 
       - name: Build release AAB
         run: ./gradlew bundleRelease --no-daemon --no-configuration-cache --stacktrace
@@ -67,7 +67,7 @@ jobs:
       - name: Upload AAB
         uses: actions/upload-artifact@v6
         with:
-          name: gas-release-aab
+          name: payroll-employee-release-aab
           path: GAS/app/build/outputs/bundle/release/*.aab
           if-no-files-found: error
           retention-days: 30
