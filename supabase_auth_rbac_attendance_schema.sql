@@ -72,3 +72,19 @@ ON CONFLICT (role,module_code) DO UPDATE SET access_level = EXCLUDED.access_leve
 CREATE OR REPLACE FUNCTION public.set_updated_at() RETURNS TRIGGER AS $$ BEGIN NEW.updated_at = now(); RETURN NEW; END; $$ LANGUAGE plpgsql;
 DROP TRIGGER IF EXISTS attendance_set_updated_at ON public.attendance_records;
 CREATE TRIGGER attendance_set_updated_at BEFORE UPDATE ON public.attendance_records FOR EACH ROW EXECUTE FUNCTION public.set_updated_at();
+
+
+-- RBAC defaults for organization and employee master-data APIs.
+-- Employee intentionally has no access to these management modules.
+INSERT INTO public.role_permissions (role,module_code,module_name,access_level) VALUES
+ ('Admin','employees','Data Karyawan','full'),
+ ('HR','employees','Data Karyawan','full'),
+ ('Manager','employees','Data Karyawan','view'),
+ ('Employee','employees','Data Karyawan','none'),
+ ('Admin','org_structure','Struktur Organisasi','full'),
+ ('HR','org_structure','Struktur Organisasi','full'),
+ ('Manager','org_structure','Struktur Organisasi','view'),
+ ('Employee','org_structure','Struktur Organisasi','none')
+ON CONFLICT (role,module_code) DO UPDATE SET
+  module_name = EXCLUDED.module_name,
+  access_level = EXCLUDED.access_level;
