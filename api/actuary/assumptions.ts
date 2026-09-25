@@ -1,7 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../_auth';
 import { actuarialAssumptions } from '../../server/actuary.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'remunerasi', req.method === 'GET' ? 'view' : 'edit');
+  if (!ctx) return;
   if (req.method === 'GET') {
     return res.status(200).json({ success: true, assumptions: actuarialAssumptions });
   }
