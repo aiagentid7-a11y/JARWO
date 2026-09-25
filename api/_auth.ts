@@ -45,6 +45,7 @@ export async function requirePermission(req: VercelRequest, res: VercelResponse,
   if (ctx.profile.role === 'Admin') return ctx;
   const token = (req.headers.authorization || '').slice(7);
   const candidates = moduleCode === 'org_structure' ? ['org_structure', 'orgstructure'] : [moduleCode];
+  const candidates = moduleCode === 'org_structure' ? ['org_structure', 'orgstructure'] : [moduleCode];
   try {
     const supabase = clientForToken(token);
     let data: any = null;
