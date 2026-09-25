@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { supabase } from '../_supabase.js';
 import { requirePermission } from '../_auth';
+import { requirePermission } from '../_auth';
 
 interface EmployeeRaw {
   id: string;
