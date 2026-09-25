@@ -44,10 +44,17 @@ export async function requirePermission(req: VercelRequest, res: VercelResponse,
   if (!ctx) return null;
   if (ctx.profile.role === 'Admin') return ctx;
   const token = (req.headers.authorization || '').slice(7);
+  const candidates = moduleCode === 'org_structure' ? ['org_structure', 'orgstructure'] : [moduleCode];
   try {
     const supabase = clientForToken(token);
-    const { data, error } = await supabase.from('role_permissions').select('access_level')
-      .eq('role', ctx.profile.role).eq('module_code', moduleCode).maybeSingle();
+    let data: any = null;
+    let error: any = null;
+    for (const candidate of candidates) {
+      const result = await supabase.from('role_permissions').select('access_level')
+        .eq('role', ctx.profile.role).eq('module_code', candidate).maybeSingle();
+      data = result.data; error = result.error;
+      if (!error && data) break;
+    }
     if (error || !data || hierarchy[data.access_level as AccessLevel] < hierarchy[required]) {
       res.status(403).json({ error: 'Akses ditolak untuk ' + moduleCode + '.' }); return null;
     }
