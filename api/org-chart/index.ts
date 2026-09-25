@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { supabase } from '../_supabase.js';
+import { requirePermission } from '../_auth';
 
 interface EmployeeRaw {
   id: string;
@@ -16,6 +17,8 @@ interface EmployeeRaw {
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'orgstructure', req.method === 'GET' ? 'view' : 'edit');
+  if (!ctx) return;
   // 1. GET: Fetch Org Chart Tree & Employees List with hierarchy
   if (req.method === 'GET') {
     try {
