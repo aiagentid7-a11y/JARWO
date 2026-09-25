@@ -1,8 +1,11 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../_auth';
 import { supabase } from '../_supabase.js';
 import { calculateRemunerationProjection } from '../../server/actuary.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'remunerasi', 'view');
+  if (!ctx) return;
   if (req.method !== 'POST') {
     res.setHeader('Allow', ['POST']);
     return res.status(405).end();
