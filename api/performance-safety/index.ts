@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../_auth';
 import {
   incidentReportsStore,
   appraisalsStore,
@@ -8,6 +9,8 @@ import {
 } from '../../server/performanceSafety.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'kpi', req.method === 'GET' ? 'view' : 'edit');
+  if (!ctx) return;
   if (req.method === 'GET') {
     try {
       const { view, userRole, userDept } = req.query;
