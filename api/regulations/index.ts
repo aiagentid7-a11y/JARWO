@@ -1,7 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../_auth';
 import { getAllRegulations, saveLaborRegulation } from '../../server/regulations.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'regulasi', req.method === 'GET' ? 'view' : 'edit');
+  if (!ctx) return;
   if (req.method === 'GET') {
     try {
       const { category, status, search } = req.query;
