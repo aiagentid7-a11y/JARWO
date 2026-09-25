@@ -1,7 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../_auth';
 import { supabase } from '../_supabase.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'org_structure', req.method === 'GET' ? 'view' : 'edit');
+  if (!ctx) return;
   if (req.method === 'GET') {
     try {
       const { data: positions, error: posErr } = await supabase
