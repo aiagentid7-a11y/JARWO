@@ -1,16 +1,20 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { requirePermission } from '../../_auth';
 import { getFilteredAuditLogs } from '../../../server/security.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  const ctx = await requirePermission(req, res, 'security', 'view');
+  if (!ctx) return;
+
   if (req.method !== 'GET') {
     res.setHeader('Allow', ['GET']);
     return res.status(405).end();
   }
 
   try {
-    const { userId, tableName, action, startDate, endDate, search, requesterRole = 'Admin' } = req.query;
+    const { userId, tableName, action, startDate, endDate, search } = req.query;
 
-    if (String(requesterRole) !== 'Admin' && String(requesterRole) !== 'HR') {
+    if (ctx.profile.role !== 'Admin' && ctx.profile.role !== 'HR') {
       return res.status(403).json({ error: 'Akses Ditolak: Hanya role Admin dan HR yang dapat mengakses Jejak Audit System.' });
     }
 
